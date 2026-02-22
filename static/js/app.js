@@ -130,6 +130,51 @@ async function loadContent() {
         resourcesList.appendChild(li);
     });
 
+    /* ------------------------------
+   CLOUD SECURITY SECTION
+------------------------------ */
+const cloudList = document.getElementById("cloudList");
+data.cloudSecurity.forEach(item => {
+    const li = document.createElement("li");
+    li.className = "search-item";
+    li.dataset.difficulty = item.difficulty || "Beginner";
+    li.innerHTML = `
+        <span class="item-title">${item.name}</span> – ${item.description}
+        <span class="pill">Difficulty: ${li.dataset.difficulty}</span>
+    `;
+    cloudList.appendChild(li);
+});
+
+/* ------------------------------
+   NETWORK SECURITY SECTION
+------------------------------ */
+const networkList = document.getElementById("networkList");
+data.networkSecurity.forEach(item => {
+    const li = document.createElement("li");
+    li.className = "search-item";
+    li.dataset.difficulty = item.difficulty || "Beginner";
+    li.innerHTML = `
+        <span class="item-title">${item.name}</span> – ${item.description}
+        <span class="pill">Difficulty: ${li.dataset.difficulty}</span>
+    `;
+    networkList.appendChild(li);
+});
+
+/* ------------------------------
+   SOC OPERATIONS SECTION
+------------------------------ */
+const socList = document.getElementById("socList");
+data.socOperations.forEach(item => {
+    const li = document.createElement("li");
+    li.className = "search-item";
+    li.dataset.difficulty = item.difficulty || "Beginner";
+    li.innerHTML = `
+        <span class="item-title">${item.name}</span> – ${item.description}
+        <span class="pill">Difficulty: ${li.dataset.difficulty}</span>
+    `;
+    socList.appendChild(li);
+});
+
     initSearch();
     initNavHighlight();
     initCollapse();
