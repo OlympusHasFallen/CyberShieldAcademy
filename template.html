@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Musonda’s CyberShield Academy</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+    <link rel="stylesheet" href="static/css/pdf.css" media="print">
+</head>
+
+<body class="dark">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="brand">
+            <div class="brand-logo">
+                <img src="static/img/logo.png" alt="Musonda’s CyberShield Academy Logo">
+            </div>
+            <div>
+                <div class="brand-title">Musonda’s CyberShield Academy</div>
+                <div class="brand-sub">Cybersecurity Learning Portal</div>
+            </div>
+        </div>
+
+        <div class="nav-section-title">Core Sections</div>
+        <a class="nav-link" data-target="attack-methods">Attack Methods</a>
+        <a class="nav-link" data-target="malware-types">Malware Types</a>
+        <a class="nav-link" data-target="defense-strategies">Defense Strategies</a>
+        <a class="nav-link" data-target="incident-response">Incident Response</a>
+        <a class="nav-link" data-target="mitre-mapping">MITRE ATT&CK</a>
+        <a class="nav-link" data-target="tools">Tools</a>
+        <a class="nav-link" data-target="glossary">Glossary</a>
+        <a class="nav-link" data-target="resources">External Resources</a>
+
+        <div class="nav-section-title">Advanced Topics</div>
+        <a class="nav-link" data-target="cloud-security">Cloud Security</a>
+        <a class="nav-link" data-target="network-security">Network Security</a>
+        <a class="nav-link" data-target="soc-operations">SOC Operations</a>
+
+        <div class="nav-section-title">Interactive</div>
+        <a class="nav-link" data-target="quiz">Quiz Engine</a>
+        <a class="nav-link" data-target="certification">Certification Exam</a>
+        <a class="nav-link" data-target="simulation">Threat Simulation</a>
+        <a class="nav-link" data-target="progress">Your Progress</a>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="topbar-title" id="appTitle">Musonda’s CyberShield Academy</div>
+                <span class="badge" id="tagline">Interactive Cybersecurity Reference</span>
+            </div>
+
+            <div class="topbar-right">
+                <div class="difficulty-filter" id="difficultyFilter">
+                    <button data-diff="All" class="diff-btn active">All</button>
+                    <button data-diff="Beginner" class="diff-btn">Beginner</button>
+                    <button data-diff="Intermediate" class="diff-btn">Intermediate</button>
+                    <button data-diff="Advanced" class="diff-btn">Advanced</button>
+                </div>
+
+                <input id="searchBox" class="search-input" type="text" placeholder="Search attacks, malware, defenses...">
+
+                <button id="pdfExport" class="toggle-btn">📄 PDF</button>
+                <button id="themeToggle" class="toggle-btn">🌙 Dark</button>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- HERO -->
+            <div class="hero fade-in">
+                <h1 id="heroTitle">Musonda’s CyberShield Academy</h1>
+                <p>
+                    A practical, quick-reference guide to common
+                    <span class="highlight">attack methods</span>,
+                    <span class="highlight">malware types</span>, and
+                    <span class="highlight">defensive strategies</span>.
+                </p>
+                <div class="hero-grid">
+                    <div class="hero-pill"><strong>Focus:</strong> Blue team, awareness, fundamentals</div>
+                    <div class="hero-pill"><strong>Includes:</strong> MITRE ATT&CK, defenses, examples</div>
+                    <div class="hero-pill"><strong>Mode:</strong> Local, safe, educational only</div>
+                </div>
+                <div class="achievements" id="achievements"></div>
+            </div>
+
+            <!-- SECTION CARDS (Attack, Malware, Defense, etc.) -->
+            <div id="attack-methods" class="section-card slide-up">
+                <div class="section-header" data-collapse="attack-body">
+                    <h2>🔐 Common Cyber Attack Methods</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="attack-body" class="section-body">
+                    <ul id="attackList"></ul>
+                </div>
+            </div>
+
+            <div id="malware-types" class="section-card slide-up">
+                <div class="section-header" data-collapse="malware-body">
+                    <h2>🦠 Common Malware Types</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="malware-body" class="section-body">
+                    <ul id="malwareList"></ul>
+                </div>
+            </div>
+
+            <div id="defense-strategies" class="section-card slide-up">
+                <div class="section-header" data-collapse="defense-body">
+                    <h2>🛡️ Defense Strategies</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="defense-body" class="section-body two-column">
+                    <div>
+                        <h3>Foundational Controls</h3>
+                        <ul id="defenseFoundational"></ul>
+                    </div>
+                    <div>
+                        <h3>Detection & Monitoring</h3>
+                        <ul id="defenseDetection"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="incident-response" class="section-card slide-up">
+                <div class="section-header" data-collapse="ir-body">
+                    <h2>🚨 Incident Response Flow</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="ir-body" class="section-body">
+                    <ol id="irList"></ol>
+                </div>
+            </div>
+
+            <div id="mitre-mapping" class="section-card slide-up">
+                <div class="section-header" data-collapse="mitre-body">
+                    <h2>🧩 MITRE ATT&CK Mapping</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="mitre-body" class="section-body">
+                    <ul id="mitreList"></ul>
+                </div>
+            </div>
+
+            <div id="tools" class="section-card slide-up">
+                <div class="section-header" data-collapse="tools-body">
+                    <h2>🧰 Tools of the Trade</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="tools-body" class="section-body two-column">
+                    <div>
+                        <h3>Blue Team</h3>
+                        <ul id="toolsBlue"></ul>
+                    </div>
+                    <div>
+                        <h3>Red Team / Testing</h3>
+                        <ul id="toolsRed"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="glossary" class="section-card slide-up">
+                <div class="section-header" data-collapse="glossary-body">
+                    <h2>📖 Glossary</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="glossary-body" class="section-body two-column">
+                    <div><ul id="glossaryLeft"></ul></div>
+                    <div><ul id="glossaryRight"></ul></div>
+                </div>
+            </div>
+
+            <div id="resources" class="section-card slide-up">
+                <div class="section-header" data-collapse="resources-body">
+                    <h2>🌐 External Learning Resources</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="resources-body" class="section-body">
+                    <ul id="resourcesList"></ul>
+                </div>
+            </div>
+
+            <!-- ADVANCED TOPICS -->
+            <div id="cloud-security" class="section-card slide-up">
+                <div class="section-header" data-collapse="cloud-body">
+                    <h2>☁️ Cloud Security</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="cloud-body" class="section-body">
+                    <ul id="cloudList"></ul>
+                </div>
+            </div>
+
+            <div id="network-security" class="section-card slide-up">
+                <div class="section-header" data-collapse="network-body">
+                    <h2>🌐 Network Security</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="network-body" class="section-body">
+                    <ul id="networkList"></ul>
+                </div>
+            </div>
+
+            <div id="soc-operations" class="section-card slide-up">
+                <div class="section-header" data-collapse="soc-body">
+                    <h2>🛰️ SOC Operations</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="soc-body" class="section-body">
+                    <ul id="socList"></ul>
+                </div>
+            </div>
+
+            <!-- QUIZ ENGINE -->
+            <div id="quiz" class="section-card slide-up">
+                <div class="section-header" data-collapse="quiz-body">
+                    <h2>📝 Quiz Engine</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+
+                <div id="quiz-body" class="section-body">
+                    <p>Select a topic and difficulty to begin.</p>
+
+                    <select id="quizTopicSelect">
+                        <option value="attackMethods">Attack Methods</option>
+                        <option value="malwareTypes">Malware Types</option>
+                        <option value="defenseStrategies">Defense Strategies</option>
+                        <option value="incidentResponse">Incident Response</option>
+                        <option value="mitreMapping">MITRE ATT&CK</option>
+                        <option value="tools">Tools</option>
+                        <option value="cloudSecurity">Cloud Security</option>
+                        <option value="networkSecurity">Network Security</option>
+                        <option value="socOperations">SOC Operations</option>
+                    </select>
+
+                    <select id="quizDifficulty">
+                        <option value="All">All Difficulties</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+
+                    <button id="quizStart" class="primary-btn">Start Quiz</button>
+
+                    <div id="quizContainer"></div>
+                    <div id="quizResult" class="achievements"></div>
+                </div>
+            </div>
+
+            <!-- CERTIFICATION -->
+            <div id="certification" class="section-card slide-up">
+                <div class="section-header" data-collapse="cert-body">
+                    <h2>🎓 Certification Exam</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+
+                <div id="cert-body" class="section-body">
+                    <p>This exam pulls 20 randomized questions from the final exam pool.</p>
+                    <button id="certStart" class="primary-btn">Start Certification Exam</button>
+
+                    <div id="certContainer"></div>
+                    <div id="certResult" class="achievements"></div>
+                </div>
+            </div>
+
+            <!-- SIMULATION -->
+            <div id="simulation" class="section-card slide-up">
+                <div class="section-header" data-collapse="simulation-body">
+                    <h2>🎯 Threat Simulation Demo</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="simulation-body" class="section-body">
+                    <div id="simulationSteps"></div>
+                    <button id="simulationStart" class="primary-btn">Start Simulation</button>
+                </div>
+            </div>
+
+            <!-- PROGRESS -->
+            <div id="progress" class="section-card slide-up">
+                <div class="section-header" data-collapse="progress-body">
+                    <h2>📊 Your Progress</h2>
+                    <span class="section-toggle">Click to collapse/expand</span>
+                </div>
+                <div id="progress-body" class="section-body">
+                    <div class="progress-summary">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progressBar"></div>
+                        </div>
+                        <div class="progress-text" id="progressText">Progress: 0%</div>
+                    </div>
+                    <div class="achievements" id="progressAchievements"></div>
+                </div>
+            </div>
+
+            <div class="footer">
+                © Musonda’s CyberShield Academy • Local educational reference only
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="static/js/app.js"></script>
+    <script src="static/js/difficulty.js"></script>
+    <script src="static/js/progress.js"></script>
+    <script src="static/js/simulation.js"></script>
+    <script src="static/js/pdf.js"></script>
+    <script src="static/js/quiz.js"></script>
+
+    <div id="nameModal" class="modal-overlay" style="display:none;">
+  <div class="modal">
+    <h2>Enter Your Full Name</h2>
+    <p>This name will appear on your certificate.</p>
+    <input type="text" id="fullNameInput" placeholder="Full name" />
+    <div class="modal-actions">
+      <button id="nameCancel" class="secondary-btn">Cancel</button>
+      <button id="nameConfirm" class="primary-btn">Continue</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

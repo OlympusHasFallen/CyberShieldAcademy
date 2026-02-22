@@ -1,0 +1,17 @@
+@media print {
+    body {
+        background: #ffffff;
+        color: #000000;
+    }
+    .sidebar,
+    .topbar,
+    #simulation,
+    #progress {
+        display: none !important;
+    }
+    .section-card {
+        page-break-inside: avoid;
+        border: 1px solid #cccccc;
+        background: #ffffff;
+    }
+}

@@ -1,0 +1,721 @@
+{
+  "appTitle": "Musonda’s CyberShield Academy",
+  "tagline": "Interactive Cybersecurity Reference",
+
+  "achievements": [
+    "Welcome to the Academy",
+    "First Steps Completed",
+    "Explored Core Concepts",
+    "Threat Simulation Ready"
+  ],
+
+  "attackMethods": [
+    {
+      "name": "Phishing",
+      "description": "Deceptive messages designed to trick users into revealing sensitive information.",
+      "category": "Social Engineering",
+      "tags": ["email", "credential theft"],
+      "mitre": "T1566",
+      "defense": "Email filtering, MFA, user training",
+      "risk": "High",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Spear Phishing",
+      "description": "Highly targeted phishing aimed at specific individuals or organizations.",
+      "category": "Social Engineering",
+      "tags": ["targeted", "identity"],
+      "mitre": "T1566.002",
+      "defense": "Advanced filtering, identity verification",
+      "risk": "High",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Business Email Compromise (BEC)",
+      "description": "Attackers impersonate executives to trick employees into transferring funds.",
+      "category": "Social Engineering",
+      "tags": ["fraud", "impersonation"],
+      "mitre": "T1586",
+      "defense": "Verification procedures, MFA",
+      "risk": "Critical",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Password Spraying",
+      "description": "Using common passwords across many accounts to avoid lockouts.",
+      "category": "Identity Attacks",
+      "tags": ["authentication", "brute force"],
+      "mitre": "T1110.003",
+      "defense": "MFA, lockout policies",
+      "risk": "Medium",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Brute Force Attack",
+      "description": "Trying many passwords until the correct one is found.",
+      "category": "Identity Attacks",
+      "tags": ["credential theft"],
+      "mitre": "T1110",
+      "defense": "MFA, rate limiting",
+      "risk": "Medium",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "SQL Injection",
+      "description": "Injecting malicious SQL queries to manipulate databases.",
+      "category": "Application Attacks",
+      "tags": ["injection", "database"],
+      "mitre": "T1190",
+      "defense": "Input validation, parameterized queries",
+      "risk": "High",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Cross-Site Scripting (XSS)",
+      "description": "Injecting malicious scripts into web pages viewed by others.",
+      "category": "Application Attacks",
+      "tags": ["web", "javascript"],
+      "mitre": "T1059",
+      "defense": "Output encoding, CSP",
+      "risk": "Medium",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Session Hijacking",
+      "description": "Stealing session tokens to impersonate users.",
+      "category": "Application Attacks",
+      "tags": ["cookies", "web"],
+      "mitre": "T1539",
+      "defense": "HTTPS, secure cookies",
+      "risk": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "DNS Spoofing",
+      "description": "Redirecting users to malicious websites by altering DNS responses.",
+      "category": "Network Attacks",
+      "tags": ["dns", "redirection"],
+      "mitre": "T1557",
+      "defense": "DNSSEC, encrypted DNS",
+      "risk": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Man-in-the-Middle (MITM)",
+      "description": "Intercepting communication between two parties.",
+      "category": "Network Attacks",
+      "tags": ["interception", "network"],
+      "mitre": "T1557",
+      "defense": "TLS, VPN",
+      "risk": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Watering Hole Attack",
+      "description": "Compromising websites frequently visited by a target group.",
+      "category": "Network Attacks",
+      "tags": ["web compromise"],
+      "mitre": "T1189",
+      "defense": "Web filtering, patching",
+      "risk": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Drive-by Download",
+      "description": "Malware automatically downloaded when visiting a compromised site.",
+      "category": "Network Attacks",
+      "tags": ["malware", "web"],
+      "mitre": "T1189",
+      "defense": "Browser isolation, patching",
+      "risk": "Medium",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Insider Threat",
+      "description": "Employees or contractors abusing legitimate access.",
+      "category": "Insider Threats",
+      "tags": ["internal", "access abuse"],
+      "mitre": "T1078",
+      "defense": "Monitoring, least privilege",
+      "risk": "Critical",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Cloud Credential Theft",
+      "description": "Stealing cloud access keys or tokens.",
+      "category": "Cloud Attacks",
+      "tags": ["cloud", "identity"],
+      "mitre": "T1552",
+      "defense": "Key rotation, IAM policies",
+      "risk": "High",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "SSRF (Server-Side Request Forgery)",
+      "description": "Forcing a server to make unauthorized internal requests.",
+      "category": "Cloud Attacks",
+      "tags": ["cloud", "metadata"],
+      "mitre": "T1190",
+      "defense": "Metadata protection, allowlists",
+      "risk": "High",
+      "difficulty": "Advanced"
+    }
+  ],
+
+  "malwareTypes": [
+    {
+      "name": "Ransomware",
+      "description": "Encrypts files and demands payment.",
+      "category": "Ransomware",
+      "tags": ["encryption", "extortion"],
+      "defense": "Backups, EDR",
+      "threatLevel": "High",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Trojan",
+      "description": "Malware disguised as legitimate software.",
+      "category": "Trojans",
+      "tags": ["stealth", "access"],
+      "defense": "Application control",
+      "threatLevel": "Medium",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Worm",
+      "description": "Self-replicating malware that spreads automatically.",
+      "category": "Worms",
+      "tags": ["propagation"],
+      "defense": "Segmentation, patching",
+      "threatLevel": "High",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Rootkit",
+      "description": "Hides attacker presence and maintains privileged access.",
+      "category": "Rootkits",
+      "tags": ["stealth", "persistence"],
+      "defense": "Secure boot, EDR",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Spyware",
+      "description": "Collects user activity and sends it to attackers.",
+      "category": "Spyware",
+      "tags": ["surveillance"],
+      "defense": "Antivirus, monitoring",
+      "threatLevel": "Medium",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Adware",
+      "description": "Displays unwanted ads and tracks browsing behavior.",
+      "category": "Adware",
+      "tags": ["ads", "tracking"],
+      "defense": "Browser hygiene",
+      "threatLevel": "Low",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Fileless Malware",
+      "description": "Operates in memory without leaving files on disk.",
+      "category": "Fileless",
+      "tags": ["memory", "stealth"],
+      "defense": "EDR, logging",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Keylogger",
+      "description": "Records keystrokes to steal credentials.",
+      "category": "Spyware",
+      "tags": ["credential theft"],
+      "defense": "Antivirus, MFA",
+      "threatLevel": "Medium",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Cryptojacker",
+      "description": "Uses system resources to mine cryptocurrency.",
+      "category": "Cryptojacking",
+      "tags": ["resource abuse"],
+      "defense": "Monitoring, patching",
+      "threatLevel": "Medium",
+      "difficulty": "Intermediate"
+    }
+  ],
+
+  "defenseStrategies": {
+    "foundational": [
+      {
+        "name": "Multi-Factor Authentication",
+        "description": "Adds an extra layer of security beyond passwords.",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "Patch Management",
+        "description": "Regularly updating systems to fix vulnerabilities.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Least Privilege",
+        "description": "Users only receive the minimum access required.",
+        "difficulty": "Beginner"
+      }
+    ],
+    "detection": [
+      {
+        "name": "Endpoint Detection & Response (EDR)",
+        "description": "Monitors endpoint activity and detects suspicious behavior.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Security Information & Event Management (SIEM)",
+        "description": "Aggregates and analyzes logs to detect threats.",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+
+  "incidentResponse": [
+    {
+      "name": "Identification",
+      "description": "Detecting and confirming a security incident.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Containment",
+      "description": "Isolating affected systems to prevent further damage.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Eradication",
+      "description": "Removing malware and closing vulnerabilities.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Recovery",
+      "description": "Restoring systems and returning to normal operations.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Lessons Learned",
+      "description": "Reviewing the incident to improve future defenses.",
+      "difficulty": "Beginner"
+    }
+  ],
+
+  "mitreMapping": [
+    {
+      "name": "Phishing",
+      "mapping": "Initial Access (T1566)",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Credential Dumping",
+      "mapping": "Credential Access (T1003)",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Privilege Escalation",
+      "mapping": "Privilege Escalation (T1068)",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Command and Control",
+      "mapping": "C2 Communication (T1071)",
+      "difficulty": "Intermediate"
+    }
+  ],
+
+  "tools": {
+    "blue": [
+      {
+        "name": "Splunk",
+        "description": "SIEM platform for log analysis and threat detection.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "CrowdStrike Falcon",
+        "description": "Cloud-native EDR platform for endpoint protection.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Wazuh",
+        "description": "Open-source SIEM and XDR platform.",
+        "difficulty": "Intermediate"
+      }
+    ],
+    "red": [
+      {
+        "name": "Metasploit",
+        "description": "Penetration testing framework for exploiting vulnerabilities.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Nmap",
+        "description": "Network scanning tool used to discover hosts and services.",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "Burp Suite",
+        "description": "Web application security testing suite.",
+        "difficulty": "Intermediate"
+      }
+    ],
+    "cloud": [
+      {
+        "name": "AWS GuardDuty",
+        "description": "Threat detection service for AWS environments.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Azure Defender",
+        "description": "Cloud-native security for Azure workloads.",
+        "difficulty": "Intermediate"
+      }
+    ],
+    "network": [
+      {
+        "name": "Zeek",
+        "description": "Network security monitoring tool.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Suricata",
+        "description": "IDS/IPS engine for network threat detection.",
+        "difficulty": "Advanced"
+      }
+    ],
+    "soc": [
+      {
+        "name": "TheHive",
+        "description": "Open-source incident response platform.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "MISP",
+        "description": "Threat intelligence sharing platform.",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+
+  "glossary": [
+    { "term": "Firewall", "definition": "Filters network traffic.", "difficulty": "Beginner" },
+    { "term": "Zero Trust", "definition": "Assumes no implicit trust.", "difficulty": "Intermediate" },
+    { "term": "IOC", "definition": "Indicator of Compromise.", "difficulty": "Beginner" },
+    { "term": "TTPs", "definition": "Tactics, Techniques, and Procedures.", "difficulty": "Intermediate" },
+    { "term": "Beaconing", "definition": "Regular outbound communication from malware.", "difficulty": "Advanced" },
+    { "term": "Lateral Movement", "definition": "Moving through a network after compromise.", "difficulty": "Intermediate" },
+    { "term": "Data Exfiltration", "definition": "Unauthorized data transfer.", "difficulty": "Intermediate" },
+    { "term": "Sandboxing", "definition": "Isolated execution environment.", "difficulty": "Advanced" },
+    { "term": "SIEM", "definition": "Security Information and Event Management.", "difficulty": "Beginner" },
+    { "term": "EDR", "definition": "Endpoint Detection and Response.", "difficulty": "Intermediate" }
+  ],
+
+  "resources": [
+    "NIST Cybersecurity Framework",
+    "MITRE ATT&CK Navigator",
+    "OWASP Top 10",
+    "CISA Cybersecurity Alerts"
+  ],
+
+  "cloudSecurity": [
+    {
+      "name": "IAM Misconfigurations",
+      "description": "Overly permissive roles or policies.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Public Bucket Exposure",
+      "description": "Cloud storage accidentally made public.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "SSRF in Cloud Metadata",
+      "description": "Accessing cloud metadata endpoints via SSRF.",
+      "difficulty": "Advanced"
+    }
+  ],
+
+  "networkSecurity": [
+    {
+      "name": "Network Segmentation",
+      "description": "Separating networks to limit lateral movement.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "DNS Security",
+      "description": "Protecting DNS from spoofing and hijacking.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Zero Trust Networking",
+      "description": "Never trust, always verify.",
+      "difficulty": "Intermediate"
+    }
+  ],
+
+  "socOperations": [
+    {
+      "name": "Alert Triage",
+      "description": "Prioritizing and analyzing security alerts.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Threat Hunting",
+      "description": "Proactively searching for threats.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Log Analysis",
+      "description": "Reviewing logs to detect suspicious activity.",
+      "difficulty": "Intermediate"
+    }
+  ],
+  "quizzes": {
+  "attackMethods": [
+    {
+      "question": "What is the primary goal of phishing?",
+      "options": [
+        "To overload a server with traffic",
+        "To trick users into revealing sensitive information",
+        "To scan open ports",
+        "To encrypt files for ransom"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which attack targets a specific individual or organization?",
+      "options": [
+        "Brute force",
+        "Spear phishing",
+        "SQL injection",
+        "DNS spoofing"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Which attack involves injecting malicious SQL queries?",
+      "options": [
+        "XSS",
+        "MITM",
+        "SQL Injection",
+        "Password spraying"
+      ],
+      "answerIndex": 2,
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Which attack intercepts communication between two parties?",
+      "options": [
+        "MITM",
+        "BEC",
+        "Drive-by download",
+        "Session hijacking"
+      ],
+      "answerIndex": 0,
+      "difficulty": "Advanced"
+    }
+  ],
+
+  "malwareTypes": [
+    {
+      "question": "Which malware encrypts files and demands payment?",
+      "options": ["Trojan", "Ransomware", "Worm", "Spyware"],
+      "answerIndex": 1,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which malware spreads automatically across networks?",
+      "options": ["Worm", "Rootkit", "Adware", "Keylogger"],
+      "answerIndex": 0,
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Which malware hides its presence and maintains privileged access?",
+      "options": ["Rootkit", "Trojan", "Spyware", "Cryptojacker"],
+      "answerIndex": 0,
+      "difficulty": "Advanced"
+    }
+  ],
+
+  "defenseStrategies": [
+    {
+      "question": "What is the purpose of MFA?",
+      "options": [
+        "Encrypt files",
+        "Add an extra layer of authentication",
+        "Monitor network traffic",
+        "Block malicious IPs"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which strategy limits user access to only what they need?",
+      "options": [
+        "Zero Trust",
+        "Least Privilege",
+        "Patch Management",
+        "EDR"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Beginner"
+    }
+  ],
+
+  "incidentResponse": [
+    {
+      "question": "Which IR phase focuses on detecting and confirming an incident?",
+      "options": ["Containment", "Identification", "Recovery", "Eradication"],
+      "answerIndex": 1,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which phase involves isolating affected systems?",
+      "options": ["Containment", "Recovery", "Lessons Learned", "Eradication"],
+      "answerIndex": 0,
+      "difficulty": "Intermediate"
+    }
+  ],
+
+  "mitreMapping": [
+    {
+      "question": "Which MITRE tactic does phishing fall under?",
+      "options": [
+        "Execution",
+        "Initial Access",
+        "Persistence",
+        "Credential Access"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Credential Dumping belongs to which MITRE tactic?",
+      "options": [
+        "Credential Access",
+        "Defense Evasion",
+        "Discovery",
+        "Exfiltration"
+      ],
+      "answerIndex": 0,
+      "difficulty": "Advanced"
+    }
+  ],
+
+  "tools": [
+    {
+      "question": "Which tool is commonly used for network scanning?",
+      "options": ["Nmap", "Splunk", "Burp Suite", "CrowdStrike"],
+      "answerIndex": 0,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which tool is a SIEM platform?",
+      "options": ["Metasploit", "Splunk", "Nmap", "Zeek"],
+      "answerIndex": 1,
+      "difficulty": "Intermediate"
+    }
+  ],
+
+  "cloudSecurity": [
+    {
+      "question": "What is a common cloud misconfiguration?",
+      "options": [
+        "Public bucket exposure",
+        "Weak TLS versions",
+        "Open RDP ports",
+        "Unpatched OS"
+      ],
+      "answerIndex": 0,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which attack abuses cloud metadata endpoints?",
+      "options": ["XSS", "SSRF", "MITM", "BEC"],
+      "answerIndex": 1,
+      "difficulty": "Advanced"
+    }
+  ],
+
+  "networkSecurity": [
+    {
+      "question": "What is the purpose of network segmentation?",
+      "options": [
+        "Encrypt data",
+        "Limit lateral movement",
+        "Block phishing emails",
+        "Monitor endpoints"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Which protocol is used to secure DNS?",
+      "options": ["DNSSEC", "DHCP", "SMTP", "FTP"],
+      "answerIndex": 0,
+      "difficulty": "Intermediate"
+    }
+  ],
+
+  "socOperations": [
+    {
+      "question": "What is alert triage?",
+      "options": [
+        "Scanning ports",
+        "Prioritizing and analyzing alerts",
+        "Encrypting logs",
+        "Blocking IP addresses"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Threat hunting is best described as:",
+      "options": [
+        "Responding to alerts",
+        "Proactively searching for threats",
+        "Blocking malicious domains",
+        "Updating firewalls"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Advanced"
+    }
+  ],
+
+  "finalExam": [
+    {
+      "question": "Which best describes Zero Trust?",
+      "options": [
+        "Trusting internal traffic by default",
+        "Assuming no implicit trust and verifying everything",
+        "Blocking all external connections",
+        "Encrypting only internet traffic"
+      ],
+      "answerIndex": 1,
+      "difficulty": "Intermediate"
+    },
+
+    { "question": "What does MFA add?", "options": ["Encryption", "Extra authentication", "Firewall rules", "Logging"], "answerIndex": 1, "difficulty": "Beginner" },
+    { "question": "Which malware spreads automatically?", "options": ["Trojan", "Worm", "Spyware", "Adware"], "answerIndex": 1, "difficulty": "Intermediate" },
+    { "question": "What is the first IR phase?", "options": ["Containment", "Identification", "Recovery", "Lessons Learned"], "answerIndex": 1, "difficulty": "Beginner" },
+    { "question": "Which tool is used for exploitation?", "options": ["Metasploit", "Splunk", "Nmap", "Zeek"], "answerIndex": 0, "difficulty": "Advanced" },
+    { "question": "Which attack injects malicious SQL?", "options": ["XSS", "SQL Injection", "MITM", "BEC"], "answerIndex": 1, "difficulty": "Intermediate" },
+    { "question": "Which tactic includes phishing?", "options": ["Execution", "Initial Access", "Persistence", "Discovery"], "answerIndex": 1, "difficulty": "Beginner" },
+    { "question": "Which malware hides itself deeply?", "options": ["Rootkit", "Adware", "Spyware", "Worm"], "answerIndex": 0, "difficulty": "Advanced" },
+    { "question": "What is lateral movement?", "options": ["Moving through a network", "Encrypting files", "Scanning ports", "Sending phishing emails"], "answerIndex": 0, "difficulty": "Intermediate" },
+    { "question": "What does DNSSEC protect?", "options": ["Email", "DNS integrity", "File systems", "TLS"], "answerIndex": 1, "difficulty": "Intermediate" },
+    { "question": "Which cloud issue exposes data?", "options": ["Public bucket", "Weak password", "Open ports", "Old TLS"], "answerIndex": 0, "difficulty": "Beginner" },
+    { "question": "What is alert triage?", "options": ["Encrypting logs", "Prioritizing alerts", "Blocking IPs", "Scanning networks"], "answerIndex": 1, "difficulty": "Beginner" },
+    { "question": "Which attack intercepts communication?", "options": ["MITM", "XSS", "BEC", "SQL Injection"], "answerIndex": 0, "difficulty": "Advanced" },
+    { "question": "Which tool is a SIEM?", "options": ["Splunk", "Nmap", "Burp Suite", "Metasploit"], "answerIndex": 0, "difficulty": "Intermediate" },
+    { "question": "Which malware mines cryptocurrency?", "options": ["Trojan", "Cryptojacker", "Rootkit", "Spyware"], "answerIndex": 1, "difficulty": "Intermediate" }
+  ]
+}
+}
