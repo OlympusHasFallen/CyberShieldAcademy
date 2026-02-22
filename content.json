@@ -932,27 +932,90 @@
     }
   ],
   "resources": [
-    "NIST Cybersecurity Framework",
-    "MITRE ATT&CK Navigator",
-    "OWASP Top 10",
-    "CISA Cybersecurity Alerts",
-    "SANS Blue Team Resources",
-    "Microsoft Security Blog",
-    "Google Cloud Security Best Practices",
-    "AWS Security Documentation",
-    "Cybersecurity and Infrastructure Security Agency (CISA)",
-    "National Cyber Security Centre (NCSC)",
-    "Cyber Threat Alliance (CTA)",
-    "VirusTotal",
-    "Have I Been Pwned",
-    "Shodan",
-    "CVE Details",
-    "Exploit Database",
-    "Red Team Tools Repository",
-    "Blue Team Tools Repository",
-    "Purple Team Collaboration Platforms",
-    "Cybersecurity Podcasts and Webinars",
-    "Security Conferences and Workshops"
+    {
+      "name": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework"
+    },
+    {
+      "name": "MITRE ATT&CK Navigator",
+      "url": "https://mitre-attack.github.io/attack-navigator/"
+    },
+    {
+      "name": "OWASP Top 10",
+      "url": "https://owasp.org/www-project-top-ten/"
+    },
+    {
+      "name": "CISA Cybersecurity Alerts",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+    },
+    {
+      "name": "SANS Blue Team Resources",
+      "url": "https://www.sans.org/blue-team/"
+    },
+    {
+      "name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/security/blog/"
+    },
+    {
+      "name": "Google Cloud Security Best Practices",
+      "url": "https://cloud.google.com/security/best-practices"
+    },
+    {
+      "name": "AWS Security Documentation",
+      "url": "https://docs.aws.amazon.com/security/"
+    },
+    {
+      "name": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "url": "https://www.cisa.gov/"
+    },
+    {
+      "name": "National Cyber Security Centre (NCSC)",
+      "url": "https://www.ncsc.gov.uk/"
+    },
+    {
+      "name": "Cyber Threat Alliance (CTA)",
+      "url": "https://www.cyberthreatalliance.org/"
+    },
+    {
+      "name": "VirusTotal",
+      "url": "https://www.virustotal.com/"
+    },
+    {
+      "name": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/"
+    },
+    {
+      "name": "Shodan",
+      "url": "https://www.shodan.io/"
+    },
+    {
+      "name": "CVE Details",
+      "url": "https://www.cvedetails.com/"
+    },
+    {
+      "name": "Exploit Database",
+      "url": "https://www.exploit-db.com/"
+    },
+    {
+      "name": "Red Team Tools Repository",
+      "url": "https://github.com/yeyintminthuhtut/Awesome-Red-Teaming"
+    },
+    {
+      "name": "Blue Team Tools Repository",
+      "url": "https://github.com/meirwah/awesome-incident-response"
+    },
+    {
+      "name": "Purple Team Collaboration Platforms",
+      "url": "https://www.attackiq.com/"
+    },
+    {
+      "name": "Cybersecurity Podcasts and Webinars",
+      "url": "https://thecyberwire.com/podcasts"
+    },
+    {
+      "name": "Security Conferences and Workshops",
+      "url": "https://infosec-conferences.com/"
+    }
   ],
   "cloudSecurity": [
     {

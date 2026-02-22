@@ -121,14 +121,25 @@ async function loadContent() {
         else glossaryRight.appendChild(li);
     });
 
-    const resourcesList = document.getElementById("resourcesList");
-    data.resources.forEach(text => {
-        const li = document.createElement("li");
-        li.className = "search-item";
-        li.dataset.difficulty = "Beginner";
-        li.textContent = text;
-        resourcesList.appendChild(li);
-    });
+  /* ------------------------------
+   RESOURCES SECTION
+------------------------------ */
+const resourcesList = document.getElementById("resourcesList");
+
+data.resources.forEach(item => {
+    const li = document.createElement("li");
+    li.className = "search-item";
+    li.dataset.difficulty = "Beginner";
+
+    // Create a clickable link
+    li.innerHTML = `
+        <a href="${item.url}" target="_blank" class="item-title">
+            ${item.name}
+        </a>
+    `;
+
+    resourcesList.appendChild(li);
+});
 
     /* ------------------------------
    CLOUD SECURITY SECTION
