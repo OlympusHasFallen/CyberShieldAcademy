@@ -165,7 +165,7 @@ body {
 }
 .primary-btn {
     border-color: var(--accent);
-    margin-top: 20px;
+    margin-top: 28px;
     background-color: rgba(88, 166, 255, 0.18);
 }
 .content {
