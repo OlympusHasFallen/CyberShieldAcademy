@@ -1,20 +1,21 @@
 {
   "appTitle": "Musonda’s CyberShield Academy",
   "tagline": "Interactive Cybersecurity Reference",
-
   "achievements": [
     "Welcome to the Academy",
     "First Steps Completed",
     "Explored Core Concepts",
     "Threat Simulation Ready"
   ],
-
   "attackMethods": [
     {
       "name": "Phishing",
       "description": "Deceptive messages designed to trick users into revealing sensitive information.",
       "category": "Social Engineering",
-      "tags": ["email", "credential theft"],
+      "tags": [
+        "email",
+        "credential theft"
+      ],
       "mitre": "T1566",
       "defense": "Email filtering, MFA, user training",
       "risk": "High",
@@ -24,7 +25,10 @@
       "name": "Spear Phishing",
       "description": "Highly targeted phishing aimed at specific individuals or organizations.",
       "category": "Social Engineering",
-      "tags": ["targeted", "identity"],
+      "tags": [
+        "targeted",
+        "identity"
+      ],
       "mitre": "T1566.002",
       "defense": "Advanced filtering, identity verification",
       "risk": "High",
@@ -34,7 +38,10 @@
       "name": "Business Email Compromise (BEC)",
       "description": "Attackers impersonate executives to trick employees into transferring funds.",
       "category": "Social Engineering",
-      "tags": ["fraud", "impersonation"],
+      "tags": [
+        "fraud",
+        "impersonation"
+      ],
       "mitre": "T1586",
       "defense": "Verification procedures, MFA",
       "risk": "Critical",
@@ -44,7 +51,10 @@
       "name": "Password Spraying",
       "description": "Using common passwords across many accounts to avoid lockouts.",
       "category": "Identity Attacks",
-      "tags": ["authentication", "brute force"],
+      "tags": [
+        "authentication",
+        "brute force"
+      ],
       "mitre": "T1110.003",
       "defense": "MFA, lockout policies",
       "risk": "Medium",
@@ -54,7 +64,9 @@
       "name": "Brute Force Attack",
       "description": "Trying many passwords until the correct one is found.",
       "category": "Identity Attacks",
-      "tags": ["credential theft"],
+      "tags": [
+        "credential theft"
+      ],
       "mitre": "T1110",
       "defense": "MFA, rate limiting",
       "risk": "Medium",
@@ -64,7 +76,10 @@
       "name": "SQL Injection",
       "description": "Injecting malicious SQL queries to manipulate databases.",
       "category": "Application Attacks",
-      "tags": ["injection", "database"],
+      "tags": [
+        "injection",
+        "database"
+      ],
       "mitre": "T1190",
       "defense": "Input validation, parameterized queries",
       "risk": "High",
@@ -74,7 +89,10 @@
       "name": "Cross-Site Scripting (XSS)",
       "description": "Injecting malicious scripts into web pages viewed by others.",
       "category": "Application Attacks",
-      "tags": ["web", "javascript"],
+      "tags": [
+        "web",
+        "javascript"
+      ],
       "mitre": "T1059",
       "defense": "Output encoding, CSP",
       "risk": "Medium",
@@ -84,7 +102,10 @@
       "name": "Session Hijacking",
       "description": "Stealing session tokens to impersonate users.",
       "category": "Application Attacks",
-      "tags": ["cookies", "web"],
+      "tags": [
+        "cookies",
+        "web"
+      ],
       "mitre": "T1539",
       "defense": "HTTPS, secure cookies",
       "risk": "High",
@@ -94,7 +115,10 @@
       "name": "DNS Spoofing",
       "description": "Redirecting users to malicious websites by altering DNS responses.",
       "category": "Network Attacks",
-      "tags": ["dns", "redirection"],
+      "tags": [
+        "dns",
+        "redirection"
+      ],
       "mitre": "T1557",
       "defense": "DNSSEC, encrypted DNS",
       "risk": "High",
@@ -104,7 +128,10 @@
       "name": "Man-in-the-Middle (MITM)",
       "description": "Intercepting communication between two parties.",
       "category": "Network Attacks",
-      "tags": ["interception", "network"],
+      "tags": [
+        "interception",
+        "network"
+      ],
       "mitre": "T1557",
       "defense": "TLS, VPN",
       "risk": "High",
@@ -114,7 +141,9 @@
       "name": "Watering Hole Attack",
       "description": "Compromising websites frequently visited by a target group.",
       "category": "Network Attacks",
-      "tags": ["web compromise"],
+      "tags": [
+        "web compromise"
+      ],
       "mitre": "T1189",
       "defense": "Web filtering, patching",
       "risk": "High",
@@ -124,7 +153,10 @@
       "name": "Drive-by Download",
       "description": "Malware automatically downloaded when visiting a compromised site.",
       "category": "Network Attacks",
-      "tags": ["malware", "web"],
+      "tags": [
+        "malware",
+        "web"
+      ],
       "mitre": "T1189",
       "defense": "Browser isolation, patching",
       "risk": "Medium",
@@ -134,7 +166,10 @@
       "name": "Insider Threat",
       "description": "Employees or contractors abusing legitimate access.",
       "category": "Insider Threats",
-      "tags": ["internal", "access abuse"],
+      "tags": [
+        "internal",
+        "access abuse"
+      ],
       "mitre": "T1078",
       "defense": "Monitoring, least privilege",
       "risk": "Critical",
@@ -144,7 +179,10 @@
       "name": "Cloud Credential Theft",
       "description": "Stealing cloud access keys or tokens.",
       "category": "Cloud Attacks",
-      "tags": ["cloud", "identity"],
+      "tags": [
+        "cloud",
+        "identity"
+      ],
       "mitre": "T1552",
       "defense": "Key rotation, IAM policies",
       "risk": "High",
@@ -154,20 +192,25 @@
       "name": "SSRF (Server-Side Request Forgery)",
       "description": "Forcing a server to make unauthorized internal requests.",
       "category": "Cloud Attacks",
-      "tags": ["cloud", "metadata"],
+      "tags": [
+        "cloud",
+        "metadata"
+      ],
       "mitre": "T1190",
       "defense": "Metadata protection, allowlists",
       "risk": "High",
       "difficulty": "Advanced"
     }
   ],
-
   "malwareTypes": [
     {
       "name": "Ransomware",
       "description": "Encrypts files and demands payment.",
       "category": "Ransomware",
-      "tags": ["encryption", "extortion"],
+      "tags": [
+        "encryption",
+        "extortion"
+      ],
       "defense": "Backups, EDR",
       "threatLevel": "High",
       "difficulty": "Intermediate"
@@ -176,7 +219,10 @@
       "name": "Trojan",
       "description": "Malware disguised as legitimate software.",
       "category": "Trojans",
-      "tags": ["stealth", "access"],
+      "tags": [
+        "stealth",
+        "access"
+      ],
       "defense": "Application control",
       "threatLevel": "Medium",
       "difficulty": "Beginner"
@@ -185,7 +231,9 @@
       "name": "Worm",
       "description": "Self-replicating malware that spreads automatically.",
       "category": "Worms",
-      "tags": ["propagation"],
+      "tags": [
+        "propagation"
+      ],
       "defense": "Segmentation, patching",
       "threatLevel": "High",
       "difficulty": "Intermediate"
@@ -194,7 +242,10 @@
       "name": "Rootkit",
       "description": "Hides attacker presence and maintains privileged access.",
       "category": "Rootkits",
-      "tags": ["stealth", "persistence"],
+      "tags": [
+        "stealth",
+        "persistence"
+      ],
       "defense": "Secure boot, EDR",
       "threatLevel": "Critical",
       "difficulty": "Advanced"
@@ -203,7 +254,9 @@
       "name": "Spyware",
       "description": "Collects user activity and sends it to attackers.",
       "category": "Spyware",
-      "tags": ["surveillance"],
+      "tags": [
+        "surveillance"
+      ],
       "defense": "Antivirus, monitoring",
       "threatLevel": "Medium",
       "difficulty": "Beginner"
@@ -212,7 +265,10 @@
       "name": "Adware",
       "description": "Displays unwanted ads and tracks browsing behavior.",
       "category": "Adware",
-      "tags": ["ads", "tracking"],
+      "tags": [
+        "ads",
+        "tracking"
+      ],
       "defense": "Browser hygiene",
       "threatLevel": "Low",
       "difficulty": "Beginner"
@@ -221,7 +277,10 @@
       "name": "Fileless Malware",
       "description": "Operates in memory without leaving files on disk.",
       "category": "Fileless",
-      "tags": ["memory", "stealth"],
+      "tags": [
+        "memory",
+        "stealth"
+      ],
       "defense": "EDR, logging",
       "threatLevel": "High",
       "difficulty": "Advanced"
@@ -230,7 +289,9 @@
       "name": "Keylogger",
       "description": "Records keystrokes to steal credentials.",
       "category": "Spyware",
-      "tags": ["credential theft"],
+      "tags": [
+        "credential theft"
+      ],
       "defense": "Antivirus, MFA",
       "threatLevel": "Medium",
       "difficulty": "Beginner"
@@ -239,7 +300,9 @@
       "name": "Cryptojacker",
       "description": "Uses system resources to mine cryptocurrency.",
       "category": "Cryptojacking",
-      "tags": ["resource abuse"],
+      "tags": [
+        "resource abuse"
+      ],
       "defense": "Monitoring, patching",
       "threatLevel": "Medium",
       "difficulty": "Intermediate"
@@ -301,7 +364,6 @@
       }
     ]
   },
-
   "incidentResponse": [
     {
       "name": "Identification",
@@ -329,7 +391,6 @@
       "difficulty": "Beginner"
     }
   ],
-
   "mitreMapping": [
     {
       "name": "Phishing",
@@ -362,7 +423,6 @@
       "difficulty": "Advanced"
     }
   ],
-
   "tools": {
     "blue": [
       {
@@ -391,80 +451,80 @@
         "difficulty": "Intermediate"
       },
       {
-  "name": "Microsoft Sentinel",
-  "description": "Cloud-native SIEM and SOAR platform built on Azure for threat detection and response.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "IBM QRadar",
-  "description": "Enterprise SIEM platform for log correlation and threat intelligence.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "LogRhythm",
-  "description": "SIEM and XDR platform for security analytics and automated response.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Google Chronicle",
-  "description": "Cloud-native security analytics platform for large-scale log ingestion and threat detection.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "Security Onion",
-  "description": "Open-source platform for network security monitoring and threat hunting.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Zeek",
-  "description": "Network security monitoring tool for traffic analysis and anomaly detection.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Suricata",
-  "description": "High-performance network IDS/IPS and threat detection engine.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Snort",
-  "description": "Open-source intrusion detection and prevention system (IDS/IPS).",
-  "difficulty": "Beginner"
-},
-{
-  "name": "Velociraptor",
-  "description": "Endpoint visibility and digital forensics tool for incident response.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "TheHive",
-  "description": "Security incident response and case management platform.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Cortex XSOAR",
-  "description": "Security orchestration, automation, and response (SOAR) platform.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "MISP",
-  "description": "Threat intelligence sharing and collaboration platform.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Wireshark",
-  "description": "Network protocol analyzer for packet-level inspection.",
-  "difficulty": "Beginner"
-},
-{
-  "name": "Tenable Nessus",
-  "description": "Vulnerability scanner for identifying security misconfigurations and weaknesses.",
-  "difficulty": "Beginner"
-},
-{
-  "name": "Qualys VMDR",
-  "description": "Cloud-based vulnerability management, detection, and response platform.",
-  "difficulty": "Intermediate"
-}
+        "name": "Microsoft Sentinel",
+        "description": "Cloud-native SIEM and SOAR platform built on Azure for threat detection and response.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "IBM QRadar",
+        "description": "Enterprise SIEM platform for log correlation and threat intelligence.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "LogRhythm",
+        "description": "SIEM and XDR platform for security analytics and automated response.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Google Chronicle",
+        "description": "Cloud-native security analytics platform for large-scale log ingestion and threat detection.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Security Onion",
+        "description": "Open-source platform for network security monitoring and threat hunting.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Zeek",
+        "description": "Network security monitoring tool for traffic analysis and anomaly detection.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Suricata",
+        "description": "High-performance network IDS/IPS and threat detection engine.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Snort",
+        "description": "Open-source intrusion detection and prevention system (IDS/IPS).",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "Velociraptor",
+        "description": "Endpoint visibility and digital forensics tool for incident response.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "TheHive",
+        "description": "Security incident response and case management platform.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Cortex XSOAR",
+        "description": "Security orchestration, automation, and response (SOAR) platform.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "MISP",
+        "description": "Threat intelligence sharing and collaboration platform.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Wireshark",
+        "description": "Network protocol analyzer for packet-level inspection.",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "Tenable Nessus",
+        "description": "Vulnerability scanner for identifying security misconfigurations and weaknesses.",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "Qualys VMDR",
+        "description": "Cloud-based vulnerability management, detection, and response platform.",
+        "difficulty": "Intermediate"
+      }
     ],
     "red": [
       {
@@ -493,80 +553,80 @@
         "difficulty": "Advanced"
       },
       {
-  "name": "Cobalt Strike",
-  "description": "Adversary simulation platform for red team operations and post-exploitation.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "Sliver",
-  "description": "Open-source command and control (C2) framework for red team engagements.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "Empire",
-  "description": "Post-exploitation framework with PowerShell and Python agents.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "Mimikatz",
-  "description": "Credential extraction tool for Windows environments.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "Responder",
-  "description": "LLMNR/NBT-NS poisoning tool for credential capture in internal networks.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Impacket",
-  "description": "Collection of Python tools for working with network protocols and lateral movement.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "CrackMapExec",
-  "description": "Post-exploitation tool for lateral movement in Active Directory environments.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "John the Ripper",
-  "description": "Password cracking tool for offline hash attacks.",
-  "difficulty": "Beginner"
-},
-{
-  "name": "Hashcat",
-  "description": "Advanced password recovery tool leveraging GPU acceleration.",
-  "difficulty": "Advanced"
-},
-{
-  "name": "Gobuster",
-  "description": "Directory and DNS brute-forcing tool for reconnaissance.",
-  "difficulty": "Beginner"
-},
-{
-  "name": "FFUF",
-  "description": "Fast web fuzzing tool for discovering hidden endpoints and parameters.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "SQLmap",
-  "description": "Automated SQL injection and database takeover tool.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Nikto",
-  "description": "Web server vulnerability scanner for misconfigurations and outdated software.",
-  "difficulty": "Beginner"
-},
-{
-  "name": "Amass",
-  "description": "Open-source reconnaissance tool for DNS enumeration and attack surface mapping.",
-  "difficulty": "Intermediate"
-},
-{
-  "name": "Recon-ng",
-  "description": "Web reconnaissance framework for open-source intelligence gathering.",
-  "difficulty": "Intermediate"
-}
+        "name": "Cobalt Strike",
+        "description": "Adversary simulation platform for red team operations and post-exploitation.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Sliver",
+        "description": "Open-source command and control (C2) framework for red team engagements.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Empire",
+        "description": "Post-exploitation framework with PowerShell and Python agents.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Mimikatz",
+        "description": "Credential extraction tool for Windows environments.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Responder",
+        "description": "LLMNR/NBT-NS poisoning tool for credential capture in internal networks.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Impacket",
+        "description": "Collection of Python tools for working with network protocols and lateral movement.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "CrackMapExec",
+        "description": "Post-exploitation tool for lateral movement in Active Directory environments.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "John the Ripper",
+        "description": "Password cracking tool for offline hash attacks.",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "Hashcat",
+        "description": "Advanced password recovery tool leveraging GPU acceleration.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Gobuster",
+        "description": "Directory and DNS brute-forcing tool for reconnaissance.",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "FFUF",
+        "description": "Fast web fuzzing tool for discovering hidden endpoints and parameters.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "SQLmap",
+        "description": "Automated SQL injection and database takeover tool.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Nikto",
+        "description": "Web server vulnerability scanner for misconfigurations and outdated software.",
+        "difficulty": "Beginner"
+      },
+      {
+        "name": "Amass",
+        "description": "Open-source reconnaissance tool for DNS enumeration and attack surface mapping.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Recon-ng",
+        "description": "Web reconnaissance framework for open-source intelligence gathering.",
+        "difficulty": "Intermediate"
+      }
     ],
     "cloud": [
       {
@@ -621,28 +681,107 @@
     ]
   },
   "glossary": [
-    { "term": "Firewall", "definition": "A security device or software that filters network traffic.", "difficulty": "Beginner" },
-    { "term": "Zero Trust", "definition": "A security model that assumes no implicit trust and verifies everything.", "difficulty": "Intermediate" },
-    { "term": "IOC", "definition": "Indicator of Compromise — evidence of a breach.", "difficulty": "Beginner" },
-    { "term": "TTPs", "definition": "Tactics, Techniques, and Procedures used by attackers.", "difficulty": "Intermediate" },
-    { "term": "Beaconing", "definition": "Regular outbound communication from malware to a command server.", "difficulty": "Advanced" },
-    { "term": "Lateral Movement", "definition": "Moving through a network after initial compromise.", "difficulty": "Intermediate" },
-    { "term": "Data Exfiltration", "definition": "Unauthorized transfer of data outside an organization.", "difficulty": "Intermediate" },
-    { "term": "Sandboxing", "definition": "Running code in an isolated environment to observe behavior.", "difficulty": "Advanced" },
-    { "term": "SIEM", "definition": "Security Information and Event Management system.", "difficulty": "Beginner" },
-    { "term": "EDR", "definition": "Endpoint Detection and Response — monitors endpoint activity.", "difficulty": "Intermediate" },
-    { "term": "IDS", "definition": "Intrusion Detection System — monitors for malicious activity.", "difficulty": "Beginner" },
-    { "term": "IPS", "definition": "Intrusion Prevention System — blocks malicious activity.", "difficulty": "Intermediate" },
-    { "term": "Hashing", "definition": "One-way transformation of data for integrity or authentication.", "difficulty": "Beginner" },
-    { "term": "Encryption", "definition": "Converting data into unreadable form without a key.", "difficulty": "Beginner" },
-    { "term": "Threat Intelligence", "definition": "Information about threats and attacker behavior.", "difficulty": "Intermediate" },
-    { "term": "C2 Server", "definition": "Command and Control server used by attackers to manage malware.", "difficulty": "Advanced" },
-    { "term": "Pivoting", "definition": "Using one compromised system to attack others.", "difficulty": "Advanced" },
-    { "term": "SIEM Correlation", "definition": "Combining multiple events to detect threats.", "difficulty": "Intermediate" },
-    { "term": "Hardening", "definition": "Reducing vulnerabilities by securing configurations.", "difficulty": "Beginner" },
-    { "term": "Attack Surface", "definition": "All possible points where an attacker can enter a system.", "difficulty": "Beginner" }
+    {
+      "term": "Firewall",
+      "definition": "A security device or software that filters network traffic.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Zero Trust",
+      "definition": "A security model that assumes no implicit trust and verifies everything.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "IOC",
+      "definition": "Indicator of Compromise — evidence of a breach.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "TTPs",
+      "definition": "Tactics, Techniques, and Procedures used by attackers.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Beaconing",
+      "definition": "Regular outbound communication from malware to a command server.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "Lateral Movement",
+      "definition": "Moving through a network after initial compromise.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Data Exfiltration",
+      "definition": "Unauthorized transfer of data outside an organization.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Sandboxing",
+      "definition": "Running code in an isolated environment to observe behavior.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "SIEM",
+      "definition": "Security Information and Event Management system.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "EDR",
+      "definition": "Endpoint Detection and Response — monitors endpoint activity.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "IDS",
+      "definition": "Intrusion Detection System — monitors for malicious activity.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "IPS",
+      "definition": "Intrusion Prevention System — blocks malicious activity.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Hashing",
+      "definition": "One-way transformation of data for integrity or authentication.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Encryption",
+      "definition": "Converting data into unreadable form without a key.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Threat Intelligence",
+      "definition": "Information about threats and attacker behavior.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "C2 Server",
+      "definition": "Command and Control server used by attackers to manage malware.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "Pivoting",
+      "definition": "Using one compromised system to attack others.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "SIEM Correlation",
+      "definition": "Combining multiple events to detect threats.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Hardening",
+      "definition": "Reducing vulnerabilities by securing configurations.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Attack Surface",
+      "definition": "All possible points where an attacker can enter a system.",
+      "difficulty": "Beginner"
+    }
   ],
-
   "resources": [
     "NIST Cybersecurity Framework",
     "MITRE ATT&CK Navigator",
@@ -651,7 +790,6 @@
     "SANS Blue Team Resources",
     "Microsoft Security Blog"
   ],
-
   "cloudSecurity": [
     {
       "name": "IAM Misconfigurations",
@@ -679,7 +817,6 @@
       "difficulty": "Intermediate"
     }
   ],
-
   "networkSecurity": [
     {
       "name": "Network Segmentation",
@@ -707,7 +844,6 @@
       "difficulty": "Intermediate"
     }
   ],
-
   "socOperations": [
     {
       "name": "Alert Triage",
@@ -848,241 +984,398 @@
         "difficulty": "Intermediate"
       },
       {
-    "question": "What is the primary goal of a brute-force attack?",
-    "options": ["To guess credentials through repeated attempts", "To overload a server with traffic", "To exploit a software vulnerability"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which attack involves tricking a user into clicking a malicious link?",
-    "options": ["Phishing", "SQL Injection", "Man-in-the-Middle"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-
-  {
-    "question": "Which attack exploits unvalidated input to manipulate a database?",
-    "options": ["SQL Injection", "Cross-Site Scripting", "DNS Spoofing"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of a DDoS attack?",
-    "options": ["To make a service unavailable", "To steal credentials", "To encrypt user data"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which attack injects malicious scripts into trusted websites?",
-    "options": ["Cross-Site Scripting (XSS)", "Phishing", "Password Spraying"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-
-  {
-    "question": "Which attack modifies DNS records to redirect users?",
-    "options": ["DNS Spoofing", "ARP Poisoning", "Session Hijacking"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the goal of privilege escalation?",
-    "options": ["Gain higher-level access", "Steal credentials", "Encrypt files"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which attack relies on exploiting trust in local network communications?",
-    "options": ["ARP Poisoning", "Phishing", "Brute Force"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "A watering hole attack targets:",
-    "options": ["Websites frequently visited by victims", "Email servers", "Cloud storage providers"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which attack involves injecting malicious code into a software supply chain?",
-    "options": ["Supply Chain Attack", "XSS", "MITM"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is credential stuffing?",
-    "options": ["Using leaked credentials to access accounts", "Guessing passwords manually", "Intercepting login traffic"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which attack relies on exploiting outdated or unpatched software?",
-    "options": ["Vulnerability Exploitation", "Phishing", "DDoS"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What is the purpose of reconnaissance in cyber attacks?",
-    "options": ["Gather information about a target", "Encrypt data", "Modify system logs"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  }
-
-],
-
+        "question": "What is the primary goal of a brute-force attack?",
+        "options": [
+          "To guess credentials through repeated attempts",
+          "To overload a server with traffic",
+          "To exploit a software vulnerability"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which attack involves tricking a user into clicking a malicious link?",
+        "options": [
+          "Phishing",
+          "SQL Injection",
+          "Man-in-the-Middle"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which attack exploits unvalidated input to manipulate a database?",
+        "options": [
+          "SQL Injection",
+          "Cross-Site Scripting",
+          "DNS Spoofing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of a DDoS attack?",
+        "options": [
+          "To make a service unavailable",
+          "To steal credentials",
+          "To encrypt user data"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which attack injects malicious scripts into trusted websites?",
+        "options": [
+          "Cross-Site Scripting (XSS)",
+          "Phishing",
+          "Password Spraying"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which attack modifies DNS records to redirect users?",
+        "options": [
+          "DNS Spoofing",
+          "ARP Poisoning",
+          "Session Hijacking"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the goal of privilege escalation?",
+        "options": [
+          "Gain higher-level access",
+          "Steal credentials",
+          "Encrypt files"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which attack relies on exploiting trust in local network communications?",
+        "options": [
+          "ARP Poisoning",
+          "Phishing",
+          "Brute Force"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "A watering hole attack targets:",
+        "options": [
+          "Websites frequently visited by victims",
+          "Email servers",
+          "Cloud storage providers"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which attack involves injecting malicious code into a software supply chain?",
+        "options": [
+          "Supply Chain Attack",
+          "XSS",
+          "MITM"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is credential stuffing?",
+        "options": [
+          "Using leaked credentials to access accounts",
+          "Guessing passwords manually",
+          "Intercepting login traffic"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which attack relies on exploiting outdated or unpatched software?",
+        "options": [
+          "Vulnerability Exploitation",
+          "Phishing",
+          "DDoS"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is the purpose of reconnaissance in cyber attacks?",
+        "options": [
+          "Gather information about a target",
+          "Encrypt data",
+          "Modify system logs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      }
+    ],
     "malwareTypes": [
       {
         "question": "Which malware encrypts files and demands payment?",
-        "options": ["Trojan", "Ransomware", "Worm", "Spyware"],
+        "options": [
+          "Trojan",
+          "Ransomware",
+          "Worm",
+          "Spyware"
+        ],
         "answerIndex": 1,
         "difficulty": "Beginner"
       },
       {
         "question": "Which malware spreads automatically across networks?",
-        "options": ["Worm", "Rootkit", "Adware", "Keylogger"],
+        "options": [
+          "Worm",
+          "Rootkit",
+          "Adware",
+          "Keylogger"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which malware hides its presence deeply in the system?",
-        "options": ["Rootkit", "Trojan", "Spyware", "Cryptojacker"],
+        "options": [
+          "Rootkit",
+          "Trojan",
+          "Spyware",
+          "Cryptojacker"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
       {
         "question": "Which malware records keystrokes?",
-        "options": ["Keylogger", "Worm", "Adware", "Ransomware"],
+        "options": [
+          "Keylogger",
+          "Worm",
+          "Adware",
+          "Ransomware"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which malware mines cryptocurrency using system resources?",
-        "options": ["Cryptojacker", "Trojan", "Rootkit", "Spyware"],
+        "options": [
+          "Cryptojacker",
+          "Trojan",
+          "Rootkit",
+          "Spyware"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which malware disguises itself as legitimate software?",
-        "options": ["Trojan", "Worm", "Spyware", "Adware"],
+        "options": [
+          "Trojan",
+          "Worm",
+          "Spyware",
+          "Adware"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which malware operates entirely in memory?",
-        "options": ["Fileless malware", "Worm", "Trojan", "Adware"],
+        "options": [
+          "Fileless malware",
+          "Worm",
+          "Trojan",
+          "Adware"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
       {
         "question": "Which malware displays unwanted ads?",
-        "options": ["Adware", "Spyware", "Trojan", "Rootkit"],
+        "options": [
+          "Adware",
+          "Spyware",
+          "Trojan",
+          "Rootkit"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which malware is most associated with privilege escalation?",
-        "options": ["Rootkit", "Worm", "Adware", "Keylogger"],
+        "options": [
+          "Rootkit",
+          "Worm",
+          "Adware",
+          "Keylogger"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
       {
         "question": "Which malware is commonly used for credential theft?",
-        "options": ["Keylogger", "Adware", "Worm", "Cryptojacker"],
+        "options": [
+          "Keylogger",
+          "Adware",
+          "Worm",
+          "Cryptojacker"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
-    "question": "What is the primary purpose of ransomware?",
-    "options": ["Encrypt files for payment", "Steal login credentials", "Monitor user activity"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which malware type replicates itself without user interaction?",
-    "options": ["Worm", "Trojan", "Spyware"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "A Trojan typically requires:",
-    "options": ["User execution", "Network scanning", "Privilege escalation"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which malware disguises itself as legitimate software?",
-    "options": ["Trojan", "Rootkit", "Worm"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the main function of spyware?",
-    "options": ["Collect user information secretly", "Encrypt system files", "Destroy system boot records"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "A rootkit is designed to:",
-    "options": ["Hide malicious activity", "Spread across networks", "Encrypt user data"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which malware logs keystrokes to steal credentials?",
-    "options": ["Keylogger", "Adware", "Worm"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Botnets are typically created using:",
-    "options": ["Compromised devices", "Encrypted backups", "Firewall misconfigurations"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which malware modifies the system boot process to maintain persistence?",
-    "options": ["Bootkit", "Adware", "Spyware"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What distinguishes a worm from a virus?",
-    "options": ["Worms self-propagate without a host file", "Viruses spread faster", "Worms require user execution"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which malware displays unwanted advertisements?",
-    "options": ["Adware", "Spyware", "Ransomware"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Fileless malware typically resides in:",
-    "options": ["Memory", "Disk partitions", "Firmware"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which malware type is commonly used to launch DDoS attacks?",
-    "options": ["Botnet", "Trojan", "Keylogger"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "A polymorphic virus is designed to:",
-    "options": ["Change its code to evade detection", "Spread only through USB devices", "Encrypt system files"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which malware corrupts or deletes system boot records?",
-    "options": ["MBR Virus", "Adware", "Spyware"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  }
+        "question": "What is the primary purpose of ransomware?",
+        "options": [
+          "Encrypt files for payment",
+          "Steal login credentials",
+          "Monitor user activity"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which malware type replicates itself without user interaction?",
+        "options": [
+          "Worm",
+          "Trojan",
+          "Spyware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "A Trojan typically requires:",
+        "options": [
+          "User execution",
+          "Network scanning",
+          "Privilege escalation"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which malware disguises itself as legitimate software?",
+        "options": [
+          "Trojan",
+          "Rootkit",
+          "Worm"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the main function of spyware?",
+        "options": [
+          "Collect user information secretly",
+          "Encrypt system files",
+          "Destroy system boot records"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "A rootkit is designed to:",
+        "options": [
+          "Hide malicious activity",
+          "Spread across networks",
+          "Encrypt user data"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which malware logs keystrokes to steal credentials?",
+        "options": [
+          "Keylogger",
+          "Adware",
+          "Worm"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Botnets are typically created using:",
+        "options": [
+          "Compromised devices",
+          "Encrypted backups",
+          "Firewall misconfigurations"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which malware modifies the system boot process to maintain persistence?",
+        "options": [
+          "Bootkit",
+          "Adware",
+          "Spyware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What distinguishes a worm from a virus?",
+        "options": [
+          "Worms self-propagate without a host file",
+          "Viruses spread faster",
+          "Worms require user execution"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which malware displays unwanted advertisements?",
+        "options": [
+          "Adware",
+          "Spyware",
+          "Ransomware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Fileless malware typically resides in:",
+        "options": [
+          "Memory",
+          "Disk partitions",
+          "Firmware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which malware type is commonly used to launch DDoS attacks?",
+        "options": [
+          "Botnet",
+          "Trojan",
+          "Keylogger"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "A polymorphic virus is designed to:",
+        "options": [
+          "Change its code to evade detection",
+          "Spread only through USB devices",
+          "Encrypt system files"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which malware corrupts or deletes system boot records?",
+        "options": [
+          "MBR Virus",
+          "Adware",
+          "Spyware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      }
     ],
-
     "defenseStrategies": [
       {
         "question": "What is the purpose of MFA?",
@@ -1108,253 +1401,426 @@
       },
       {
         "question": "Which tool aggregates logs for threat detection?",
-        "options": ["SIEM", "EDR", "Firewall", "IDS"],
+        "options": [
+          "SIEM",
+          "EDR",
+          "Firewall",
+          "IDS"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which control reduces lateral movement?",
-        "options": ["Segmentation", "MFA", "DNSSEC", "Backups"],
+        "options": [
+          "Segmentation",
+          "MFA",
+          "DNSSEC",
+          "Backups"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which control detects suspicious endpoint behavior?",
-        "options": ["EDR", "SIEM", "Firewall", "VPN"],
+        "options": [
+          "EDR",
+          "SIEM",
+          "Firewall",
+          "VPN"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
       {
         "question": "Which control prevents exploitation of known vulnerabilities?",
-        "options": ["Patch management", "MFA", "DNSSEC", "Encryption"],
+        "options": [
+          "Patch management",
+          "MFA",
+          "DNSSEC",
+          "Encryption"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which strategy assumes no implicit trust?",
-        "options": ["Zero Trust", "Defense in Depth", "Hardening", "Segmentation"],
+        "options": [
+          "Zero Trust",
+          "Defense in Depth",
+          "Hardening",
+          "Segmentation"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
-        {
-    "question": "What is the primary purpose of a firewall?",
-    "options": ["Control incoming and outgoing network traffic", "Encrypt stored data", "Scan for malware"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which security model enforces the principle of least privilege?",
-    "options": ["RBAC", "NAT", "DNS"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Multi-factor authentication improves security by:",
-    "options": ["Requiring multiple verification methods", "Encrypting all network traffic", "Blocking all unknown IPs"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What is network segmentation used for?",
-    "options": ["Limiting lateral movement", "Increasing bandwidth", "Improving Wi-Fi coverage"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which strategy focuses on detecting threats already inside the network?",
-    "options": ["Intrusion Detection", "Firewall Filtering", "DNS Caching"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Zero Trust assumes:",
-    "options": ["No user or device is trusted by default", "All internal traffic is safe", "Only external users need verification"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of patch management?",
-    "options": ["Fix vulnerabilities and improve security", "Increase system speed", "Remove unused applications"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Encryption protects data by:",
-    "options": ["Making it unreadable without a key", "Blocking unauthorized IPs", "Scanning for malware"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which defense strategy focuses on monitoring user behavior for anomalies?",
-    "options": ["UEBA", "VPN", "NAT"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "A honeypot is used to:",
-    "options": ["Attract and analyze attackers", "Encrypt sensitive data", "Improve network speed"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of endpoint protection?",
-    "options": ["Secure individual devices", "Monitor network traffic", "Manage cloud resources"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which strategy involves limiting access based on job roles?",
-    "options": ["Role-Based Access Control", "Network Address Translation", "Load Balancing"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What does data loss prevention (DLP) aim to stop?",
-    "options": ["Unauthorized data exfiltration", "Malware infections", "Network outages"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which security measure ensures data integrity?",
-    "options": ["Hashing", "VPN", "Firewall"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of a SIEM system?",
-    "options": ["Aggregate and analyze security logs", "Encrypt network traffic", "Block malicious IPs"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Defense-in-depth refers to:",
-    "options": ["Using multiple layers of security controls", "Encrypting data twice", "Blocking all external traffic"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which strategy helps prevent unauthorized physical access?",
-    "options": ["Badge systems", "VPN", "Firewall rules"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Network Access Control (NAC) ensures:",
-    "options": ["Only compliant devices can connect", "All traffic is encrypted", "All users have admin rights"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of security awareness training?",
-    "options": ["Educate users on threats and safe practices", "Improve system performance", "Reduce network latency"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which strategy focuses on preventing attackers from moving laterally?",
-    "options": ["Microsegmentation", "Load Balancing", "DNS Filtering"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  }
+      {
+        "question": "What is the primary purpose of a firewall?",
+        "options": [
+          "Control incoming and outgoing network traffic",
+          "Encrypt stored data",
+          "Scan for malware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which security model enforces the principle of least privilege?",
+        "options": [
+          "RBAC",
+          "NAT",
+          "DNS"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Multi-factor authentication improves security by:",
+        "options": [
+          "Requiring multiple verification methods",
+          "Encrypting all network traffic",
+          "Blocking all unknown IPs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is network segmentation used for?",
+        "options": [
+          "Limiting lateral movement",
+          "Increasing bandwidth",
+          "Improving Wi-Fi coverage"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which strategy focuses on detecting threats already inside the network?",
+        "options": [
+          "Intrusion Detection",
+          "Firewall Filtering",
+          "DNS Caching"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Zero Trust assumes:",
+        "options": [
+          "No user or device is trusted by default",
+          "All internal traffic is safe",
+          "Only external users need verification"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of patch management?",
+        "options": [
+          "Fix vulnerabilities and improve security",
+          "Increase system speed",
+          "Remove unused applications"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Encryption protects data by:",
+        "options": [
+          "Making it unreadable without a key",
+          "Blocking unauthorized IPs",
+          "Scanning for malware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which defense strategy focuses on monitoring user behavior for anomalies?",
+        "options": [
+          "UEBA",
+          "VPN",
+          "NAT"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "A honeypot is used to:",
+        "options": [
+          "Attract and analyze attackers",
+          "Encrypt sensitive data",
+          "Improve network speed"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of endpoint protection?",
+        "options": [
+          "Secure individual devices",
+          "Monitor network traffic",
+          "Manage cloud resources"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which strategy involves limiting access based on job roles?",
+        "options": [
+          "Role-Based Access Control",
+          "Network Address Translation",
+          "Load Balancing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What does data loss prevention (DLP) aim to stop?",
+        "options": [
+          "Unauthorized data exfiltration",
+          "Malware infections",
+          "Network outages"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which security measure ensures data integrity?",
+        "options": [
+          "Hashing",
+          "VPN",
+          "Firewall"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of a SIEM system?",
+        "options": [
+          "Aggregate and analyze security logs",
+          "Encrypt network traffic",
+          "Block malicious IPs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Defense-in-depth refers to:",
+        "options": [
+          "Using multiple layers of security controls",
+          "Encrypting data twice",
+          "Blocking all external traffic"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which strategy helps prevent unauthorized physical access?",
+        "options": [
+          "Badge systems",
+          "VPN",
+          "Firewall rules"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Network Access Control (NAC) ensures:",
+        "options": [
+          "Only compliant devices can connect",
+          "All traffic is encrypted",
+          "All users have admin rights"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of security awareness training?",
+        "options": [
+          "Educate users on threats and safe practices",
+          "Improve system performance",
+          "Reduce network latency"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which strategy focuses on preventing attackers from moving laterally?",
+        "options": [
+          "Microsegmentation",
+          "Load Balancing",
+          "DNS Filtering"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      }
     ],
-
     "incidentResponse": [
       {
         "question": "Which IR phase focuses on detecting an incident?",
-        "options": ["Containment", "Identification", "Recovery", "Eradication"],
+        "options": [
+          "Containment",
+          "Identification",
+          "Recovery",
+          "Eradication"
+        ],
         "answerIndex": 1,
         "difficulty": "Beginner"
       },
       {
         "question": "Which phase isolates affected systems?",
-        "options": ["Containment", "Recovery", "Lessons Learned", "Eradication"],
+        "options": [
+          "Containment",
+          "Recovery",
+          "Lessons Learned",
+          "Eradication"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which phase removes malware?",
-        "options": ["Eradication", "Containment", "Recovery", "Identification"],
+        "options": [
+          "Eradication",
+          "Containment",
+          "Recovery",
+          "Identification"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which phase restores systems to normal?",
-        "options": ["Recovery", "Eradication", "Containment", "Lessons Learned"],
+        "options": [
+          "Recovery",
+          "Eradication",
+          "Containment",
+          "Lessons Learned"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which phase improves future defenses?",
-        "options": ["Lessons Learned", "Recovery", "Containment", "Eradication"],
+        "options": [
+          "Lessons Learned",
+          "Recovery",
+          "Containment",
+          "Eradication"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
-        {
-    "question": "What is the first phase of the incident response lifecycle?",
-    "options": ["Preparation", "Containment", "Eradication"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which phase focuses on stopping the spread of an active threat?",
-    "options": ["Containment", "Recovery", "Lessons Learned"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "During which phase are malicious artifacts removed from affected systems?",
-    "options": ["Eradication", "Identification", "Preparation"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of the identification phase?",
-    "options": ["Determine if an incident has occurred", "Restore systems", "Document lessons learned"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which activity is part of the recovery phase?",
-    "options": ["Restoring systems to normal operation", "Collecting forensic evidence", "Blocking malicious IPs"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is a key goal of the lessons learned phase?",
-    "options": ["Improve future response processes", "Remove malware", "Notify stakeholders"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which team is typically responsible for coordinating incident response?",
-    "options": ["CSIRT", "HR Department", "Marketing Team"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Forensic imaging is usually performed during which phase?",
-    "options": ["Identification", "Containment", "Recovery"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of an incident response playbook?",
-    "options": ["Provide step-by-step procedures for specific incidents", "Encrypt sensitive data", "Monitor network traffic"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which action is part of containment?",
-    "options": ["Isolating affected systems", "Rebuilding servers", "Conducting user training"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  }
+      {
+        "question": "What is the first phase of the incident response lifecycle?",
+        "options": [
+          "Preparation",
+          "Containment",
+          "Eradication"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which phase focuses on stopping the spread of an active threat?",
+        "options": [
+          "Containment",
+          "Recovery",
+          "Lessons Learned"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "During which phase are malicious artifacts removed from affected systems?",
+        "options": [
+          "Eradication",
+          "Identification",
+          "Preparation"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of the identification phase?",
+        "options": [
+          "Determine if an incident has occurred",
+          "Restore systems",
+          "Document lessons learned"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which activity is part of the recovery phase?",
+        "options": [
+          "Restoring systems to normal operation",
+          "Collecting forensic evidence",
+          "Blocking malicious IPs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is a key goal of the lessons learned phase?",
+        "options": [
+          "Improve future response processes",
+          "Remove malware",
+          "Notify stakeholders"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which team is typically responsible for coordinating incident response?",
+        "options": [
+          "CSIRT",
+          "HR Department",
+          "Marketing Team"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Forensic imaging is usually performed during which phase?",
+        "options": [
+          "Identification",
+          "Containment",
+          "Recovery"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of an incident response playbook?",
+        "options": [
+          "Provide step-by-step procedures for specific incidents",
+          "Encrypt sensitive data",
+          "Monitor network traffic"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which action is part of containment?",
+        "options": [
+          "Isolating affected systems",
+          "Rebuilding servers",
+          "Conducting user training"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      }
     ],
-
     "mitreMapping": [
       {
         "question": "Phishing belongs to which MITRE tactic?",
-        "options": ["Execution", "Initial Access", "Persistence", "Discovery"],
+        "options": [
+          "Execution",
+          "Initial Access",
+          "Persistence",
+          "Discovery"
+        ],
         "answerIndex": 1,
         "difficulty": "Beginner"
       },
@@ -1392,179 +1858,293 @@
         "difficulty": "Advanced"
       },
       {
-    "question": "Which MITRE ATT&CK tactic focuses on gaining initial access to a target?",
-    "options": ["Initial Access", "Execution", "Persistence"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which tactic involves running malicious code on a system?",
-    "options": ["Execution", "Discovery", "Impact"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Credential dumping falls under which MITRE ATT&CK tactic?",
-    "options": ["Credential Access", "Lateral Movement", "Collection"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which tactic focuses on maintaining access to a compromised system?",
-    "options": ["Persistence", "Impact", "Reconnaissance"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  
-  {
-    "question": "Which tactic includes techniques like masquerading and obfuscation?",
-    "options": ["Defense Evasion", "Execution", "Discovery"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Data exfiltration belongs to which MITRE ATT&CK tactic?",
-    "options": ["Exfiltration", "Impact", "Collection"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which tactic involves gathering information about the environment?",
-    "options": ["Discovery", "Execution", "Initial Access"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Command and Control (C2) is used by attackers to:",
-    "options": ["Communicate with compromised systems", "Encrypt data", "Scan for vulnerabilities"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which technique involves using valid accounts to avoid detection?",
-    "options": ["Valid Accounts", "Brute Force", "Spearphishing"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Impact tactics typically aim to:",
-    "options": ["Disrupt availability or integrity", "Gain initial access", "Collect credentials"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which tactic includes techniques like screen capture and keylogging?",
-    "options": ["Collection", "Execution", "Discovery"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Privilege escalation techniques are used to:",
-    "options": ["Gain higher-level permissions", "Encrypt system files", "Scan network ports"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which tactic includes reconnaissance activities such as scanning and enumeration?",
-    "options": ["Reconnaissance", "Persistence", "Impact"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  }
+        "question": "Which MITRE ATT&CK tactic focuses on gaining initial access to a target?",
+        "options": [
+          "Initial Access",
+          "Execution",
+          "Persistence"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which tactic involves running malicious code on a system?",
+        "options": [
+          "Execution",
+          "Discovery",
+          "Impact"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Credential dumping falls under which MITRE ATT&CK tactic?",
+        "options": [
+          "Credential Access",
+          "Lateral Movement",
+          "Collection"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which tactic focuses on maintaining access to a compromised system?",
+        "options": [
+          "Persistence",
+          "Impact",
+          "Reconnaissance"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which tactic includes techniques like masquerading and obfuscation?",
+        "options": [
+          "Defense Evasion",
+          "Execution",
+          "Discovery"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Data exfiltration belongs to which MITRE ATT&CK tactic?",
+        "options": [
+          "Exfiltration",
+          "Impact",
+          "Collection"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which tactic involves gathering information about the environment?",
+        "options": [
+          "Discovery",
+          "Execution",
+          "Initial Access"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Command and Control (C2) is used by attackers to:",
+        "options": [
+          "Communicate with compromised systems",
+          "Encrypt data",
+          "Scan for vulnerabilities"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which technique involves using valid accounts to avoid detection?",
+        "options": [
+          "Valid Accounts",
+          "Brute Force",
+          "Spearphishing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Impact tactics typically aim to:",
+        "options": [
+          "Disrupt availability or integrity",
+          "Gain initial access",
+          "Collect credentials"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which tactic includes techniques like screen capture and keylogging?",
+        "options": [
+          "Collection",
+          "Execution",
+          "Discovery"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Privilege escalation techniques are used to:",
+        "options": [
+          "Gain higher-level permissions",
+          "Encrypt system files",
+          "Scan network ports"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which tactic includes reconnaissance activities such as scanning and enumeration?",
+        "options": [
+          "Reconnaissance",
+          "Persistence",
+          "Impact"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      }
     ],
-
     "tools": [
       {
         "question": "Which tool is used for network scanning?",
-        "options": ["Nmap", "Splunk", "Burp Suite", "CrowdStrike"],
+        "options": [
+          "Nmap",
+          "Splunk",
+          "Burp Suite",
+          "CrowdStrike"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which tool is a SIEM?",
-        "options": ["Metasploit", "Splunk", "Nmap", "Zeek"],
+        "options": [
+          "Metasploit",
+          "Splunk",
+          "Nmap",
+          "Zeek"
+        ],
         "answerIndex": 1,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which tool is used for exploitation?",
-        "options": ["Metasploit", "Wireshark", "Suricata", "Azure Defender"],
+        "options": [
+          "Metasploit",
+          "Wireshark",
+          "Suricata",
+          "Azure Defender"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
       {
         "question": "Which tool analyzes packets?",
-        "options": ["Wireshark", "Nmap", "Burp Suite", "MISP"],
+        "options": [
+          "Wireshark",
+          "Nmap",
+          "Burp Suite",
+          "MISP"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which tool is used for threat intelligence sharing?",
-        "options": ["MISP", "Nmap", "Hydra", "Zeek"],
+        "options": [
+          "MISP",
+          "Nmap",
+          "Hydra",
+          "Zeek"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
       {
-    "question": "What is the primary purpose of Wireshark?",
-    "options": ["Packet analysis", "Password cracking", "Log aggregation"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Nmap is mainly used for:",
-    "options": ["Network scanning and enumeration", "Encrypting data", "Managing cloud resources"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which tool is commonly used for password cracking?",
-    "options": ["John the Ripper", "Splunk", "Burp Suite"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the primary function of Burp Suite?",
-    "options": ["Web application security testing", "Firewall configuration", "Endpoint protection"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Splunk is best described as a:",
-    "options": ["SIEM platform", "Packet sniffer", "Malware scanner"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which tool is used for reverse engineering malware?",
-    "options": ["Ghidra", "Nmap", "Nessus"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Nessus is primarily used for:",
-    "options": ["Vulnerability scanning", "Network routing", "Log management"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What type of tool is OSSEC?",
-    "options": ["Host-based intrusion detection system", "Packet analyzer", "Password manager"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which tool is commonly used to capture and replay web traffic?",
-    "options": ["OWASP ZAP", "Wireshark", "Metasploit"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Metasploit is best known as a:",
-    "options": ["Penetration testing framework", "Cloud monitoring tool", "Firewall appliance"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  }
+        "question": "What is the primary purpose of Wireshark?",
+        "options": [
+          "Packet analysis",
+          "Password cracking",
+          "Log aggregation"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Nmap is mainly used for:",
+        "options": [
+          "Network scanning and enumeration",
+          "Encrypting data",
+          "Managing cloud resources"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which tool is commonly used for password cracking?",
+        "options": [
+          "John the Ripper",
+          "Splunk",
+          "Burp Suite"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the primary function of Burp Suite?",
+        "options": [
+          "Web application security testing",
+          "Firewall configuration",
+          "Endpoint protection"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Splunk is best described as a:",
+        "options": [
+          "SIEM platform",
+          "Packet sniffer",
+          "Malware scanner"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which tool is used for reverse engineering malware?",
+        "options": [
+          "Ghidra",
+          "Nmap",
+          "Nessus"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Nessus is primarily used for:",
+        "options": [
+          "Vulnerability scanning",
+          "Network routing",
+          "Log management"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What type of tool is OSSEC?",
+        "options": [
+          "Host-based intrusion detection system",
+          "Packet analyzer",
+          "Password manager"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which tool is commonly used to capture and replay web traffic?",
+        "options": [
+          "OWASP ZAP",
+          "Wireshark",
+          "Metasploit"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Metasploit is best known as a:",
+        "options": [
+          "Penetration testing framework",
+          "Cloud monitoring tool",
+          "Firewall appliance"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      }
     ],
-
     "cloudSecurity": [
       {
         "question": "What is a common cloud misconfiguration?",
@@ -1579,7 +2159,12 @@
       },
       {
         "question": "Which attack abuses cloud metadata endpoints?",
-        "options": ["XSS", "SSRF", "MITM", "BEC"],
+        "options": [
+          "XSS",
+          "SSRF",
+          "MITM",
+          "BEC"
+        ],
         "answerIndex": 1,
         "difficulty": "Advanced"
       },
@@ -1594,68 +2179,107 @@
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
-        {
-    "question": "What is the shared responsibility model in cloud security?",
-    "options": ["Security duties are split between provider and customer", "The provider handles all security", "The customer handles all security"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which cloud model gives the customer the most control?",
-    "options": ["IaaS", "PaaS", "SaaS"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What is the primary purpose of cloud IAM?",
-    "options": ["Control access to cloud resources", "Encrypt all network traffic", "Monitor CPU usage"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which threat involves unauthorized access due to misconfigured cloud storage?",
-    "options": ["Data exposure", "DDoS attack", "Phishing"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What does cloud encryption protect?",
-    "options": ["Data at rest and in transit", "Only network traffic", "Only user passwords"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which cloud security tool monitors and enforces policies across cloud environments?",
-    "options": ["CSPM", "VPN", "Load Balancer"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is a common risk of multi-tenant cloud environments?",
-    "options": ["Resource sharing increases attack surface", "Users cannot access the cloud", "Data cannot be encrypted"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which technology isolates workloads in cloud environments?",
-    "options": ["Virtualization", "DNS", "NAT"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "A cloud access security broker (CASB) is used to:",
-    "options": ["Enforce security policies between users and cloud services", "Manage encryption keys", "Scan local networks"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is a common cause of cloud account compromise?",
-    "options": ["Weak or reused credentials", "High CPU usage", "Slow network speeds"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  }
+      {
+        "question": "What is the shared responsibility model in cloud security?",
+        "options": [
+          "Security duties are split between provider and customer",
+          "The provider handles all security",
+          "The customer handles all security"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which cloud model gives the customer the most control?",
+        "options": [
+          "IaaS",
+          "PaaS",
+          "SaaS"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is the primary purpose of cloud IAM?",
+        "options": [
+          "Control access to cloud resources",
+          "Encrypt all network traffic",
+          "Monitor CPU usage"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which threat involves unauthorized access due to misconfigured cloud storage?",
+        "options": [
+          "Data exposure",
+          "DDoS attack",
+          "Phishing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What does cloud encryption protect?",
+        "options": [
+          "Data at rest and in transit",
+          "Only network traffic",
+          "Only user passwords"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which cloud security tool monitors and enforces policies across cloud environments?",
+        "options": [
+          "CSPM",
+          "VPN",
+          "Load Balancer"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is a common risk of multi-tenant cloud environments?",
+        "options": [
+          "Resource sharing increases attack surface",
+          "Users cannot access the cloud",
+          "Data cannot be encrypted"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which technology isolates workloads in cloud environments?",
+        "options": [
+          "Virtualization",
+          "DNS",
+          "NAT"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "A cloud access security broker (CASB) is used to:",
+        "options": [
+          "Enforce security policies between users and cloud services",
+          "Manage encryption keys",
+          "Scan local networks"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is a common cause of cloud account compromise?",
+        "options": [
+          "Weak or reused credentials",
+          "High CPU usage",
+          "Slow network speeds"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      }
     ],
-
     "networkSecurity": [
       {
         "question": "What is the purpose of network segmentation?",
@@ -1670,108 +2294,177 @@
       },
       {
         "question": "Which protocol secures DNS?",
-        "options": ["DNSSEC", "DHCP", "SMTP", "FTP"],
+        "options": [
+          "DNSSEC",
+          "DHCP",
+          "SMTP",
+          "FTP"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which tool captures and analyzes packets?",
-        "options": ["Wireshark", "Nmap", "Hydra", "Burp Suite"],
+        "options": [
+          "Wireshark",
+          "Nmap",
+          "Hydra",
+          "Burp Suite"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
-        {
-    "question": "What is the primary purpose of a VPN?",
-    "options": ["Encrypt traffic between a user and a network", "Block malicious IP addresses", "Scan for vulnerabilities"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which protocol is used to securely browse websites?",
-    "options": ["HTTPS", "FTP", "Telnet"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "A DMZ in network security is used to:",
-    "options": ["Isolate public-facing services", "Increase Wi-Fi speed", "Store encrypted backups"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which device inspects traffic and blocks malicious activity in real time?",
-    "options": ["IPS", "Switch", "Load Balancer"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is port scanning used for?",
-    "options": ["Identifying open ports and services", "Encrypting network traffic", "Blocking unauthorized users"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which protocol is commonly used for secure remote administration?",
-    "options": ["SSH", "HTTP", "SMTP"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Network segmentation helps prevent:",
-    "options": ["Lateral movement by attackers", "Email phishing", "Password reuse"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What does TLS provide?",
-    "options": ["Encryption for data in transit", "Firewall filtering", "Network routing"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which tool captures and analyzes network packets?",
-    "options": ["Wireshark", "Nessus", "Metasploit"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "A VLAN is used to:",
-    "options": ["Logically segment networks", "Encrypt wireless traffic", "Block malicious domains"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of an IDS?",
-    "options": ["Detect suspicious network activity", "Encrypt stored data", "Manage cloud resources"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which attack targets ARP tables to redirect traffic?",
-    "options": ["ARP Spoofing", "DNS Tunneling", "SQL Injection"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the main function of a proxy server?",
-    "options": ["Act as an intermediary between users and the internet", "Encrypt all network traffic", "Scan for malware"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "802.1X is used for:",
-    "options": ["Network access control", "Wireless encryption", "Routing traffic"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which protocol secures wireless networks?",
-    "options": ["WPA3", "FTP", "SNMP"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  }
+      {
+        "question": "What is the primary purpose of a VPN?",
+        "options": [
+          "Encrypt traffic between a user and a network",
+          "Block malicious IP addresses",
+          "Scan for vulnerabilities"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which protocol is used to securely browse websites?",
+        "options": [
+          "HTTPS",
+          "FTP",
+          "Telnet"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "A DMZ in network security is used to:",
+        "options": [
+          "Isolate public-facing services",
+          "Increase Wi-Fi speed",
+          "Store encrypted backups"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which device inspects traffic and blocks malicious activity in real time?",
+        "options": [
+          "IPS",
+          "Switch",
+          "Load Balancer"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is port scanning used for?",
+        "options": [
+          "Identifying open ports and services",
+          "Encrypting network traffic",
+          "Blocking unauthorized users"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which protocol is commonly used for secure remote administration?",
+        "options": [
+          "SSH",
+          "HTTP",
+          "SMTP"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Network segmentation helps prevent:",
+        "options": [
+          "Lateral movement by attackers",
+          "Email phishing",
+          "Password reuse"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What does TLS provide?",
+        "options": [
+          "Encryption for data in transit",
+          "Firewall filtering",
+          "Network routing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which tool captures and analyzes network packets?",
+        "options": [
+          "Wireshark",
+          "Nessus",
+          "Metasploit"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "A VLAN is used to:",
+        "options": [
+          "Logically segment networks",
+          "Encrypt wireless traffic",
+          "Block malicious domains"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of an IDS?",
+        "options": [
+          "Detect suspicious network activity",
+          "Encrypt stored data",
+          "Manage cloud resources"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which attack targets ARP tables to redirect traffic?",
+        "options": [
+          "ARP Spoofing",
+          "DNS Tunneling",
+          "SQL Injection"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the main function of a proxy server?",
+        "options": [
+          "Act as an intermediary between users and the internet",
+          "Encrypt all network traffic",
+          "Scan for malware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "802.1X is used for:",
+        "options": [
+          "Network access control",
+          "Wireless encryption",
+          "Routing traffic"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which protocol secures wireless networks?",
+        "options": [
+          "WPA3",
+          "FTP",
+          "SNMP"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      }
     ],
-
     "socOperations": [
       {
         "question": "What is alert triage?",
@@ -1806,67 +2499,106 @@
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
-        {
-    "question": "What is the primary role of a Security Operations Center (SOC)?",
-    "options": ["Monitor, detect, and respond to security incidents", "Develop new software", "Manage HR policies"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which SOC activity involves reviewing alerts to determine their severity?",
-    "options": ["Alert triage", "Threat hunting", "Patch management"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "A SIEM helps SOC analysts by:",
-    "options": ["Aggregating and correlating logs", "Encrypting network traffic", "Managing user passwords"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which SOC role typically handles the initial investigation of alerts?",
-    "options": ["Tier 1 Analyst", "CISO", "Network Engineer"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Escalation in a SOC occurs when:",
-    "options": ["An alert requires deeper investigation", "A system is rebooted", "A user forgets their password"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Threat hunting is best described as:",
-    "options": ["Proactively searching for hidden threats", "Resetting user accounts", "Updating firewall rules"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which type of log is most useful for detecting unauthorized logins?",
-    "options": ["Authentication logs", "DNS logs", "Backup logs"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of correlation rules in a SIEM?",
-    "options": ["Identify patterns across multiple events", "Encrypt stored data", "Improve network speed"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "A SOC runbook provides:",
-    "options": ["Step-by-step procedures for handling alerts", "A list of blocked IP addresses", "A backup of system files"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which metric measures how quickly a SOC responds to incidents?",
-    "options": ["MTTR (Mean Time to Respond)", "CPU utilization", "Bandwidth usage"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  }
-
+      {
+        "question": "What is the primary role of a Security Operations Center (SOC)?",
+        "options": [
+          "Monitor, detect, and respond to security incidents",
+          "Develop new software",
+          "Manage HR policies"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which SOC activity involves reviewing alerts to determine their severity?",
+        "options": [
+          "Alert triage",
+          "Threat hunting",
+          "Patch management"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "A SIEM helps SOC analysts by:",
+        "options": [
+          "Aggregating and correlating logs",
+          "Encrypting network traffic",
+          "Managing user passwords"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which SOC role typically handles the initial investigation of alerts?",
+        "options": [
+          "Tier 1 Analyst",
+          "CISO",
+          "Network Engineer"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Escalation in a SOC occurs when:",
+        "options": [
+          "An alert requires deeper investigation",
+          "A system is rebooted",
+          "A user forgets their password"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Threat hunting is best described as:",
+        "options": [
+          "Proactively searching for hidden threats",
+          "Resetting user accounts",
+          "Updating firewall rules"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which type of log is most useful for detecting unauthorized logins?",
+        "options": [
+          "Authentication logs",
+          "DNS logs",
+          "Backup logs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of correlation rules in a SIEM?",
+        "options": [
+          "Identify patterns across multiple events",
+          "Encrypt stored data",
+          "Improve network speed"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "A SOC runbook provides:",
+        "options": [
+          "Step-by-step procedures for handling alerts",
+          "A list of blocked IP addresses",
+          "A backup of system files"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which metric measures how quickly a SOC responds to incidents?",
+        "options": [
+          "MTTR (Mean Time to Respond)",
+          "CPU utilization",
+          "Bandwidth usage"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      }
     ],
     "finalExam": [
       {
@@ -1882,31 +2614,56 @@
       },
       {
         "question": "Which malware encrypts files and demands payment?",
-        "options": ["Trojan", "Ransomware", "Worm", "Spyware"],
+        "options": [
+          "Trojan",
+          "Ransomware",
+          "Worm",
+          "Spyware"
+        ],
         "answerIndex": 1,
         "difficulty": "Beginner"
       },
       {
         "question": "Which attack intercepts communication between two parties?",
-        "options": ["MITM", "XSS", "BEC", "SQL Injection"],
+        "options": [
+          "MITM",
+          "XSS",
+          "BEC",
+          "SQL Injection"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
       {
         "question": "Which tool is used for network scanning?",
-        "options": ["Nmap", "Splunk", "Burp Suite", "CrowdStrike"],
+        "options": [
+          "Nmap",
+          "Splunk",
+          "Burp Suite",
+          "CrowdStrike"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which IR phase focuses on detecting an incident?",
-        "options": ["Containment", "Identification", "Recovery", "Eradication"],
+        "options": [
+          "Containment",
+          "Identification",
+          "Recovery",
+          "Eradication"
+        ],
         "answerIndex": 1,
         "difficulty": "Beginner"
       },
       {
         "question": "Which attack abuses cloud metadata endpoints?",
-        "options": ["XSS", "SSRF", "MITM", "BEC"],
+        "options": [
+          "XSS",
+          "SSRF",
+          "MITM",
+          "BEC"
+        ],
         "answerIndex": 1,
         "difficulty": "Advanced"
       },
@@ -1923,19 +2680,34 @@
       },
       {
         "question": "Which malware spreads automatically across networks?",
-        "options": ["Trojan", "Worm", "Spyware", "Adware"],
+        "options": [
+          "Trojan",
+          "Worm",
+          "Spyware",
+          "Adware"
+        ],
         "answerIndex": 1,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which MITRE tactic includes phishing?",
-        "options": ["Execution", "Initial Access", "Persistence", "Discovery"],
+        "options": [
+          "Execution",
+          "Initial Access",
+          "Persistence",
+          "Discovery"
+        ],
         "answerIndex": 1,
         "difficulty": "Beginner"
       },
       {
         "question": "Which malware hides deeply in the system?",
-        "options": ["Rootkit", "Adware", "Spyware", "Worm"],
+        "options": [
+          "Rootkit",
+          "Adware",
+          "Spyware",
+          "Worm"
+        ],
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
@@ -1952,7 +2724,12 @@
       },
       {
         "question": "Which protocol secures DNS?",
-        "options": ["DNSSEC", "DHCP", "SMTP", "FTP"],
+        "options": [
+          "DNSSEC",
+          "DHCP",
+          "SMTP",
+          "FTP"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
@@ -1980,31 +2757,56 @@
       },
       {
         "question": "Which tool is a SIEM?",
-        "options": ["Splunk", "Nmap", "Burp Suite", "Metasploit"],
+        "options": [
+          "Splunk",
+          "Nmap",
+          "Burp Suite",
+          "Metasploit"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which malware mines cryptocurrency?",
-        "options": ["Trojan", "Cryptojacker", "Rootkit", "Spyware"],
+        "options": [
+          "Trojan",
+          "Cryptojacker",
+          "Rootkit",
+          "Spyware"
+        ],
         "answerIndex": 1,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which attack injects malicious SQL?",
-        "options": ["XSS", "SQL Injection", "MITM", "BEC"],
+        "options": [
+          "XSS",
+          "SQL Injection",
+          "MITM",
+          "BEC"
+        ],
         "answerIndex": 1,
         "difficulty": "Intermediate"
       },
       {
         "question": "Which IR phase restores systems?",
-        "options": ["Recovery", "Eradication", "Containment", "Lessons Learned"],
+        "options": [
+          "Recovery",
+          "Eradication",
+          "Containment",
+          "Lessons Learned"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which tool analyzes packets?",
-        "options": ["Wireshark", "Nmap", "Hydra", "Burp Suite"],
+        "options": [
+          "Wireshark",
+          "Nmap",
+          "Hydra",
+          "Burp Suite"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
@@ -2021,19 +2823,34 @@
       },
       {
         "question": "Which control prevents exploitation of known vulnerabilities?",
-        "options": ["Patch management", "MFA", "DNSSEC", "Encryption"],
+        "options": [
+          "Patch management",
+          "MFA",
+          "DNSSEC",
+          "Encryption"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which malware records keystrokes?",
-        "options": ["Keylogger", "Worm", "Adware", "Ransomware"],
+        "options": [
+          "Keylogger",
+          "Worm",
+          "Adware",
+          "Ransomware"
+        ],
         "answerIndex": 0,
         "difficulty": "Beginner"
       },
       {
         "question": "Which attack relies on tricking employees into transferring funds?",
-        "options": ["BEC", "Phishing", "MITM", "SQL injection"],
+        "options": [
+          "BEC",
+          "Phishing",
+          "MITM",
+          "SQL injection"
+        ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
       },
@@ -2059,371 +2876,606 @@
         "answerIndex": 0,
         "difficulty": "Advanced"
       },
-        {
-    "question": "What is the primary purpose of a firewall?",
-    "options": ["Control network traffic", "Encrypt data", "Scan for malware"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which attack attempts to guess passwords through repeated attempts?",
-    "options": ["Brute force", "Phishing", "SQL injection"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Ransomware typically aims to:",
-    "options": ["Encrypt files for payment", "Steal credentials", "Monitor user activity"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What does HTTPS provide?",
-    "options": ["Encrypted web communication", "Faster browsing", "Malware protection"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which cloud model offers the least customer control?",
-    "options": ["SaaS", "IaaS", "PaaS"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What is the first phase of the incident response lifecycle?",
-    "options": ["Preparation", "Containment", "Recovery"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which tool is commonly used for packet analysis?",
-    "options": ["Wireshark", "Nmap", "Metasploit"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Phishing falls under which MITRE ATT&CK tactic?",
-    "options": ["Initial Access", "Execution", "Impact"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "A worm differs from a virus because it:",
-    "options": ["Self-replicates without a host file", "Requires user execution", "Only spreads via USB"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What is the purpose of MFA?",
-    "options": ["Add additional verification factors", "Encrypt data", "Block all unknown IPs"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-
-  {
-    "question": "Which attack intercepts communication between two parties?",
-    "options": ["Man-in-the-Middle", "Brute force", "Ransomware"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Nmap is primarily used for:",
-    "options": ["Network scanning", "Password cracking", "Log analysis"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What does network segmentation help prevent?",
-    "options": ["Lateral movement", "Phishing", "Password reuse"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Credential dumping belongs to which MITRE tactic?",
-    "options": ["Credential Access", "Discovery", "Impact"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of a SIEM?",
-    "options": ["Aggregate and analyze logs", "Encrypt network traffic", "Manage cloud storage"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which malware logs keystrokes?",
-    "options": ["Keylogger", "Adware", "Worm"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "A DMZ is used to:",
-    "options": ["Isolate public-facing services", "Improve Wi-Fi", "Store backups"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of containment in incident response?",
-    "options": ["Stop the spread of an active threat", "Restore systems", "Document lessons learned"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which cloud security tool enforces policies across cloud environments?",
-    "options": ["CSPM", "VPN", "Load balancer"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What does TLS protect?",
-    "options": ["Data in transit", "Data at rest", "Firmware"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-
-  {
-    "question": "Which attack injects malicious SQL commands into a database?",
-    "options": ["SQL Injection", "XSS", "DNS Spoofing"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "A rootkit is designed to:",
-    "options": ["Hide malicious activity", "Encrypt files", "Scan networks"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which MITRE tactic includes obfuscation and masquerading?",
-    "options": ["Defense Evasion", "Execution", "Discovery"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of microsegmentation?",
-    "options": ["Prevent lateral movement", "Increase bandwidth", "Encrypt data"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Fileless malware typically resides in:",
-    "options": ["Memory", "Disk", "Firmware"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which tool is used for reverse engineering malware?",
-    "options": ["Ghidra", "Nmap", "Nessus"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of a honeypot?",
-    "options": ["Attract and analyze attackers", "Encrypt data", "Improve routing"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which attack targets ARP tables?",
-    "options": ["ARP Spoofing", "DNS Tunneling", "MITM"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Threat hunting is best described as:",
-    "options": ["Proactively searching for hidden threats", "Resetting user accounts", "Updating firewall rules"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which MITRE tactic includes screen capture and keylogging?",
-    "options": ["Collection", "Execution", "Impact"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-
-  {
-    "question": "What is the purpose of hashing?",
-    "options": ["Ensure data integrity", "Encrypt data", "Block IPs"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which malware spreads without user interaction?",
-    "options": ["Worm", "Trojan", "Adware"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What does a proxy server do?",
-    "options": ["Acts as an intermediary between users and the internet", "Encrypts all traffic", "Scans for malware"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which cloud threat involves misconfigured storage buckets?",
-    "options": ["Data exposure", "Phishing", "DDoS"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Privilege escalation aims to:",
-    "options": ["Gain higher-level permissions", "Encrypt files", "Scan ports"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of NAC?",
-    "options": ["Ensure only compliant devices connect", "Encrypt data", "Manage DNS"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which tool is used for web application testing?",
-    "options": ["Burp Suite", "Wireshark", "Splunk"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "A SOC runbook provides:",
-    "options": ["Steps for handling alerts", "A list of blocked IPs", "Backup procedures"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which protocol secures wireless networks?",
-    "options": ["WPA3", "FTP", "SNMP"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What is the purpose of DLP?",
-    "options": ["Prevent unauthorized data exfiltration", "Improve network speed", "Encrypt all traffic"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-
-  {
-    "question": "Which attack targets websites frequently visited by victims?",
-    "options": ["Watering hole attack", "Phishing", "Brute force"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "A bootkit infects:",
-    "options": ["The system boot process", "Browser extensions", "Cloud storage"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What does a CASB do?",
-    "options": ["Enforce security policies between users and cloud services", "Encrypt local disks", "Monitor CPU usage"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which MITRE tactic includes using valid accounts?",
-    "options": ["Defense Evasion", "Initial Access", "Impact"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of forensic imaging?",
-    "options": ["Preserve evidence for investigation", "Speed up recovery", "Encrypt data"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which tool is used for vulnerability scanning?",
-    "options": ["Nessus", "Metasploit", "Wireshark"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What does UEBA analyze?",
-    "options": ["User and entity behavior", "Network routing", "Cloud billing"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which attack modifies DNS records?",
-    "options": ["DNS Spoofing", "ARP Poisoning", "SQL Injection"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of the recovery phase?",
-    "options": ["Restore systems to normal operation", "Identify the incident", "Collect evidence"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which protocol is used for secure remote administration?",
-    "options": ["SSH", "HTTP", "SMTP"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-
-  {
-    "question": "What is the goal of reconnaissance?",
-    "options": ["Gather information about a target", "Encrypt data", "Modify logs"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which malware displays unwanted ads?",
-    "options": ["Adware", "Spyware", "Trojan"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "What does a load balancer do?",
-    "options": ["Distributes traffic across servers", "Encrypts data", "Scans for malware"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which MITRE tactic includes data exfiltration?",
-    "options": ["Exfiltration", "Impact", "Discovery"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What is the purpose of log correlation?",
-    "options": ["Identify patterns across events", "Encrypt logs", "Block IPs"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "Which attack uses leaked credentials?",
-    "options": ["Credential stuffing", "Password spraying", "MITM"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "What does virtualization provide in cloud environments?",
-    "options": ["Workload isolation", "Faster internet", "Automatic backups"],
-    "answerIndex": 0,
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "Which tool is used for penetration testing?",
-    "options": ["Metasploit", "Nmap", "Wireshark"],
-    "answerIndex": 0,
-    "difficulty": "Advanced"
-  },
-  {
-    "question": "What is the purpose of the lessons learned phase?",
-    "options": ["Improve future response processes", "Remove malware", "Notify users"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  },
-  {
-    "question": "Which protocol encrypts email communication?",
-    "options": ["TLS", "FTP", "ICMP"],
-    "answerIndex": 0,
-    "difficulty": "Intermediate"
-  }
+      {
+        "question": "What is the primary purpose of a firewall?",
+        "options": [
+          "Control network traffic",
+          "Encrypt data",
+          "Scan for malware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which attack attempts to guess passwords through repeated attempts?",
+        "options": [
+          "Brute force",
+          "Phishing",
+          "SQL injection"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Ransomware typically aims to:",
+        "options": [
+          "Encrypt files for payment",
+          "Steal credentials",
+          "Monitor user activity"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What does HTTPS provide?",
+        "options": [
+          "Encrypted web communication",
+          "Faster browsing",
+          "Malware protection"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which cloud model offers the least customer control?",
+        "options": [
+          "SaaS",
+          "IaaS",
+          "PaaS"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is the first phase of the incident response lifecycle?",
+        "options": [
+          "Preparation",
+          "Containment",
+          "Recovery"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which tool is commonly used for packet analysis?",
+        "options": [
+          "Wireshark",
+          "Nmap",
+          "Metasploit"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Phishing falls under which MITRE ATT&CK tactic?",
+        "options": [
+          "Initial Access",
+          "Execution",
+          "Impact"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "A worm differs from a virus because it:",
+        "options": [
+          "Self-replicates without a host file",
+          "Requires user execution",
+          "Only spreads via USB"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is the purpose of MFA?",
+        "options": [
+          "Add additional verification factors",
+          "Encrypt data",
+          "Block all unknown IPs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which attack intercepts communication between two parties?",
+        "options": [
+          "Man-in-the-Middle",
+          "Brute force",
+          "Ransomware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Nmap is primarily used for:",
+        "options": [
+          "Network scanning",
+          "Password cracking",
+          "Log analysis"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What does network segmentation help prevent?",
+        "options": [
+          "Lateral movement",
+          "Phishing",
+          "Password reuse"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Credential dumping belongs to which MITRE tactic?",
+        "options": [
+          "Credential Access",
+          "Discovery",
+          "Impact"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of a SIEM?",
+        "options": [
+          "Aggregate and analyze logs",
+          "Encrypt network traffic",
+          "Manage cloud storage"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which malware logs keystrokes?",
+        "options": [
+          "Keylogger",
+          "Adware",
+          "Worm"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "A DMZ is used to:",
+        "options": [
+          "Isolate public-facing services",
+          "Improve Wi-Fi",
+          "Store backups"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of containment in incident response?",
+        "options": [
+          "Stop the spread of an active threat",
+          "Restore systems",
+          "Document lessons learned"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which cloud security tool enforces policies across cloud environments?",
+        "options": [
+          "CSPM",
+          "VPN",
+          "Load balancer"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What does TLS protect?",
+        "options": [
+          "Data in transit",
+          "Data at rest",
+          "Firmware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which attack injects malicious SQL commands into a database?",
+        "options": [
+          "SQL Injection",
+          "XSS",
+          "DNS Spoofing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "A rootkit is designed to:",
+        "options": [
+          "Hide malicious activity",
+          "Encrypt files",
+          "Scan networks"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which MITRE tactic includes obfuscation and masquerading?",
+        "options": [
+          "Defense Evasion",
+          "Execution",
+          "Discovery"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of microsegmentation?",
+        "options": [
+          "Prevent lateral movement",
+          "Increase bandwidth",
+          "Encrypt data"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Fileless malware typically resides in:",
+        "options": [
+          "Memory",
+          "Disk",
+          "Firmware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which tool is used for reverse engineering malware?",
+        "options": [
+          "Ghidra",
+          "Nmap",
+          "Nessus"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of a honeypot?",
+        "options": [
+          "Attract and analyze attackers",
+          "Encrypt data",
+          "Improve routing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which attack targets ARP tables?",
+        "options": [
+          "ARP Spoofing",
+          "DNS Tunneling",
+          "MITM"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Threat hunting is best described as:",
+        "options": [
+          "Proactively searching for hidden threats",
+          "Resetting user accounts",
+          "Updating firewall rules"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which MITRE tactic includes screen capture and keylogging?",
+        "options": [
+          "Collection",
+          "Execution",
+          "Impact"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of hashing?",
+        "options": [
+          "Ensure data integrity",
+          "Encrypt data",
+          "Block IPs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which malware spreads without user interaction?",
+        "options": [
+          "Worm",
+          "Trojan",
+          "Adware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What does a proxy server do?",
+        "options": [
+          "Acts as an intermediary between users and the internet",
+          "Encrypts all traffic",
+          "Scans for malware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which cloud threat involves misconfigured storage buckets?",
+        "options": [
+          "Data exposure",
+          "Phishing",
+          "DDoS"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Privilege escalation aims to:",
+        "options": [
+          "Gain higher-level permissions",
+          "Encrypt files",
+          "Scan ports"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of NAC?",
+        "options": [
+          "Ensure only compliant devices connect",
+          "Encrypt data",
+          "Manage DNS"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which tool is used for web application testing?",
+        "options": [
+          "Burp Suite",
+          "Wireshark",
+          "Splunk"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "A SOC runbook provides:",
+        "options": [
+          "Steps for handling alerts",
+          "A list of blocked IPs",
+          "Backup procedures"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which protocol secures wireless networks?",
+        "options": [
+          "WPA3",
+          "FTP",
+          "SNMP"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is the purpose of DLP?",
+        "options": [
+          "Prevent unauthorized data exfiltration",
+          "Improve network speed",
+          "Encrypt all traffic"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which attack targets websites frequently visited by victims?",
+        "options": [
+          "Watering hole attack",
+          "Phishing",
+          "Brute force"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "A bootkit infects:",
+        "options": [
+          "The system boot process",
+          "Browser extensions",
+          "Cloud storage"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What does a CASB do?",
+        "options": [
+          "Enforce security policies between users and cloud services",
+          "Encrypt local disks",
+          "Monitor CPU usage"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which MITRE tactic includes using valid accounts?",
+        "options": [
+          "Defense Evasion",
+          "Initial Access",
+          "Impact"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of forensic imaging?",
+        "options": [
+          "Preserve evidence for investigation",
+          "Speed up recovery",
+          "Encrypt data"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which tool is used for vulnerability scanning?",
+        "options": [
+          "Nessus",
+          "Metasploit",
+          "Wireshark"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What does UEBA analyze?",
+        "options": [
+          "User and entity behavior",
+          "Network routing",
+          "Cloud billing"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which attack modifies DNS records?",
+        "options": [
+          "DNS Spoofing",
+          "ARP Poisoning",
+          "SQL Injection"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of the recovery phase?",
+        "options": [
+          "Restore systems to normal operation",
+          "Identify the incident",
+          "Collect evidence"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which protocol is used for secure remote administration?",
+        "options": [
+          "SSH",
+          "HTTP",
+          "SMTP"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is the goal of reconnaissance?",
+        "options": [
+          "Gather information about a target",
+          "Encrypt data",
+          "Modify logs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which malware displays unwanted ads?",
+        "options": [
+          "Adware",
+          "Spyware",
+          "Trojan"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What does a load balancer do?",
+        "options": [
+          "Distributes traffic across servers",
+          "Encrypts data",
+          "Scans for malware"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which MITRE tactic includes data exfiltration?",
+        "options": [
+          "Exfiltration",
+          "Impact",
+          "Discovery"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What is the purpose of log correlation?",
+        "options": [
+          "Identify patterns across events",
+          "Encrypt logs",
+          "Block IPs"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which attack uses leaked credentials?",
+        "options": [
+          "Credential stuffing",
+          "Password spraying",
+          "MITM"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "What does virtualization provide in cloud environments?",
+        "options": [
+          "Workload isolation",
+          "Faster internet",
+          "Automatic backups"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which tool is used for penetration testing?",
+        "options": [
+          "Metasploit",
+          "Nmap",
+          "Wireshark"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is the purpose of the lessons learned phase?",
+        "options": [
+          "Improve future response processes",
+          "Remove malware",
+          "Notify users"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which protocol encrypts email communication?",
+        "options": [
+          "TLS",
+          "FTP",
+          "ICMP"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      }
     ]
   }
 }
