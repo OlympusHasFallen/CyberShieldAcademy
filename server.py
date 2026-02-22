@@ -6,7 +6,7 @@ import json
 PORT = 8080
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-TEMPLATE_PATH = os.path.join(BASE_DIR, "template.html")
+TEMPLATE_PATH = os.path.join(BASE_DIR, "index.html")
 CONTENT_PATH = os.path.join(BASE_DIR, "content.json")
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 
