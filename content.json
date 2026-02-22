@@ -389,7 +389,82 @@
         "name": "Microsoft Defender for Endpoint",
         "description": "Enterprise-grade endpoint protection and detection.",
         "difficulty": "Intermediate"
-      }
+      },
+      {
+  "name": "Microsoft Sentinel",
+  "description": "Cloud-native SIEM and SOAR platform built on Azure for threat detection and response.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "IBM QRadar",
+  "description": "Enterprise SIEM platform for log correlation and threat intelligence.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "LogRhythm",
+  "description": "SIEM and XDR platform for security analytics and automated response.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Google Chronicle",
+  "description": "Cloud-native security analytics platform for large-scale log ingestion and threat detection.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "Security Onion",
+  "description": "Open-source platform for network security monitoring and threat hunting.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Zeek",
+  "description": "Network security monitoring tool for traffic analysis and anomaly detection.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Suricata",
+  "description": "High-performance network IDS/IPS and threat detection engine.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Snort",
+  "description": "Open-source intrusion detection and prevention system (IDS/IPS).",
+  "difficulty": "Beginner"
+},
+{
+  "name": "Velociraptor",
+  "description": "Endpoint visibility and digital forensics tool for incident response.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "TheHive",
+  "description": "Security incident response and case management platform.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Cortex XSOAR",
+  "description": "Security orchestration, automation, and response (SOAR) platform.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "MISP",
+  "description": "Threat intelligence sharing and collaboration platform.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Wireshark",
+  "description": "Network protocol analyzer for packet-level inspection.",
+  "difficulty": "Beginner"
+},
+{
+  "name": "Tenable Nessus",
+  "description": "Vulnerability scanner for identifying security misconfigurations and weaknesses.",
+  "difficulty": "Beginner"
+},
+{
+  "name": "Qualys VMDR",
+  "description": "Cloud-based vulnerability management, detection, and response platform.",
+  "difficulty": "Intermediate"
+}
     ],
     "red": [
       {
@@ -416,7 +491,82 @@
         "name": "BloodHound",
         "description": "Active Directory attack path mapping tool.",
         "difficulty": "Advanced"
-      }
+      },
+      {
+  "name": "Cobalt Strike",
+  "description": "Adversary simulation platform for red team operations and post-exploitation.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "Sliver",
+  "description": "Open-source command and control (C2) framework for red team engagements.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "Empire",
+  "description": "Post-exploitation framework with PowerShell and Python agents.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "Mimikatz",
+  "description": "Credential extraction tool for Windows environments.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "Responder",
+  "description": "LLMNR/NBT-NS poisoning tool for credential capture in internal networks.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Impacket",
+  "description": "Collection of Python tools for working with network protocols and lateral movement.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "CrackMapExec",
+  "description": "Post-exploitation tool for lateral movement in Active Directory environments.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "John the Ripper",
+  "description": "Password cracking tool for offline hash attacks.",
+  "difficulty": "Beginner"
+},
+{
+  "name": "Hashcat",
+  "description": "Advanced password recovery tool leveraging GPU acceleration.",
+  "difficulty": "Advanced"
+},
+{
+  "name": "Gobuster",
+  "description": "Directory and DNS brute-forcing tool for reconnaissance.",
+  "difficulty": "Beginner"
+},
+{
+  "name": "FFUF",
+  "description": "Fast web fuzzing tool for discovering hidden endpoints and parameters.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "SQLmap",
+  "description": "Automated SQL injection and database takeover tool.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Nikto",
+  "description": "Web server vulnerability scanner for misconfigurations and outdated software.",
+  "difficulty": "Beginner"
+},
+{
+  "name": "Amass",
+  "description": "Open-source reconnaissance tool for DNS enumeration and attack surface mapping.",
+  "difficulty": "Intermediate"
+},
+{
+  "name": "Recon-ng",
+  "description": "Web reconnaissance framework for open-source intelligence gathering.",
+  "difficulty": "Intermediate"
+}
     ],
     "cloud": [
       {
