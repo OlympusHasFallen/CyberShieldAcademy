@@ -774,7 +774,163 @@
       "term": "Attack Surface",
       "definition": "All possible points where an attacker can enter a system.",
       "difficulty": "Beginner"
-    }
+    },
+    {
+      "term": "Red Team",
+      "definition": "Simulates attackers to test defenses.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Blue Team",
+      "definition": "Defends against attacks and protects assets.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Purple Team",
+      "definition": "Collaborates between red and blue teams for improved security.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "APT",
+      "definition": "Advanced Persistent Threat — a prolonged and targeted cyberattack.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "MITRE ATT&CK",
+      "definition": "A knowledge base of adversary tactics and techniques.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "CVE",
+      "definition": "Common Vulnerabilities and Exposures — a list of publicly disclosed vulnerabilities.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "CVSS",
+      "definition": "Common Vulnerability Scoring System — a framework for rating the severity of vulnerabilities.",
+      "difficulty": "Intermediate"
+    },
+   
+    {
+      "term": "Penetration Testing",
+      "definition": "Simulated cyberattack to test defenses.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Vulnerability Assessment",
+      "definition": "Systematic review of security weaknesses.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Incident Response",
+      "definition": "Process of handling and mitigating security incidents.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Forensics",
+      "definition": "Collecting and analyzing digital evidence after an incident.",
+      "difficulty": "Advanced"
+    },
+    {
+    "term": "SOC",
+    "definition": "Security Operations Center — centralized team responsible for monitoring and responding to security incidents.",
+    "difficulty": "Beginner"
+  },
+  {
+    "term": "SOAR",
+    "definition": "Security Orchestration, Automation, and Response — automates incident response workflows.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "term": "XDR",
+    "definition": "Extended Detection and Response — unified threat detection across endpoints, network, and cloud.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "term": "MDR",
+    "definition": "Managed Detection and Response — outsourced security monitoring and incident response service.",
+    "difficulty": "Beginner"
+  },
+  {
+    "term": "Exploit",
+    "definition": "Code or technique used to take advantage of a vulnerability.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "term": "Zero-Day",
+    "definition": "A vulnerability unknown to the vendor with no available patch.",
+    "difficulty": "Advanced"
+  },
+  {
+    "term": "Supply Chain Attack",
+    "definition": "Compromising a trusted vendor or software dependency to attack a target organization.",
+    "difficulty": "Advanced"
+  },
+  {
+    "term": "CSPM",
+    "definition": "Cloud Security Posture Management — identifies misconfigurations in cloud environments.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "term": "CASB",
+    "definition": "Cloud Access Security Broker — enforces security policies between users and cloud services.",
+    "difficulty": "Advanced"
+  },
+  {
+    "term": "Credential Stuffing",
+    "definition": "Using stolen username and password combinations to gain unauthorized access.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "term": "Brute Force Attack",
+    "definition": "Attempting multiple password combinations until the correct one is found.",
+    "difficulty": "Beginner"
+  },
+  {
+    "term": "Threat Hunting",
+    "definition": "Proactively searching for hidden threats within a network environment.",
+    "difficulty": "Advanced"
+  },
+  {
+    "term": "Playbook",
+    "definition": "Documented step-by-step procedure for responding to security incidents.",
+    "difficulty": "Beginner"
+  },
+  {
+    "term": "Runbook",
+    "definition": "Operational guide for executing technical processes or tasks.",
+    "difficulty": "Beginner"
+  },
+  {
+    "term": "Beaconing",
+    "definition": "Regular outbound communication from compromised systems to a command-and-control server.",
+    "difficulty": "Advanced"
+  },
+  {
+    "term": "Lateral Movement",
+    "definition": "Techniques used by attackers to move through a network after initial compromise.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "term": "Data Exfiltration",
+    "definition": "Unauthorized transfer of data from an organization’s network.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "term": "Hardening",
+    "definition": "Reducing vulnerabilities by securing configurations and removing unnecessary services.",
+    "difficulty": "Beginner"
+  },
+  {
+    "term": "Microsegmentation",
+    "definition": "Granular network segmentation to isolate workloads and reduce attack spread.",
+    "difficulty": "Advanced"
+  },
+  {
+    "term": "Purple Team",
+    "definition": "Collaboration between Red and Blue teams to improve detection and defense capabilities.",
+    "difficulty": "Beginner"
+  }
   ],
   "resources": [
     "NIST Cybersecurity Framework",
@@ -782,7 +938,22 @@
     "OWASP Top 10",
     "CISA Cybersecurity Alerts",
     "SANS Blue Team Resources",
-    "Microsoft Security Blog"
+    "Microsoft Security Blog",
+    "Google Cloud Security Best Practices",
+    "AWS Security Documentation",
+    "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "National Cyber Security Centre (NCSC)",
+    "Cyber Threat Alliance (CTA)",
+    "VirusTotal",
+    "Have I Been Pwned",
+    "Shodan",
+    "CVE Details",
+    "Exploit Database",
+    "Red Team Tools Repository",
+    "Blue Team Tools Repository",
+    "Purple Team Collaboration Platforms",
+    "Cybersecurity Podcasts and Webinars",
+    "Security Conferences and Workshops"
   ],
   "cloudSecurity": [
     {
@@ -809,6 +980,56 @@
       "name": "Misconfigured Security Groups",
       "description": "Overly open inbound/outbound rules exposing cloud workloads.",
       "difficulty": "Intermediate"
+    },
+    {
+      "name": "Cloud Ransomware",
+      "description": "Ransomware targeting cloud workloads and data.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Cloud Account Takeover",
+      "description": "Attackers gaining access to cloud accounts through credential theft.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Insecure APIs",
+      "description": "Vulnerabilities in cloud service APIs that can be exploited.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Cloud Supply Chain Attacks",
+      "description": "Compromising third-party cloud services to attack customers.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Cloud Data Exfiltration",
+      "description": "Unauthorized transfer of data from cloud environments.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Cloud Misconfiguration",
+      "description": "Incorrectly configured cloud resources leading to vulnerabilities.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Cloud Privilege Escalation",
+      "description": "Exploiting vulnerabilities to gain higher privileges in cloud environments.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Cloud DDoS Attacks",
+      "description": "Distributed Denial of Service attacks targeting cloud services.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Cloud Insider Threats",
+      "description": "Malicious or negligent insiders abusing cloud access.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Cloud Compliance Violations",
+      "description": "Failing to meet regulatory requirements in cloud environments.",
+      "difficulty": "Beginner"
     }
   ],
   "networkSecurity": [
@@ -835,6 +1056,101 @@
     {
       "name": "Network Monitoring",
       "description": "Inspecting traffic for anomalies and threats.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "VPNs and Remote Access",
+      "description": "Securing remote connections to the network.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Intrusion Detection and Prevention",
+      "description": "Detecting and blocking malicious network activity.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Network Access Control (NAC)",
+      "description": "Enforcing security policies on devices connecting to the network.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "DDoS Mitigation",
+      "description": "Defending against Distributed Denial of Service attacks.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Network Forensics",
+      "description": "Analyzing network traffic to investigate incidents.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Secure Network Architecture",
+      "description": "Designing networks with security in mind from the ground up.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Wireless Security",
+      "description": "Securing Wi-Fi networks against unauthorized access and attacks.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Network Segmentation",
+      "description": "Dividing a network into segments to improve security and performance.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Network Access Control (NAC)",
+      "description": "Enforcing security policies on devices attempting to access the network.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "DDoS Protection",
+      "description": "Implementing measures to mitigate Distributed Denial of Service attacks.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Network Forensics",
+      "description": "Analyzing network traffic to investigate security incidents.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Secure Network Design",
+      "description": "Architecting networks with security principles in mind.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Wireless Security",
+      "description": "Protecting Wi-Fi networks from unauthorized access and attacks.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "DNS Security",
+      "description": "Securing the Domain Name System against attacks like spoofing and hijacking.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Zero Trust Networking",
+      "description": "Implementing a security model that requires strict identity verification for every person and device trying to access resources on a private network.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "TLS Encryption",
+      "description": "Using Transport Layer Security to encrypt data in transit and protect it from interception.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Network Monitoring",
+      "description": "Continuously observing network traffic for signs of malicious activity or anomalies.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "VPNs and Remote Access",
+      "description": "Securing remote connections to the network using Virtual Private Networks.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Intrusion Detection and Prevention Systems (IDS/IPS)",
+      "description": "Deploying systems that can detect and block malicious network traffic.",
       "difficulty": "Intermediate"
     }
   ],
@@ -863,6 +1179,76 @@
       "name": "Forensic Investigation",
       "description": "Collecting and analyzing digital evidence.",
       "difficulty": "Advanced"
+    },
+    {
+      "name": "Incident Response",
+      "description": "Coordinating actions to contain and remediate security incidents.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Threat Intelligence Analysis",
+      "description": "Interpreting threat data to inform defenses.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Security Orchestration and Automation",
+      "description": "Automating repetitive tasks to improve efficiency.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Vulnerability Management",
+      "description": "Identifying and prioritizing vulnerabilities for remediation.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "SOC Metrics and Reporting",
+      "description": "Measuring SOC performance and communicating results.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Collaboration with Red Team",
+      "description": "Working with red team to improve detection and response.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Collaboration with IT and DevOps",
+      "description": "Working with other teams to implement security controls.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Continuous Improvement",
+      "description": "Regularly reviewing and enhancing SOC processes and tools.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "SOC Shift Handover",
+      "description": "Ensuring smooth transition between SOC shifts.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "SOC Playbook Development",
+      "description": "Creating and maintaining playbooks for incident response.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "SOC Runbook Execution",
+      "description": "Following runbooks to perform specific tasks during incidents.",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "SOC Training and Development",
+      "description": "Providing ongoing training to SOC analysts.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "SOC Tool Management",
+      "description": "Maintaining and optimizing SOC tools and technologies.",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "SOC Incident Post-Mortem",
+      "description": "Conducting reviews after incidents to identify lessons learned.",
+      "difficulty": "Beginner"
     }
   ],
   "quizzes": {
