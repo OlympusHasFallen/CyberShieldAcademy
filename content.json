@@ -524,6 +524,51 @@
         "name": "Qualys VMDR",
         "description": "Cloud-based vulnerability management, detection, and response platform.",
         "difficulty": "Intermediate"
+      },
+      {
+        "name": "AWS GuardDuty",
+        "description": "Threat detection service for AWS environments.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Azure Defender",
+        "description": "Cloud-native security for Azure workloads.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "GCP Security Command Center",
+        "description": "Centralized security and risk management for Google Cloud.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "Zeek",
+        "description": "Network security monitoring tool.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Suricata",
+        "description": "IDS/IPS engine for network threat detection.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Wireshark",
+        "description": "Packet analysis tool for network troubleshooting and investigation.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "TheHive",
+        "description": "Open-source incident response platform.",
+        "difficulty": "Intermediate"
+      },
+      {
+        "name": "MISP",
+        "description": "Threat intelligence sharing platform.",
+        "difficulty": "Advanced"
+      },
+      {
+        "name": "Cortex",
+        "description": "Automated analysis engine used with TheHive.",
+        "difficulty": "Advanced"
       }
     ],
     "red": [
@@ -626,51 +671,6 @@
         "name": "Recon-ng",
         "description": "Web reconnaissance framework for open-source intelligence gathering.",
         "difficulty": "Intermediate"
-      },
-      {
-        "name": "AWS GuardDuty",
-        "description": "Threat detection service for AWS environments.",
-        "difficulty": "Intermediate"
-      },
-      {
-        "name": "Azure Defender",
-        "description": "Cloud-native security for Azure workloads.",
-        "difficulty": "Intermediate"
-      },
-      {
-        "name": "GCP Security Command Center",
-        "description": "Centralized security and risk management for Google Cloud.",
-        "difficulty": "Intermediate"
-      },
-      {
-        "name": "Zeek",
-        "description": "Network security monitoring tool.",
-        "difficulty": "Advanced"
-      },
-      {
-        "name": "Suricata",
-        "description": "IDS/IPS engine for network threat detection.",
-        "difficulty": "Advanced"
-      },
-      {
-        "name": "Wireshark",
-        "description": "Packet analysis tool for network troubleshooting and investigation.",
-        "difficulty": "Intermediate"
-      },
-      {
-        "name": "TheHive",
-        "description": "Open-source incident response platform.",
-        "difficulty": "Intermediate"
-      },
-      {
-        "name": "MISP",
-        "description": "Threat intelligence sharing platform.",
-        "difficulty": "Advanced"
-      },
-      {
-        "name": "Cortex",
-        "description": "Automated analysis engine used with TheHive.",
-        "difficulty": "Advanced"
       }
     ]
   },
