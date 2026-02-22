@@ -626,9 +626,7 @@
         "name": "Recon-ng",
         "description": "Web reconnaissance framework for open-source intelligence gathering.",
         "difficulty": "Intermediate"
-      }
-    ],
-    "cloud": [
+      },
       {
         "name": "AWS GuardDuty",
         "description": "Threat detection service for AWS environments.",
@@ -643,9 +641,7 @@
         "name": "GCP Security Command Center",
         "description": "Centralized security and risk management for Google Cloud.",
         "difficulty": "Intermediate"
-      }
-    ],
-    "network": [
+      },
       {
         "name": "Zeek",
         "description": "Network security monitoring tool.",
@@ -660,9 +656,7 @@
         "name": "Wireshark",
         "description": "Packet analysis tool for network troubleshooting and investigation.",
         "difficulty": "Intermediate"
-      }
-    ],
-    "soc": [
+      },
       {
         "name": "TheHive",
         "description": "Open-source incident response platform.",
