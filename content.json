@@ -810,7 +810,6 @@
       "definition": "Common Vulnerability Scoring System — a framework for rating the severity of vulnerabilities.",
       "difficulty": "Intermediate"
     },
-   
     {
       "term": "Penetration Testing",
       "definition": "Simulated cyberattack to test defenses.",
@@ -832,105 +831,105 @@
       "difficulty": "Advanced"
     },
     {
-    "term": "SOC",
-    "definition": "Security Operations Center — centralized team responsible for monitoring and responding to security incidents.",
-    "difficulty": "Beginner"
-  },
-  {
-    "term": "SOAR",
-    "definition": "Security Orchestration, Automation, and Response — automates incident response workflows.",
-    "difficulty": "Intermediate"
-  },
-  {
-    "term": "XDR",
-    "definition": "Extended Detection and Response — unified threat detection across endpoints, network, and cloud.",
-    "difficulty": "Intermediate"
-  },
-  {
-    "term": "MDR",
-    "definition": "Managed Detection and Response — outsourced security monitoring and incident response service.",
-    "difficulty": "Beginner"
-  },
-  {
-    "term": "Exploit",
-    "definition": "Code or technique used to take advantage of a vulnerability.",
-    "difficulty": "Intermediate"
-  },
-  {
-    "term": "Zero-Day",
-    "definition": "A vulnerability unknown to the vendor with no available patch.",
-    "difficulty": "Advanced"
-  },
-  {
-    "term": "Supply Chain Attack",
-    "definition": "Compromising a trusted vendor or software dependency to attack a target organization.",
-    "difficulty": "Advanced"
-  },
-  {
-    "term": "CSPM",
-    "definition": "Cloud Security Posture Management — identifies misconfigurations in cloud environments.",
-    "difficulty": "Intermediate"
-  },
-  {
-    "term": "CASB",
-    "definition": "Cloud Access Security Broker — enforces security policies between users and cloud services.",
-    "difficulty": "Advanced"
-  },
-  {
-    "term": "Credential Stuffing",
-    "definition": "Using stolen username and password combinations to gain unauthorized access.",
-    "difficulty": "Intermediate"
-  },
-  {
-    "term": "Brute Force Attack",
-    "definition": "Attempting multiple password combinations until the correct one is found.",
-    "difficulty": "Beginner"
-  },
-  {
-    "term": "Threat Hunting",
-    "definition": "Proactively searching for hidden threats within a network environment.",
-    "difficulty": "Advanced"
-  },
-  {
-    "term": "Playbook",
-    "definition": "Documented step-by-step procedure for responding to security incidents.",
-    "difficulty": "Beginner"
-  },
-  {
-    "term": "Runbook",
-    "definition": "Operational guide for executing technical processes or tasks.",
-    "difficulty": "Beginner"
-  },
-  {
-    "term": "Beaconing",
-    "definition": "Regular outbound communication from compromised systems to a command-and-control server.",
-    "difficulty": "Advanced"
-  },
-  {
-    "term": "Lateral Movement",
-    "definition": "Techniques used by attackers to move through a network after initial compromise.",
-    "difficulty": "Intermediate"
-  },
-  {
-    "term": "Data Exfiltration",
-    "definition": "Unauthorized transfer of data from an organization’s network.",
-    "difficulty": "Intermediate"
-  },
-  {
-    "term": "Hardening",
-    "definition": "Reducing vulnerabilities by securing configurations and removing unnecessary services.",
-    "difficulty": "Beginner"
-  },
-  {
-    "term": "Microsegmentation",
-    "definition": "Granular network segmentation to isolate workloads and reduce attack spread.",
-    "difficulty": "Advanced"
-  },
-  {
-    "term": "Purple Team",
-    "definition": "Collaboration between Red and Blue teams to improve detection and defense capabilities.",
-    "difficulty": "Beginner"
-  }
+      "term": "SOC",
+      "definition": "Security Operations Center — centralized team responsible for monitoring and responding to security incidents.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "SOAR",
+      "definition": "Security Orchestration, Automation, and Response — automates incident response workflows.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "XDR",
+      "definition": "Extended Detection and Response — unified threat detection across endpoints, network, and cloud.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "MDR",
+      "definition": "Managed Detection and Response — outsourced security monitoring and incident response service.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Exploit",
+      "definition": "Code or technique used to take advantage of a vulnerability.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Zero-Day",
+      "definition": "A vulnerability unknown to the vendor with no available patch.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "Supply Chain Attack",
+      "definition": "Compromising a trusted vendor or software dependency to attack a target organization.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "CSPM",
+      "definition": "Cloud Security Posture Management — identifies misconfigurations in cloud environments.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "CASB",
+      "definition": "Cloud Access Security Broker — enforces security policies between users and cloud services.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "Credential Stuffing",
+      "definition": "Using stolen username and password combinations to gain unauthorized access.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Brute Force Attack",
+      "definition": "Attempting multiple password combinations until the correct one is found.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Threat Hunting",
+      "definition": "Proactively searching for hidden threats within a network environment.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "Playbook",
+      "definition": "Documented step-by-step procedure for responding to security incidents.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Runbook",
+      "definition": "Operational guide for executing technical processes or tasks.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Beaconing",
+      "definition": "Regular outbound communication from compromised systems to a command-and-control server.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "Lateral Movement",
+      "definition": "Techniques used by attackers to move through a network after initial compromise.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Data Exfiltration",
+      "definition": "Unauthorized transfer of data from an organization’s network.",
+      "difficulty": "Intermediate"
+    },
+    {
+      "term": "Hardening",
+      "definition": "Reducing vulnerabilities by securing configurations and removing unnecessary services.",
+      "difficulty": "Beginner"
+    },
+    {
+      "term": "Microsegmentation",
+      "definition": "Granular network segmentation to isolate workloads and reduce attack spread.",
+      "difficulty": "Advanced"
+    },
+    {
+      "term": "Purple Team",
+      "definition": "Collaboration between Red and Blue teams to improve detection and defense capabilities.",
+      "difficulty": "Beginner"
+    }
   ],
   "resources": [
     "NIST Cybersecurity Framework",
