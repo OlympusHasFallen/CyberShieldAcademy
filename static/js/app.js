@@ -186,6 +186,21 @@ data.socOperations.forEach(item => {
     socList.appendChild(li);
 });
 
+// Strict username sanitizer: letters + spaces only
+function sanitizeName(input) {
+    return input
+        .replace(/[^A-Za-z ]/g, " ")   // allow only letters and spaces
+        .replace(/\s+/g, " ")         // collapse multiple spaces
+        .trim();                      // remove leading/trailing spaces
+}
+
+// Apply sanitizer in real time to the modal input
+const fullNameInput = document.getElementById("fullNameInput");
+fullNameInput.addEventListener("input", () => {
+    fullNameInput.value = sanitizeName(fullNameInput.value);
+});
+
+
     initSearch();
     initNavHighlight();
     initCollapse();
@@ -197,13 +212,18 @@ data.socOperations.forEach(item => {
 
 function initSearch() {
     const searchBox = document.getElementById("searchBox");
-    const searchItems = document.querySelectorAll(".search-item");
+
     searchBox.addEventListener("input", () => {
         const q = searchBox.value.toLowerCase().trim();
+
+        // Re‑query live DOM each time
+        const searchItems = document.querySelectorAll(".search-item");
+
         searchItems.forEach(item => {
             const text = item.innerText.toLowerCase();
             item.style.display = text.includes(q) ? "" : "none";
         });
+
         updateProgressFromDOM();
     });
 }
