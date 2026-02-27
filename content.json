@@ -306,6 +306,267 @@
       "defense": "Monitoring, patching",
       "threatLevel": "Medium",
       "difficulty": "Intermediate"
+    },
+    {
+      "name": "Backdoor",
+      "description": "Provides unauthorized access to a system.",
+      "category": "Backdoors",
+      "tags": [
+        "access",
+        "persistence"
+      ],
+      "defense": "EDR, patching",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Botnet",
+      "description": "Network of infected devices controlled by attackers.",
+      "category": "Botnets",
+      "tags": [
+        "DDoS",
+        "spam"
+      ],
+      "defense": "Network monitoring, EDR",
+      "threatLevel": "High",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "RAT (Remote Access Trojan)",
+      "description": "Allows attackers to remotely control an infected system.",
+      "category": "Trojans",
+      "tags": [
+        "remote control"
+      ],
+      "defense": "EDR, network monitoring",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Logic Bomb",
+      "description": "Triggers malicious actions when specific conditions are met.",
+      "category": "Logic Bombs",
+      "tags": [
+        "time-based",
+        "event-based"
+      ],
+      "defense": "Code review, monitoring",
+      "threatLevel": "Medium",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "Rogue Software",
+      "description": "Fake security software that scams users.",
+      "category": "Rogue Software",
+      "tags": [
+        "scam",
+        "fake"
+      ],
+      "defense": "User education, antivirus",
+      "threatLevel": "Low",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Mobile Malware",
+      "description": "Malware targeting mobile devices.",
+      "category": "Mobile",
+      "tags": [
+        "mobile",
+        "app"
+      ],
+      "defense": "Mobile security solutions",
+      "threatLevel": "Medium",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "IoT Malware",
+      "description": "Malware targeting Internet of Things devices.",
+      "category": "IoT",
+      "tags": [
+        "iot",
+        "embedded"
+      ],
+      "defense": "Network segmentation, patching",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Scareware",
+      "description": "Fake software that scares users into taking action.",
+      "category": "Scareware",
+      "tags": [
+        "scam",
+        "fake"
+      ],
+      "defense": "User education, antivirus",
+      "threatLevel": "Low",
+      "difficulty": "Beginner"
+    },
+    {
+      "name": "Ransomware-as-a-Service (RaaS)",
+      "description": "Ransomware offered as a service to other criminals.",
+      "category": "Ransomware",
+      "tags": [
+        "ransomware",
+        "service"
+      ],
+      "defense": "Backups, EDR, threat intelligence",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Fileless Ransomware",
+      "description": "Ransomware that operates in memory without leaving files on disk.",
+      "category": "Ransomware",
+      "tags": [
+        "fileless",
+        "memory"
+      ],
+      "defense": "EDR, logging, backups",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Mobile Ransomware",
+      "description": "Ransomware targeting mobile devices.",
+      "category": "Ransomware",
+      "tags": [
+        "mobile",
+        "app"
+      ],
+      "defense": "Mobile security solutions, backups",
+      "threatLevel": "High",
+      "difficulty": "Intermediate"
+    },
+    {
+      "name": "IoT Ransomware",
+      "description": "Ransomware targeting Internet of Things devices.",
+      "category": "Ransomware",
+      "tags": [
+        "iot",
+        "embedded"
+      ],
+      "defense": "Network segmentation, patching, backups",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with Data Exfiltration",
+      "description": "Ransomware that also steals data to increase leverage.",
+      "category": "Ransomware",
+      "tags": [
+        "data theft",
+        "extortion"
+      ],
+      "defense": "Data loss prevention, EDR, backups",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with DDoS Threat",
+      "description": "Ransomware that threatens to launch DDoS attacks if ransom is not paid.",
+      "category": "Ransomware",
+      "tags": [
+        "ddos",
+        "extortion"
+      ],
+      "defense": "DDoS protection, EDR, backups",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with Public Shaming",
+      "description": "Ransomware that threatens to publicly release stolen data if ransom is not paid.",
+      "category": "Ransomware",
+      "tags": [
+        "public shaming",
+        "extortion"
+      ],
+      "defense": "Data loss prevention, EDR, backups",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with Supply Chain Attack",
+      "description": "Ransomware that spreads through compromised software updates or third-party vendors.",
+      "category": "Ransomware",
+      "tags": [
+        "supply chain",
+        "extortion"
+      ],
+      "defense": "Supply chain security, EDR, backups",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with Multi-Vector Attack",
+      "description": "Ransomware that uses multiple attack vectors to increase chances of success.",
+      "category": "Ransomware",
+      "tags": [
+        "multi-vector",
+        "extortion"
+      ],
+      "defense": "Comprehensive security strategy, EDR, backups",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with RaaS and Multi-Vector Attack",
+      "description": "Ransomware that combines RaaS with multiple attack vectors for maximum impact.",
+      "category": "Ransomware",
+      "tags": [
+        "raas",
+        "multi-vector",
+        "extortion"
+      ],
+      "defense": "Comprehensive security strategy, EDR, backups, threat intelligence",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with RaaS, Multi-Vector Attack, and Data Exfiltration",
+      "description": "Ransomware that combines RaaS, multiple attack vectors, and data exfiltration for maximum leverage.",
+      "category": "Ransomware",
+      "tags": [
+        "raas",
+        "multi-vector",
+        "data theft",
+        "extortion"
+      ],
+      "defense": "Comprehensive security strategy, EDR, backups, threat intelligence, data loss prevention",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with RaaS, Multi-Vector Attack, Data Exfiltration, and DDoS Threat",
+      "description": "Ransomware that combines RaaS, multiple attack vectors, data exfiltration, and DDoS threats for maximum impact and leverage.",
+      "category": "Ransomware",
+      "tags": [
+        "raas",
+        "multi-vector",
+        "data theft",
+        "ddos",
+        "extortion"
+      ],
+      "defense": "Comprehensive security strategy, EDR, backups, threat intelligence, data loss prevention, DDoS protection",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Ransomware with RaaS, Multi-Vector Attack, Data Exfiltration, DDoS Threat, and Public Shaming",
+      "description": "Ransomware that combines RaaS, multiple attack vectors, data exfiltration, DDoS threats, and public shaming for maximum impact and leverage.",
+      "category": "Ransomware",
+      "tags": [
+        "raas",
+        "multi-vector",
+        "data theft",
+        "ddos",
+        "public shaming",
+        "extortion"
+      ],
+      "defense": "Comprehensive security strategy, EDR, backups, threat intelligence, data loss prevention, DDoS protection, public relations strategy",
+      "threatLevel": "Critical",
+      "difficulty": "Advanced"
     }
   ],
   "defenseStrategies": {
@@ -1430,7 +1691,8 @@
         "options": [
           "To guess credentials through repeated attempts",
           "To overload a server with traffic",
-          "To exploit a software vulnerability"
+          "To exploit a software vulnerability",
+          "To redirect users to malicious sites"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1440,7 +1702,8 @@
         "options": [
           "Phishing",
           "SQL Injection",
-          "Man-in-the-Middle"
+          "Man-in-the-Middle",
+          "Password Spraying"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1450,7 +1713,8 @@
         "options": [
           "SQL Injection",
           "Cross-Site Scripting",
-          "DNS Spoofing"
+          "DNS Spoofing",
+          "Password Spraying"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1460,7 +1724,8 @@
         "options": [
           "To make a service unavailable",
           "To steal credentials",
-          "To encrypt user data"
+          "To encrypt user data",
+          "To redirect users to malicious sites"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1470,7 +1735,8 @@
         "options": [
           "Cross-Site Scripting (XSS)",
           "Phishing",
-          "Password Spraying"
+          "Password Spraying",
+          "DNS Spoofing"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1480,7 +1746,8 @@
         "options": [
           "DNS Spoofing",
           "ARP Poisoning",
-          "Session Hijacking"
+          "Session Hijacking",
+          "SQL Injection"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1490,7 +1757,8 @@
         "options": [
           "Gain higher-level access",
           "Steal credentials",
-          "Encrypt files"
+          "Encrypt files",
+          "Overload a server"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1500,7 +1768,8 @@
         "options": [
           "ARP Poisoning",
           "Phishing",
-          "Brute Force"
+          "Brute Force",
+          "SQL Injection"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1510,7 +1779,8 @@
         "options": [
           "Websites frequently visited by victims",
           "Email servers",
-          "Cloud storage providers"
+          "Cloud storage providers",
+          "DNS servers"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1520,7 +1790,8 @@
         "options": [
           "Supply Chain Attack",
           "XSS",
-          "MITM"
+          "MITM",
+          "Phishing"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1530,7 +1801,8 @@
         "options": [
           "Using leaked credentials to access accounts",
           "Guessing passwords manually",
-          "Intercepting login traffic"
+          "Intercepting login traffic",
+          "Exploiting software vulnerabilities"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1540,7 +1812,8 @@
         "options": [
           "Vulnerability Exploitation",
           "Phishing",
-          "DDoS"
+          "DDoS",
+          "Password Spraying"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1550,7 +1823,8 @@
         "options": [
           "Gather information about a target",
           "Encrypt data",
-          "Modify system logs"
+          "Modify system logs",
+          "Steal credentials"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1672,7 +1946,8 @@
         "options": [
           "Encrypt files for payment",
           "Steal login credentials",
-          "Monitor user activity"
+          "Monitor user activity",
+          "Display unwanted ads"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1682,7 +1957,8 @@
         "options": [
           "Worm",
           "Trojan",
-          "Spyware"
+          "Spyware",
+          "Adware"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1692,7 +1968,8 @@
         "options": [
           "User execution",
           "Network scanning",
-          "Privilege escalation"
+          "Privilege escalation",
+          "Automatic propagation"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1702,7 +1979,8 @@
         "options": [
           "Trojan",
           "Rootkit",
-          "Worm"
+          "Worm",
+          "Adware"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1712,7 +1990,8 @@
         "options": [
           "Collect user information secretly",
           "Encrypt system files",
-          "Destroy system boot records"
+          "Destroy system boot records",
+          "Display unwanted ads"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1722,7 +2001,8 @@
         "options": [
           "Hide malicious activity",
           "Spread across networks",
-          "Encrypt user data"
+          "Encrypt user data",
+          "Display unwanted ads"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1732,7 +2012,8 @@
         "options": [
           "Keylogger",
           "Adware",
-          "Worm"
+          "Worm",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1742,7 +2023,8 @@
         "options": [
           "Compromised devices",
           "Encrypted backups",
-          "Firewall misconfigurations"
+          "Firewall misconfigurations",
+          "DNS spoofing"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1752,7 +2034,8 @@
         "options": [
           "Bootkit",
           "Adware",
-          "Spyware"
+          "Spyware",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1762,7 +2045,8 @@
         "options": [
           "Worms self-propagate without a host file",
           "Viruses spread faster",
-          "Worms require user execution"
+          "Worms require user execution",
+          "Viruses do not cause damage"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1772,7 +2056,8 @@
         "options": [
           "Adware",
           "Spyware",
-          "Ransomware"
+          "Ransomware",
+          "Rootkit"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1782,7 +2067,8 @@
         "options": [
           "Memory",
           "Disk partitions",
-          "Firmware"
+          "Firmware",
+          "Cloud storage"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1792,7 +2078,8 @@
         "options": [
           "Botnet",
           "Trojan",
-          "Keylogger"
+          "Keylogger",
+          "Adware"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1802,7 +2089,8 @@
         "options": [
           "Change its code to evade detection",
           "Spread only through USB devices",
-          "Encrypt system files"
+          "Encrypt system files",
+          "Steal user credentials"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1812,7 +2100,8 @@
         "options": [
           "MBR Virus",
           "Adware",
-          "Spyware"
+          "Spyware",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1901,7 +2190,8 @@
         "options": [
           "Control incoming and outgoing network traffic",
           "Encrypt stored data",
-          "Scan for malware"
+          "Scan for malware",
+          "Monitor user behavior"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1911,7 +2201,8 @@
         "options": [
           "RBAC",
           "NAT",
-          "DNS"
+          "DNS",
+          "Load Balancing"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1921,7 +2212,8 @@
         "options": [
           "Requiring multiple verification methods",
           "Encrypting all network traffic",
-          "Blocking all unknown IPs"
+          "Blocking all unknown IPs",
+          "Monitoring user behavior"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1931,7 +2223,8 @@
         "options": [
           "Limiting lateral movement",
           "Increasing bandwidth",
-          "Improving Wi-Fi coverage"
+          "Improving Wi-Fi coverage",
+          "Encrypting data in transit"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1941,7 +2234,8 @@
         "options": [
           "Intrusion Detection",
           "Firewall Filtering",
-          "DNS Caching"
+          "DNS Caching",
+          "Password Rotation"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -1951,7 +2245,8 @@
         "options": [
           "No user or device is trusted by default",
           "All internal traffic is safe",
-          "Only external users need verification"
+          "Only external users need verification",
+          "Encryption is not necessary"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1961,7 +2256,8 @@
         "options": [
           "Fix vulnerabilities and improve security",
           "Increase system speed",
-          "Remove unused applications"
+          "Remove unused applications",
+          "Encrypt sensitive data"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1971,7 +2267,8 @@
         "options": [
           "Making it unreadable without a key",
           "Blocking unauthorized IPs",
-          "Scanning for malware"
+          "Scanning for malware",
+          "Monitoring user behavior"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -1981,7 +2278,8 @@
         "options": [
           "UEBA",
           "VPN",
-          "NAT"
+          "NAT",
+          "DNSSEC"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -1991,7 +2289,8 @@
         "options": [
           "Attract and analyze attackers",
           "Encrypt sensitive data",
-          "Improve network speed"
+          "Improve network speed",
+          "Block all external traffic"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2001,7 +2300,8 @@
         "options": [
           "Secure individual devices",
           "Monitor network traffic",
-          "Manage cloud resources"
+          "Manage cloud resources",
+          "Establish VPN connections"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2011,7 +2311,8 @@
         "options": [
           "Role-Based Access Control",
           "Network Address Translation",
-          "Load Balancing"
+          "Load Balancing",
+          "DNS Caching"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2021,7 +2322,8 @@
         "options": [
           "Unauthorized data exfiltration",
           "Malware infections",
-          "Network outages"
+          "Network outages",
+          "Phishing attacks"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2031,7 +2333,8 @@
         "options": [
           "Hashing",
           "VPN",
-          "Firewall"
+          "Firewall",
+          "DNSSEC"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2041,7 +2344,8 @@
         "options": [
           "Aggregate and analyze security logs",
           "Encrypt network traffic",
-          "Block malicious IPs"
+          "Block malicious IPs",
+          "Manage user access"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2051,7 +2355,8 @@
         "options": [
           "Using multiple layers of security controls",
           "Encrypting data twice",
-          "Blocking all external traffic"
+          "Blocking all external traffic",
+          "Relying on a single security solution"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2061,7 +2366,8 @@
         "options": [
           "Badge systems",
           "VPN",
-          "Firewall rules"
+          "Firewall rules",
+          "DNSSEC"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2071,7 +2377,8 @@
         "options": [
           "Only compliant devices can connect",
           "All traffic is encrypted",
-          "All users have admin rights"
+          "All users have admin rights",
+          "All external IPs are blocked"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2081,7 +2388,8 @@
         "options": [
           "Educate users on threats and safe practices",
           "Improve system performance",
-          "Reduce network latency"
+          "Reduce network latency",
+          "Encrypt sensitive data"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2091,7 +2399,8 @@
         "options": [
           "Microsegmentation",
           "Load Balancing",
-          "DNS Filtering"
+          "DNS Filtering",
+          "VPN"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2158,7 +2467,8 @@
         "options": [
           "Preparation",
           "Containment",
-          "Eradication"
+          "Eradication",
+          "Lessons Learned"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2168,7 +2478,8 @@
         "options": [
           "Containment",
           "Recovery",
-          "Lessons Learned"
+          "Lessons Learned",
+          "Eradication"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2178,7 +2489,8 @@
         "options": [
           "Eradication",
           "Identification",
-          "Preparation"
+          "Preparation",
+          "Lessons Learned"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2188,7 +2500,8 @@
         "options": [
           "Determine if an incident has occurred",
           "Restore systems",
-          "Document lessons learned"
+          "Document lessons learned",
+          "Isolate affected systems"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2198,7 +2511,8 @@
         "options": [
           "Restoring systems to normal operation",
           "Collecting forensic evidence",
-          "Blocking malicious IPs"
+          "Blocking malicious IPs",
+          "Documenting the incident"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2208,7 +2522,8 @@
         "options": [
           "Improve future response processes",
           "Remove malware",
-          "Notify stakeholders"
+          "Notify stakeholders",
+          "Isolate affected systems"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2218,7 +2533,8 @@
         "options": [
           "CSIRT",
           "HR Department",
-          "Marketing Team"
+          "Marketing Team",
+          "Finance Department"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2228,7 +2544,8 @@
         "options": [
           "Identification",
           "Containment",
-          "Recovery"
+          "Recovery",
+          "Lessons Learned"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2238,7 +2555,8 @@
         "options": [
           "Provide step-by-step procedures for specific incidents",
           "Encrypt sensitive data",
-          "Monitor network traffic"
+          "Monitor network traffic",
+          "Block malicious IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2248,7 +2566,8 @@
         "options": [
           "Isolating affected systems",
           "Rebuilding servers",
-          "Conducting user training"
+          "Conducting user training",
+          "Documenting lessons learned"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2304,7 +2623,8 @@
         "options": [
           "Initial Access",
           "Execution",
-          "Persistence"
+          "Persistence",
+          "Discovery"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2314,7 +2634,8 @@
         "options": [
           "Execution",
           "Discovery",
-          "Impact"
+          "Impact",
+          "Exfiltration"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2324,7 +2645,8 @@
         "options": [
           "Credential Access",
           "Lateral Movement",
-          "Collection"
+          "Collection",
+          "Exfiltration"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2334,7 +2656,8 @@
         "options": [
           "Persistence",
           "Impact",
-          "Reconnaissance"
+          "Reconnaissance",
+          "Exfiltration"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2344,7 +2667,8 @@
         "options": [
           "Defense Evasion",
           "Execution",
-          "Discovery"
+          "Discovery",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2354,7 +2678,8 @@
         "options": [
           "Exfiltration",
           "Impact",
-          "Collection"
+          "Collection",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2364,7 +2689,8 @@
         "options": [
           "Discovery",
           "Execution",
-          "Initial Access"
+          "Initial Access",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2374,7 +2700,8 @@
         "options": [
           "Communicate with compromised systems",
           "Encrypt data",
-          "Scan for vulnerabilities"
+          "Scan for vulnerabilities",
+          "Block network traffic"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2384,7 +2711,8 @@
         "options": [
           "Valid Accounts",
           "Brute Force",
-          "Spearphishing"
+          "Spearphishing",
+          "Watering Hole"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2394,7 +2722,8 @@
         "options": [
           "Disrupt availability or integrity",
           "Gain initial access",
-          "Collect credentials"
+          "Collect credentials",
+          "Maintain persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2404,7 +2733,8 @@
         "options": [
           "Collection",
           "Execution",
-          "Discovery"
+          "Discovery",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2414,7 +2744,8 @@
         "options": [
           "Gain higher-level permissions",
           "Encrypt system files",
-          "Scan network ports"
+          "Scan network ports",
+          "Exfiltrate data"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2424,7 +2755,8 @@
         "options": [
           "Reconnaissance",
           "Persistence",
-          "Impact"
+          "Impact",
+          "Exfiltration"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2491,7 +2823,8 @@
         "options": [
           "Packet analysis",
           "Password cracking",
-          "Log aggregation"
+          "Log aggregation",
+          "Cloud security monitoring"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2501,7 +2834,8 @@
         "options": [
           "Network scanning and enumeration",
           "Encrypting data",
-          "Managing cloud resources"
+          "Managing cloud resources",
+          "Monitoring user behavior"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2511,7 +2845,8 @@
         "options": [
           "John the Ripper",
           "Splunk",
-          "Burp Suite"
+          "Burp Suite",
+          "OSSEC"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2521,7 +2856,8 @@
         "options": [
           "Web application security testing",
           "Firewall configuration",
-          "Endpoint protection"
+          "Endpoint protection",
+          "Cloud monitoring"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2531,7 +2867,8 @@
         "options": [
           "SIEM platform",
           "Packet sniffer",
-          "Malware scanner"
+          "Malware scanner",
+          "Cloud security tool"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2541,7 +2878,8 @@
         "options": [
           "Ghidra",
           "Nmap",
-          "Nessus"
+          "Nessus",
+          "OSSEC"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2551,7 +2889,8 @@
         "options": [
           "Vulnerability scanning",
           "Network routing",
-          "Log management"
+          "Log management",
+          "Threat intelligence sharing"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2561,7 +2900,8 @@
         "options": [
           "Host-based intrusion detection system",
           "Packet analyzer",
-          "Password manager"
+          "Password manager",
+          "Cloud security platform"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2571,7 +2911,8 @@
         "options": [
           "OWASP ZAP",
           "Wireshark",
-          "Metasploit"
+          "Metasploit",
+          "Splunk"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2581,7 +2922,8 @@
         "options": [
           "Penetration testing framework",
           "Cloud monitoring tool",
-          "Firewall appliance"
+          "Firewall appliance",
+          "SIEM platform"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2626,7 +2968,8 @@
         "options": [
           "Security duties are split between provider and customer",
           "The provider handles all security",
-          "The customer handles all security"
+          "The customer handles all security",
+          "Security is not a concern in the cloud"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2636,7 +2979,8 @@
         "options": [
           "IaaS",
           "PaaS",
-          "SaaS"
+          "SaaS",
+          "FaaS"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2646,7 +2990,8 @@
         "options": [
           "Control access to cloud resources",
           "Encrypt all network traffic",
-          "Monitor CPU usage"
+          "Monitor CPU usage",
+          "Manage local user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2656,7 +3001,8 @@
         "options": [
           "Data exposure",
           "DDoS attack",
-          "Phishing"
+          "Phishing",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2666,7 +3012,8 @@
         "options": [
           "Data at rest and in transit",
           "Only network traffic",
-          "Only user passwords"
+          "Only user passwords",
+          "Only API keys"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2676,7 +3023,8 @@
         "options": [
           "CSPM",
           "VPN",
-          "Load Balancer"
+          "Load Balancer",
+          "Firewall"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2686,7 +3034,8 @@
         "options": [
           "Resource sharing increases attack surface",
           "Users cannot access the cloud",
-          "Data cannot be encrypted"
+          "Data cannot be encrypted",
+          "Cloud services are slower"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2696,7 +3045,8 @@
         "options": [
           "Virtualization",
           "DNS",
-          "NAT"
+          "NAT",
+          "Firewall"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2706,7 +3056,8 @@
         "options": [
           "Enforce security policies between users and cloud services",
           "Manage encryption keys",
-          "Scan local networks"
+          "Scan local networks",
+          "Monitor physical access"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2716,7 +3067,8 @@
         "options": [
           "Weak or reused credentials",
           "High CPU usage",
-          "Slow network speeds"
+          "Slow network speeds",
+          "Unpatched local software"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2761,7 +3113,8 @@
         "options": [
           "Encrypt traffic between a user and a network",
           "Block malicious IP addresses",
-          "Scan for vulnerabilities"
+          "Scan for vulnerabilities",
+          "Manage user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2771,7 +3124,8 @@
         "options": [
           "HTTPS",
           "FTP",
-          "Telnet"
+          "Telnet",
+          "SNMP"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2781,7 +3135,8 @@
         "options": [
           "Isolate public-facing services",
           "Increase Wi-Fi speed",
-          "Store encrypted backups"
+          "Store encrypted backups",
+          "Monitor endpoint behavior"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2791,7 +3146,8 @@
         "options": [
           "IPS",
           "Switch",
-          "Load Balancer"
+          "Load Balancer",
+          "DNS Server"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2801,7 +3157,8 @@
         "options": [
           "Identifying open ports and services",
           "Encrypting network traffic",
-          "Blocking unauthorized users"
+          "Blocking unauthorized users",
+          "Monitoring endpoint behavior"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2811,7 +3168,8 @@
         "options": [
           "SSH",
           "HTTP",
-          "SMTP"
+          "SMTP",
+          "FTP"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2821,7 +3179,8 @@
         "options": [
           "Lateral movement by attackers",
           "Email phishing",
-          "Password reuse"
+          "Password reuse",
+          "Data loss from endpoints"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2831,7 +3190,8 @@
         "options": [
           "Encryption for data in transit",
           "Firewall filtering",
-          "Network routing"
+          "Network routing",
+          "User authentication"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2841,7 +3201,8 @@
         "options": [
           "Wireshark",
           "Nessus",
-          "Metasploit"
+          "Metasploit",
+          "Splunk"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2851,7 +3212,8 @@
         "options": [
           "Logically segment networks",
           "Encrypt wireless traffic",
-          "Block malicious domains"
+          "Block malicious domains",
+          "Monitor endpoint behavior"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2861,7 +3223,8 @@
         "options": [
           "Detect suspicious network activity",
           "Encrypt stored data",
-          "Manage cloud resources"
+          "Manage cloud resources",
+          "Block unauthorized IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2871,7 +3234,8 @@
         "options": [
           "ARP Spoofing",
           "DNS Tunneling",
-          "SQL Injection"
+          "SQL Injection",
+          "Cross-Site Scripting"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2881,7 +3245,8 @@
         "options": [
           "Act as an intermediary between users and the internet",
           "Encrypt all network traffic",
-          "Scan for malware"
+          "Scan for malware",
+          "Manage user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2891,7 +3256,8 @@
         "options": [
           "Network access control",
           "Wireless encryption",
-          "Routing traffic"
+          "Routing traffic",
+          "DNS resolution"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -2901,7 +3267,8 @@
         "options": [
           "WPA3",
           "FTP",
-          "SNMP"
+          "SNMP",
+          "Telnet"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2946,7 +3313,8 @@
         "options": [
           "Monitor, detect, and respond to security incidents",
           "Develop new software",
-          "Manage HR policies"
+          "Manage HR policies",
+          "Design marketing campaigns"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2956,7 +3324,8 @@
         "options": [
           "Alert triage",
           "Threat hunting",
-          "Patch management"
+          "Patch management",
+          "User training"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2966,7 +3335,8 @@
         "options": [
           "Aggregating and correlating logs",
           "Encrypting network traffic",
-          "Managing user passwords"
+          "Managing user passwords",
+          "Blocking unauthorized IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2976,7 +3346,8 @@
         "options": [
           "Tier 1 Analyst",
           "CISO",
-          "Network Engineer"
+          "Network Engineer",
+          "HR Specialist"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -2986,7 +3357,8 @@
         "options": [
           "An alert requires deeper investigation",
           "A system is rebooted",
-          "A user forgets their password"
+          "A user forgets their password",
+          "A firewall rule is updated"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -2996,7 +3368,8 @@
         "options": [
           "Proactively searching for hidden threats",
           "Resetting user accounts",
-          "Updating firewall rules"
+          "Updating firewall rules",
+          "Encrypting logs"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3006,7 +3379,8 @@
         "options": [
           "Authentication logs",
           "DNS logs",
-          "Backup logs"
+          "Backup logs",
+          "Application logs"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3016,7 +3390,8 @@
         "options": [
           "Identify patterns across multiple events",
           "Encrypt stored data",
-          "Improve network speed"
+          "Improve network speed",
+          "Block malicious IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3026,7 +3401,8 @@
         "options": [
           "Step-by-step procedures for handling alerts",
           "A list of blocked IP addresses",
-          "A backup of system files"
+          "A backup of system files",
+          "A map of the network topology"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3036,7 +3412,8 @@
         "options": [
           "MTTR (Mean Time to Respond)",
           "CPU utilization",
-          "Bandwidth usage"
+          "Bandwidth usage",
+          "User login frequency"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3323,7 +3700,8 @@
         "options": [
           "Control network traffic",
           "Encrypt data",
-          "Scan for malware"
+          "Scan for malware",
+          "Manage user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3333,7 +3711,8 @@
         "options": [
           "Brute force",
           "Phishing",
-          "SQL injection"
+          "SQL injection",
+          "MITM"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3343,7 +3722,8 @@
         "options": [
           "Encrypt files for payment",
           "Steal credentials",
-          "Monitor user activity"
+          "Monitor user activity",
+          "Spread across networks"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3353,7 +3733,8 @@
         "options": [
           "Encrypted web communication",
           "Faster browsing",
-          "Malware protection"
+          "Malware protection",
+          "DNS security"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3363,7 +3744,8 @@
         "options": [
           "SaaS",
           "IaaS",
-          "PaaS"
+          "PaaS",
+          "MaaS"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3373,7 +3755,8 @@
         "options": [
           "Preparation",
           "Containment",
-          "Recovery"
+          "Recovery",
+          "Eradication"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3383,7 +3766,8 @@
         "options": [
           "Wireshark",
           "Nmap",
-          "Metasploit"
+          "Metasploit",
+          "Splunk"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3393,7 +3777,8 @@
         "options": [
           "Initial Access",
           "Execution",
-          "Impact"
+          "Impact",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3403,7 +3788,8 @@
         "options": [
           "Self-replicates without a host file",
           "Requires user execution",
-          "Only spreads via USB"
+          "Only spreads via USB",
+          "Is always fileless"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3413,7 +3799,8 @@
         "options": [
           "Add additional verification factors",
           "Encrypt data",
-          "Block all unknown IPs"
+          "Block all unknown IPs",
+          "Scan for vulnerabilities"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3423,7 +3810,8 @@
         "options": [
           "Man-in-the-Middle",
           "Brute force",
-          "Ransomware"
+          "Ransomware",
+          "SQL Injection"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3433,7 +3821,8 @@
         "options": [
           "Network scanning",
           "Password cracking",
-          "Log analysis"
+          "Log analysis",
+          "Cloud monitoring"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3443,7 +3832,8 @@
         "options": [
           "Lateral movement",
           "Phishing",
-          "Password reuse"
+          "Password reuse",
+          "DDoS attacks"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3453,7 +3843,8 @@
         "options": [
           "Credential Access",
           "Discovery",
-          "Impact"
+          "Impact",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3463,7 +3854,8 @@
         "options": [
           "Aggregate and analyze logs",
           "Encrypt network traffic",
-          "Manage cloud storage"
+          "Manage cloud storage",
+          "Block malicious IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3473,7 +3865,8 @@
         "options": [
           "Keylogger",
           "Adware",
-          "Worm"
+          "Worm",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3483,7 +3876,8 @@
         "options": [
           "Isolate public-facing services",
           "Improve Wi-Fi",
-          "Store backups"
+          "Store backups",
+          "Encrypt data"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3493,7 +3887,8 @@
         "options": [
           "Stop the spread of an active threat",
           "Restore systems",
-          "Document lessons learned"
+          "Document lessons learned",
+          "Identify the attack vector"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3503,7 +3898,8 @@
         "options": [
           "CSPM",
           "VPN",
-          "Load balancer"
+          "Load balancer",
+          "Firewall"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3513,7 +3909,8 @@
         "options": [
           "Data in transit",
           "Data at rest",
-          "Firmware"
+          "Firmware",
+          "User credentials"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3523,7 +3920,8 @@
         "options": [
           "SQL Injection",
           "XSS",
-          "DNS Spoofing"
+          "DNS Spoofing",
+          "MITM"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3533,7 +3931,8 @@
         "options": [
           "Hide malicious activity",
           "Encrypt files",
-          "Scan networks"
+          "Scan networks",
+          "Block IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3543,7 +3942,8 @@
         "options": [
           "Defense Evasion",
           "Execution",
-          "Discovery"
+          "Discovery",
+          "Impact"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3553,7 +3953,8 @@
         "options": [
           "Prevent lateral movement",
           "Increase bandwidth",
-          "Encrypt data"
+          "Encrypt data",
+          "Manage user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3563,7 +3964,8 @@
         "options": [
           "Memory",
           "Disk",
-          "Firmware"
+          "Firmware",
+          "Cloud storage"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3573,7 +3975,8 @@
         "options": [
           "Ghidra",
           "Nmap",
-          "Nessus"
+          "Nessus",
+          "Wireshark"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3583,7 +3986,8 @@
         "options": [
           "Attract and analyze attackers",
           "Encrypt data",
-          "Improve routing"
+          "Improve routing",
+          "Manage user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3593,7 +3997,8 @@
         "options": [
           "ARP Spoofing",
           "DNS Tunneling",
-          "MITM"
+          "MITM",
+          "SQL Injection"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3603,7 +4008,8 @@
         "options": [
           "Proactively searching for hidden threats",
           "Resetting user accounts",
-          "Updating firewall rules"
+          "Updating firewall rules",
+          "Monitoring CPU usage"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3613,7 +4019,8 @@
         "options": [
           "Collection",
           "Execution",
-          "Impact"
+          "Impact",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3623,7 +4030,8 @@
         "options": [
           "Ensure data integrity",
           "Encrypt data",
-          "Block IPs"
+          "Block IPs",
+          "Scan for malware"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3633,7 +4041,8 @@
         "options": [
           "Worm",
           "Trojan",
-          "Adware"
+          "Adware",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3643,7 +4052,8 @@
         "options": [
           "Acts as an intermediary between users and the internet",
           "Encrypts all traffic",
-          "Scans for malware"
+          "Scans for malware",
+          "Manages cloud resources"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3653,7 +4063,8 @@
         "options": [
           "Data exposure",
           "Phishing",
-          "DDoS"
+          "DDoS",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3663,7 +4074,8 @@
         "options": [
           "Gain higher-level permissions",
           "Encrypt files",
-          "Scan ports"
+          "Scan ports",
+          "Block IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3673,7 +4085,8 @@
         "options": [
           "Ensure only compliant devices connect",
           "Encrypt data",
-          "Manage DNS"
+          "Manage DNS",
+          "Scan for vulnerabilities"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3683,7 +4096,8 @@
         "options": [
           "Burp Suite",
           "Wireshark",
-          "Splunk"
+          "Splunk",
+          "Nmap"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3693,7 +4107,8 @@
         "options": [
           "Steps for handling alerts",
           "A list of blocked IPs",
-          "Backup procedures"
+          "Backup procedures",
+          "Encryption keys"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3703,7 +4118,8 @@
         "options": [
           "WPA3",
           "FTP",
-          "SNMP"
+          "SNMP",
+          "HTTP"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3713,7 +4129,8 @@
         "options": [
           "Prevent unauthorized data exfiltration",
           "Improve network speed",
-          "Encrypt all traffic"
+          "Encrypt all traffic",
+          "Manage user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3723,7 +4140,8 @@
         "options": [
           "Watering hole attack",
           "Phishing",
-          "Brute force"
+          "Brute force",
+          "SQL injection"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3733,7 +4151,8 @@
         "options": [
           "The system boot process",
           "Browser extensions",
-          "Cloud storage"
+          "Cloud storage",
+          "Email servers"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3743,7 +4162,8 @@
         "options": [
           "Enforce security policies between users and cloud services",
           "Encrypt local disks",
-          "Monitor CPU usage"
+          "Monitor CPU usage",
+          "Scan for malware"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3753,7 +4173,8 @@
         "options": [
           "Defense Evasion",
           "Initial Access",
-          "Impact"
+          "Impact",
+          "Discovery"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3763,7 +4184,8 @@
         "options": [
           "Preserve evidence for investigation",
           "Speed up recovery",
-          "Encrypt data"
+          "Encrypt data",
+          "Block malicious IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3773,7 +4195,8 @@
         "options": [
           "Nessus",
           "Metasploit",
-          "Wireshark"
+          "Wireshark",
+          "Splunk"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3783,7 +4206,8 @@
         "options": [
           "User and entity behavior",
           "Network routing",
-          "Cloud billing"
+          "Cloud billing",
+          "Firmware updates"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3793,7 +4217,8 @@
         "options": [
           "DNS Spoofing",
           "ARP Poisoning",
-          "SQL Injection"
+          "SQL Injection",
+          "XSS"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3803,7 +4228,8 @@
         "options": [
           "Restore systems to normal operation",
           "Identify the incident",
-          "Collect evidence"
+          "Collect evidence",
+          "Contain the threat"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3813,7 +4239,8 @@
         "options": [
           "SSH",
           "HTTP",
-          "SMTP"
+          "SMTP",
+          "FTP"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3823,7 +4250,8 @@
         "options": [
           "Gather information about a target",
           "Encrypt data",
-          "Modify logs"
+          "Modify logs",
+          "Block IPs"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3833,7 +4261,8 @@
         "options": [
           "Adware",
           "Spyware",
-          "Trojan"
+          "Trojan",
+          "Ransomware"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3843,7 +4272,8 @@
         "options": [
           "Distributes traffic across servers",
           "Encrypts data",
-          "Scans for malware"
+          "Scans for malware",
+          "Manages user accounts"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3853,7 +4283,8 @@
         "options": [
           "Exfiltration",
           "Impact",
-          "Discovery"
+          "Discovery",
+          "Persistence"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3863,7 +4294,8 @@
         "options": [
           "Identify patterns across events",
           "Encrypt logs",
-          "Block IPs"
+          "Block IPs",
+          "Improve network speed"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3873,7 +4305,8 @@
         "options": [
           "Credential stuffing",
           "Password spraying",
-          "MITM"
+          "MITM",
+          "SQL Injection"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3883,7 +4316,8 @@
         "options": [
           "Workload isolation",
           "Faster internet",
-          "Automatic backups"
+          "Automatic backups",
+            "Network Translation"
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
@@ -3893,7 +4327,8 @@
         "options": [
           "Metasploit",
           "Nmap",
-          "Wireshark"
+          "Wireshark",
+          "Splunk"
         ],
         "answerIndex": 0,
         "difficulty": "Advanced"
@@ -3903,7 +4338,8 @@
         "options": [
           "Improve future response processes",
           "Remove malware",
-          "Notify users"
+          "Notify users",
+          "Restore systems"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
@@ -3913,7 +4349,8 @@
         "options": [
           "TLS",
           "FTP",
-          "ICMP"
+          "ICMP",
+          "SNMP"
         ],
         "answerIndex": 0,
         "difficulty": "Intermediate"
