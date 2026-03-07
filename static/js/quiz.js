@@ -6,6 +6,11 @@ async function loadQuizData() {
   return await res.json().then(d => d.quizzes);
 }
 
+async function loadQuizData1() {
+  const resOne = await fetch("content1.json");
+  return await resOne.json().then(d => d.quizzes);
+}
+
 // ---------------------------------------------------------
 // Utility: Random subset
 // ---------------------------------------------------------
