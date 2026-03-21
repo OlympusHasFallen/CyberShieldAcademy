@@ -1,6 +1,454 @@
 {
   "threatActors": [
     {
+      "name": "APT1 (Comment Crew)",
+      "description": "A Chinese state-sponsored group known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2013 US Department of Defense Hack",
+        "2012 US Energy Sector Hack"
+      ],
+      
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from APT1.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+  {
+    "name": "APT2",
+    "description": "A China-linked cyber espionage group targeting defense and technology sectors.",
+    "origin": "China",
+    "motivation": "Intelligence gathering",
+    "notableAttacks": [
+      "Defense Contractor Breaches",
+      "Technology Sector Espionage"
+    ],
+    "tags": [
+      "State-Sponsored",
+      "Cyber Espionage"
+    ],
+    "defense": "Use strong access controls and monitor outbound traffic for anomalies.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT3 (Gothic Panda)",
+    "description": "A Chinese threat group known for exploiting zero-day vulnerabilities in enterprise systems.",
+    "origin": "China",
+    "motivation": "Cyber espionage",
+    "notableAttacks": [
+      "Adobe Flash Zero-Day Exploits",
+      "US Government Contractor Attacks"
+    ],
+    "tags": [
+      "State-Sponsored",
+      "Zero-Day Exploits"
+    ],
+    "defense": "Patch systems promptly and deploy intrusion detection systems.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT4",
+    "description": "A China-linked group involved in targeting financial and industrial sectors.",
+    "origin": "China",
+    "motivation": "Economic intelligence",
+    "notableAttacks": [
+      "Financial Sector Intrusions"
+    ],
+    "tags": [
+      "Cyber Espionage",
+      "Financial Targeting"
+    ],
+    "defense": "Use behavioral analytics and enforce strong authentication.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT5 (Keyhole Panda)",
+    "description": "A Chinese APT group targeting telecommunications and satellite industries.",
+    "origin": "China",
+    "motivation": "Strategic intelligence",
+    "notableAttacks": [
+      "Satellite Communications Breaches"
+    ],
+    "tags": [
+      "State-Sponsored",
+      "Telecom Targeting"
+    ],
+    "defense": "Implement network segmentation and monitor privileged access.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT6",
+    "description": "A Chinese threat group associated with long-term espionage campaigns.",
+    "origin": "China",
+    "motivation": "Intelligence collection",
+    "notableAttacks": [
+      "Government Network Intrusions"
+    ],
+    "tags": [
+      "Cyber Espionage"
+    ],
+    "defense": "Use threat intelligence feeds and anomaly detection.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT7",
+    "description": "A China-based group focused on stealing intellectual property.",
+    "origin": "China",
+    "motivation": "Economic gain",
+    "notableAttacks": [
+      "Manufacturing Sector Attacks"
+    ],
+    "tags": [
+      "IP Theft"
+    ],
+    "defense": "Encrypt sensitive data and monitor access logs.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT8",
+    "description": "A Chinese group targeting defense and aerospace industries.",
+    "origin": "China",
+    "motivation": "Strategic intelligence",
+    "notableAttacks": [
+      "Aerospace Contractor Breaches"
+    ],
+    "tags": [
+      "Defense Targeting"
+    ],
+    "defense": "Harden endpoints and use MFA.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT9",
+    "description": "A Chinese threat group known for supply chain attacks.",
+    "origin": "China",
+    "motivation": "Espionage",
+    "notableAttacks": [
+      "Managed Service Provider Compromises"
+    ],
+    "tags": [
+      "Supply Chain Attacks"
+    ],
+    "defense": "Audit third-party access and monitor vendor activity.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT10 (Stone Panda)",
+    "description": "A Chinese group known for large-scale global espionage campaigns via MSPs.",
+    "origin": "China",
+    "motivation": "Cyber espionage",
+    "notableAttacks": [
+      "Cloud Hopper Campaign"
+    ],
+    "tags": [
+      "State-Sponsored",
+      "Supply Chain"
+    ],
+    "defense": "Secure MSP connections and enforce strong identity controls.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT11",
+    "description": "A Chinese group targeting gaming and software industries.",
+    "origin": "China",
+    "motivation": "Intellectual property theft",
+    "notableAttacks": [
+      "Gaming Industry Breaches"
+    ],
+    "tags": [
+      "IP Theft"
+    ],
+    "defense": "Implement code integrity checks and monitoring.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT12 (Numbered Panda)",
+    "description": "A Chinese cyber espionage group targeting journalists and NGOs.",
+    "origin": "China",
+    "motivation": "Surveillance",
+    "notableAttacks": [
+      "Media Organization Attacks"
+    ],
+    "tags": [
+      "Cyber Espionage"
+    ],
+    "defense": "Use phishing awareness training and email filtering.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT13",
+    "description": "A Chinese group focusing on telecom and data exfiltration.",
+    "origin": "China",
+    "motivation": "Data collection",
+    "notableAttacks": [
+      "Telecom Network Breaches"
+    ],
+    "tags": [
+      "Telecom Targeting"
+    ],
+    "defense": "Monitor network traffic and apply strict firewall rules.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT14",
+    "description": "A Chinese cyber espionage group targeting government networks.",
+    "origin": "China",
+    "motivation": "Political intelligence",
+    "notableAttacks": [
+      "Government Intrusions"
+    ],
+    "tags": [
+      "Government Targeting"
+    ],
+    "defense": "Apply zero trust architecture.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT15 (Ke3chang)",
+    "description": "A Chinese group targeting diplomatic entities.",
+    "origin": "China",
+    "motivation": "Political espionage",
+    "notableAttacks": [
+      "European Diplomatic Attacks"
+    ],
+    "tags": [
+      "Diplomatic Targeting"
+    ],
+    "defense": "Use endpoint protection and secure communications.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT16",
+    "description": "A China-linked group focused on industrial espionage.",
+    "origin": "China",
+    "motivation": "Economic intelligence",
+    "notableAttacks": [
+      "Manufacturing Sector Attacks"
+    ],
+    "tags": [
+      "Industrial Espionage"
+    ],
+    "defense": "Segment industrial networks and monitor ICS traffic.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT17 (DeputyDog)",
+    "description": "A Chinese group known for targeting US companies.",
+    "origin": "China",
+    "motivation": "Corporate espionage",
+    "notableAttacks": [
+      "US Technology Company Breaches"
+    ],
+    "tags": [
+      "Corporate Espionage"
+    ],
+    "defense": "Use SIEM monitoring and patch vulnerabilities.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT18 (Dynamite Panda)",
+    "description": "A Chinese group targeting aerospace and defense.",
+    "origin": "China",
+    "motivation": "Strategic intelligence",
+    "notableAttacks": [
+      "Aerospace Sector Intrusions"
+    ],
+    "tags": [
+      "Defense Targeting"
+    ],
+    "defense": "Deploy network segmentation and EDR tools.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT19 (Deep Panda)",
+    "description": "A Chinese group focused on healthcare and financial sectors.",
+    "origin": "China",
+    "motivation": "Data theft",
+    "notableAttacks": [
+      "Healthcare Data Breaches"
+    ],
+    "tags": [
+      "Healthcare Targeting"
+    ],
+    "defense": "Encrypt sensitive data and monitor for exfiltration.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT20 (Violin Panda)",
+    "description": "A Chinese group known for web server exploitation.",
+    "origin": "China",
+    "motivation": "Espionage",
+    "notableAttacks": [
+      "Web Server Compromises"
+    ],
+    "tags": [
+      "Web Exploitation"
+    ],
+    "defense": "Harden web servers and apply WAF protections.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT21",
+    "description": "A Chinese cyber espionage group targeting critical infrastructure.",
+    "origin": "China",
+    "motivation": "Strategic intelligence",
+    "notableAttacks": [
+      "Infrastructure Attacks"
+    ],
+    "tags": [
+      "Critical Infrastructure"
+    ],
+    "defense": "Implement ICS security controls and monitoring.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT22",
+    "description": "A China-linked group involved in data exfiltration campaigns.",
+    "origin": "China",
+    "motivation": "Data theft",
+    "notableAttacks": [
+      "Enterprise Data Breaches"
+    ],
+    "tags": [
+      "Data Exfiltration"
+    ],
+    "defense": "Monitor outbound traffic and enforce DLP.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT23",
+    "description": "A Chinese group targeting government and military systems.",
+    "origin": "China",
+    "motivation": "Military intelligence",
+    "notableAttacks": [
+      "Military Network Intrusions"
+    ],
+    "tags": [
+      "Military Targeting"
+    ],
+    "defense": "Use network isolation and strict access control.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT24",
+    "description": "A Chinese cyber espionage group targeting global enterprises.",
+    "origin": "China",
+    "motivation": "Corporate espionage",
+    "notableAttacks": [
+      "Global Enterprise Breaches"
+    ],
+    "tags": [
+      "Corporate Espionage"
+    ],
+    "defense": "Use advanced threat detection and logging.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT25",
+    "description": "A Chinese group involved in persistent access campaigns.",
+    "origin": "China",
+    "motivation": "Long-term surveillance",
+    "notableAttacks": [
+      "Persistent Network Intrusions"
+    ],
+    "tags": [
+      "Persistence Techniques"
+    ],
+    "defense": "Monitor for persistence mechanisms and unusual logins.",
+    "threatLevel": "Medium",
+    "difficulty": "Advanced"
+  },
+  {
+    "name": "APT26",
+    "description": "A Chinese threat group targeting financial institutions.",
+    "origin": "China",
+    "motivation": "Financial intelligence",
+    "notableAttacks": [
+      "Banking Sector Attacks"
+    ],
+    "tags": [
+      "Financial Targeting"
+    ],
+    "defense": "Apply fraud detection systems and MFA.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"},
+  {
+    "name": "APT27 (Emissary Panda)",
+    "description": "A Chinese cyber espionage group targeting government and defense sectors.",
+    "origin": "China",
+    "motivation": "Strategic intelligence gathering",
+    "notableAttacks": [
+      "Government Agency Breaches",
+      "Defense Contractor Intrusions"
+    ],
+    "tags": [
+      "State-Sponsored",
+      "Cyber Espionage",
+      "Government Targets"
+    ],
+    "defense": "Use strong authentication, monitor privileged accounts, and apply timely patching.",
+    "threatLevel": "High",
+    "difficulty": "Advanced"},
+  {
+      "name": "APT33 (Elfin)",
+      "description": "An Iranian state-sponsored group known for cyber espionage and attacks targeting aviation and energy sectors.",
+      "origin": "Iran",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2018 US Aviation Sector Hack",
+        "2019 Saudi Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from APT33.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"},
+      {
+      "name": "APT34 (OilRig)",
+      "description": "An Iranian state-sponsored group known for cyber espionage and attacks targeting financial, energy, and government sectors.",
+      "origin": "Iran",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2016 US Financial Sector Hack",
+        "2017 Middle East Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from APT34.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"},
+        {
       "name": "APT28 (Fancy Bear)",
       "description": "A Russian state-sponsored group known for cyber espionage and attacks on government and military targets.",
       "origin": "Russia",
@@ -9,7 +457,6 @@
         "2016 US Election Interference",
         "2015 German Bundestag Hack"
       ],
-      
       "tags": [
         "State-Sponsored",
         "Cyber Espionage",
@@ -17,298 +464,7 @@
       ],
       "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from APT28.",
       "threatLevel": "High",
-      "difficulty": "Advanced"              
-    },    
-    {
-      "name": "Lazarus Group",
-      "description": "A North Korean state-sponsored group involved in cyber espionage, financial theft, and destructive attacks.",
-      "origin": "North Korea",
-      "motivation": "Financial gain and political objectives",
-      "notableAttacks": [
-        "2017 WannaCry Ransomware Attack",
-        "2014 Sony Pictures Hack"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage",
-        "Financial Theft"
-      ],
-      "defense": "Deploy advanced threat detection systems, implement strict access controls, and conduct regular security audits to counter the threats posed by the Lazarus Group.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "Charming Kitten (APT35)",
-      "description": "An Iranian state-sponsored group focused on cyber espionage against individuals and organizations in the Middle East and beyond.",
-      "origin": "Iran",
-      "motivation": "Political intelligence gathering and surveillance",
-      "notableAttacks": [
-        "Targeting of US government officials",
-        "Phishing campaigns against journalists"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage",
-        "Government Targets"
-      ],
-      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from Charming Kitten.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "Turla (Snake)",
-      "description": "A Russian state-sponsored group known for sophisticated cyber espionage campaigns targeting government and military organizations.",
-      "origin": "Russia",
-      "motivation": "Political and strategic intelligence gathering",
-      "notableAttacks": [
-        "2014 French TV5Monde Hack",
-        "2016 US Government Targeting"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage",
-        "Government Targets"
-      ],
-      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from Turla.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "OceanLotus (APT32)",
-      "description": "A Vietnamese state-sponsored group involved in cyber espionage and attacks against government, corporate, and dissident targets.",
-      "origin": "Vietnam",
-      "motivation": "Political intelligence gathering and economic espionage",
-      "notableAttacks": [
-        "Targeting of Southeast Asian governments",
-        "Attacks on multinational corporations"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage",
-        "Government Targets"
-      ],
-      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from OceanLotus.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "Equation Group",
-      "description": "A highly sophisticated group believed to be linked to the NSA, known for advanced cyber espionage and offensive capabilities.",
-      "origin": "United States",
-      "motivation": "Intelligence gathering and cyber warfare",
-      "notableAttacks": [
-        "2010 Stuxnet Attack",
-        "2016 Shadow Brokers Leak"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage",
-        "Government Targets"
-      ],
-      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from Equation Group.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "Cobalt Group",
-      "description": "A cybercriminal group known for targeting financial institutions with sophisticated malware and attack techniques.",
-      "origin": "Russia",
-      "motivation": "Financial gain through cybercrime",
-      "notableAttacks": [
-        "2016 SWIFT Banking Attacks",
-        "2018 ATM Malware Campaign"
-      ],
-      "tags": [
-        "Cyber Criminal",
-        "Financial Theft"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Cobalt Group.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "FIN7 (Carbanak Group)",
-      "description": "A financially motivated cybercriminal group known for targeting retail and hospitality sectors with sophisticated malware.",
-      "origin": "Unknown (suspected Eastern Europe)",
-      "motivation": "Financial gain through cybercrime",
-      "notableAttacks": [
-        "2015 Target Data Breach",
-        "2017 Hospitality Industry Attacks"
-      ],
-      "tags": [
-        "Cyber Criminal",
-        "Financial Theft"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from FIN7.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "Magecart",
-      "description": "A collective of cybercriminal groups specializing in web skimming attacks to steal payment card information from e-commerce sites.",
-      "origin": "Global (various groups)",
-      "motivation": "Financial gain through cybercrime",
-      "notableAttacks": [
-        "2018 British Airways Data Breach",
-        "2019 Ticketmaster Skimming Attack"
-      ],
-      "tags": [
-        "Cyber Criminal",
-        "Financial Theft"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Magecart.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "DarkSide",
-      "description": "A ransomware group known for high-profile attacks on critical infrastructure and large enterprises, often demanding significant ransoms.",
-      "origin": "Unknown (suspected Eastern Europe)",
-      "motivation": "Financial gain through ransomware attacks",
-      "notableAttacks": [
-        "2021 Colonial Pipeline Ransomware Attack",
-        "2020 Brenntag Ransomware Attack"
-      ],
-      "tags": [
-        "Ransomware",
-        "Financial Gain"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from DarkSide.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "REvil (Sodinokibi)",
-      "description": "A ransomware group known for targeting large enterprises and demanding high ransoms, often using double extortion tactics.",
-      "origin": "Unknown (suspected Eastern Europe)",
-      "motivation": "Financial gain through ransomware attacks",
-      "notableAttacks": [
-        "2021 Kaseya Ransomware Attack",
-        "2020 Travelex Ransomware Attack"
-      ],
-      "tags": [
-        "Ransomware",
-        "Financial Gain"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from REvil.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
-    {
-      "name": "Conti",
-      "description": "A ransomware group known for targeting healthcare, government, and enterprise organizations with sophisticated ransomware attacks.",
-      "origin": "Unknown (suspected Eastern Europe)",
-      "motivation": "Financial gain through ransomware attacks",
-      "notableAttacks": [
-        "2020 Irish Health Service Ransomware Attack",
-        "2021 Costa Rica Government Ransomware Attack"
-      ],
-      "tags": [
-        "Ransomware",
-        "Financial Gain"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Conti.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "LockBit",
-      "description": "A ransomware group known for targeting a wide range of industries with fast encryption and high ransom demands.",
-      "origin": "Unknown (suspected Eastern Europe)",
-      "motivation": "Financial gain through ransomware attacks",
-      "notableAttacks": [
-        "2021 Accenture Ransomware Attack",
-        "2020 University of California Ransomware Attack"
-      ],
-      "tags": [
-        "Ransomware",
-        "Financial Gain"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from LockBit.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "Babuk Locker",
-      "description": "A ransomware group known for targeting government and enterprise organizations, often using double extortion tactics.",
-      "origin": "Unknown (suspected Eastern Europe)",
-      "motivation": "Financial gain through ransomware attacks",
-      "notableAttacks": [
-        "2021 Washington D.C. Police Department Ransomware Attack",
-        "2021 Los Angeles Unified School District Ransomware Attack"
-      ],
-      "tags": [
-        "Ransomware",
-        "Financial Gain"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Babuk Locker.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "Evil Corp",
-      "description": "A cybercriminal group known for targeting financial institutions and enterprises with sophisticated malware and ransomware attacks.",
-      "origin": "Russia",
-      "motivation": "Financial gain through cybercrime",
-      "notableAttacks": [
-        "2019 Dridex Banking Malware Campaign",
-        "2020 WastedLocker Ransomware Attack"
-      ],
-      "tags": [
-        "Cyber Criminal",
-        "Financial Theft"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Evil Corp.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
-    {
-      "name": "NetWalker",
-      "description": "A ransomware group known for targeting healthcare and government organizations, often using double extortion tactics.",
-      "origin": "Unknown (suspected Eastern Europe)",
-      "motivation": "Financial gain through ransomware attacks",
-      "notableAttacks": [
-        "2020 University of California Ransomware Attack",
-        "2021 City of Tulsa Ransomware Attack"
-      ],
-      "tags": [
-        "Ransomware",
-        "Financial Gain"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from NetWalker.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
-    {
-      "name": "Sunburst (SolarWinds Attack)",
-      "description": "A sophisticated supply chain attack attributed to a state-sponsored group, involving the compromise of SolarWinds software to infiltrate multiple organizations.",
-      "origin": "Unknown (suspected Russian state-sponsored group)",
-      "motivation": "Intelligence gathering and cyber espionage",
-      "notableAttacks": [
-        "2020 SolarWinds Supply Chain Attack",
-        "2021 Microsoft Exchange Server Vulnerabilities"
-      ],
-      "tags": [
-        "Supply Chain Attack",
-        "Cyber Espionage"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Sunburst.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
+      "difficulty": "Advanced"},    
     {
       "name": "APT29 (Cozy Bear)",
       "description": "A Russian state-sponsored group known for cyber espionage and attacks on government and diplomatic targets.",
@@ -322,100 +478,10 @@
         "State-Sponsored",
         "Cyber Espionage"
       ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT29.",
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from APT29.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "APT1 (Comment Crew)",
-      "description": "A Chinese state-sponsored group known for cyber espionage targeting various industries and government organizations.",
-      "origin": "China",
-      "motivation": "Political intelligence gathering and economic espionage",
-      "notableAttacks": [
-        "2013 US Department of Defense Hack",
-        "2012 US Energy Sector Hack"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT1.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "APT10 (Stone Panda)",
-      "description": "A Chinese state-sponsored group known for cyber espionage targeting various industries and government organizations.",
-      "origin": "China",
-      "motivation": "Political intelligence gathering and economic espionage",
-      "notableAttacks": [
-        "2018 US Cloud Service Providers Hack",
-        "2016 US Defense Contractor Hack"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT10.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "APT41 (Double Dragon)",
-      "description": "A Chinese state-sponsored group known for cyber espionage and financially motivated attacks targeting various industries.",
-      "origin": "China",
-      "motivation": "Political intelligence gathering and financial gain through cybercrime",
-      "notableAttacks": [
-        "2019 US Healthcare Sector Hack",
-        "2020 US Video Game Industry Hack"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT41.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
-    {
-      "name": "APT33 (Elfin)",
-      "description": "An Iranian state-sponsored group known for cyber espionage and attacks targeting aviation and energy sectors.",
-      "origin": "Iran",
-      "motivation": "Political intelligence gathering and economic espionage",
-      "notableAttacks": [
-        "2018 US Aviation Sector Hack",
-        "2019 Saudi Energy Sector Hack"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT33.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
-    {
-      "name": "APT34 (OilRig)",
-      "description": "An Iranian state-sponsored group known for cyber espionage and attacks targeting financial, energy, and government sectors.",
-      "origin": "Iran",
-      "motivation": "Political intelligence gathering and economic espionage",
-      "notableAttacks": [
-        "2016 US Financial Sector Hack",
-        "2017 Middle East Energy Sector Hack"
-      ],
-      "tags": [
-        "State-Sponsored",
-        "Cyber Espionage"
-      ],
-      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT34.",
-      "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
-    {
+      "difficulty": "Advanced"},
+      {
       "name": "APT38 (Lazarus Group Subset)",
       "description": "A financially motivated subset of the Lazarus Group, known for cyber theft targeting financial institutions worldwide.",
       "origin": "North Korea",
@@ -431,7 +497,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT38.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT39 (Chafer)",
@@ -466,7 +531,23 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT40.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
+    },
+    {
+      "name": "APT41 (Double Dragon)",
+      "description": "A Chinese state-sponsored group known for cyber espionage and financially motivated attacks targeting various industries.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and financial gain through cybercrime",
+      "notableAttacks": [
+        "2019 US Healthcare Sector Hack",
+        "2020 US Video Game Industry Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT41.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
     },
     {
       "name": "APT42 (Twisted Spider)",
@@ -636,8 +717,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT51.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
+      "difficulty": "Advanced"},
     {
       "name": "APT52 (Twisted Spider Subset)",
       "description": "A financially motivated subset of the Twisted Spider group, known for cybercrime targeting various industries.",
@@ -688,7 +768,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT54.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT55 (RedAlpha Subset)",
@@ -723,7 +802,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT56.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT57 (Kimsuky Subset)",
@@ -758,7 +836,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT58.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT59 (Naikon Subset)",
@@ -793,7 +870,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT60.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT61 (Twisted Spider Subset 2)",
@@ -810,8 +886,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT61.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
+      "difficulty": "Advanced"},
     {
       "name": "APT62 (RedBaldKnight Subset)",
       "description": "A subset of the RedBaldKnight group, known for cyber espionage targeting various industries and government organizations.",
@@ -828,7 +903,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT62.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT63 (Bronze Union Subset 2)",
@@ -845,8 +919,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT63.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
+      "difficulty": "Advanced"},
     {
       "name": "APT64 (RedAlpha Subset 2)",
       "description": "Another subset of the RedAlpha group, known for cyber espionage targeting various industries and government organizations.",
@@ -863,7 +936,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT64.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT65 (Zirconium Subset 2)",
@@ -881,7 +953,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT65.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT66 (Kimsuky Subset 2)",
@@ -899,7 +970,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT66.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT67 (Scarlet Mimic Subset 2)",
@@ -916,8 +986,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT67.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
+      "difficulty": "Advanced" },
     {
       "name": "APT68 (Naikon Subset 2)",
       "description": "Another subset of the Naikon group, known for cyber espionage targeting Southeast Asian governments and organizations.",
@@ -933,9 +1002,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT68.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-
-    },
+      "difficulty": "Advanced" },
     {
       "name": "APT69 (Elderwood Subset 2)",
       "description": "Another subset of the Elderwood group, known for cyber espionage targeting various industries and government organizations.",
@@ -951,8 +1018,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT69.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
+      "difficulty": "Advanced" },
     {
       "name": "APT70 (Twisted Spider Subset 3)",
       "description": "Yet another financially motivated subset of the Twisted Spider group, known for cybercrime targeting various industries.",
@@ -968,8 +1034,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT70.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    },
+      "difficulty": "Advanced" },
     {
       "name": "APT71 (RedBaldKnight Subset 2)",
       "description": "Another subset of the RedBaldKnight group, known for cyber espionage targeting various industries and government organizations.",
@@ -986,7 +1051,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT71.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT72 (Bronze Union Subset 3)",
@@ -1021,7 +1085,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT73.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT74 (Zirconium Subset 3)",
@@ -1038,8 +1101,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT74.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    
+      "difficulty": "Advanced"   
     },
     {
       "name": "APT75 (Kimsuky Subset 3)",
@@ -1108,7 +1170,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT78.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT79 (Twisted Spider Subset 4)",
@@ -1126,7 +1187,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT79.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT80 (RedBaldKnight Subset 3)",
@@ -1144,7 +1204,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT80.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT81 (Bronze Union Subset 4)",
@@ -1161,8 +1220,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT81.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    
+      "difficulty": "Advanced"   
     },
     {
       "name": "APT82 (RedAlpha Subset 4)",
@@ -1180,7 +1238,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT82.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT83 (Zirconium Subset 4)",
@@ -1197,8 +1254,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT83.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    
+      "difficulty": "Advanced"   
     },
     {
       "name": "APT84 (Kimsuky Subset 4)",
@@ -1216,7 +1272,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT84.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT85 (Scarlet Mimic Subset 4)",
@@ -1233,8 +1288,7 @@
       ],
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT85.",
       "threatLevel": "High",
-      "difficulty": "Advanced"
-    
+      "difficulty": "Advanced"  
     },
     {
       "name": "APT86 (Naikon Subset 4)",
@@ -1252,7 +1306,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT86.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT87 (Elderwood Subset 4)",
@@ -1270,7 +1323,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT87.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-    
     },
     {
       "name": "APT88 (Twisted Spider Subset 5)",
@@ -1288,7 +1340,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT88.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-    
     },
     {
       "name": "APT89 (RedBaldKnight Subset 4)",
@@ -1306,7 +1357,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT89.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT90 (Bronze Union Subset 5)",
@@ -1324,7 +1374,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT90.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT91 (RedAlpha Subset 5)",
@@ -1352,7 +1401,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT92.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT93 (Kimsuky Subset 5)",
@@ -1370,7 +1418,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT93.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT94 (Scarlet Mimic Subset 5)",
@@ -1388,7 +1435,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT94.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT95 (Naikon Subset 5)",
@@ -1406,7 +1452,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT95.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT96 (Elderwood Subset 5)",
@@ -1424,7 +1469,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT96.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT97 (Twisted Spider Subset 6)",
@@ -1442,7 +1486,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT97.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT98 (RedBaldKnight Subset 5)",
@@ -1460,7 +1503,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT98.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT99 (Bronze Union Subset 6)",
@@ -1478,7 +1520,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT99.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT100 (RedAlpha Subset 6)",
@@ -1496,7 +1537,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT100.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT101 (Zirconium Subset 6)",
@@ -1514,7 +1554,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT101.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT102 (Kimsuky Subset 6)",
@@ -1532,7 +1571,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT102.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT103 (Scarlet Mimic Subset 6)",
@@ -1550,7 +1588,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT103.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT104 (Naikon Subset 6)",
@@ -1568,7 +1605,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT104.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT105 (Elderwood Subset 6)",
@@ -1586,7 +1622,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT105.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT106 (Twisted Spider Subset 7)",
@@ -1604,7 +1639,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT106.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT107 (RedBaldKnight Subset 6)",
@@ -1622,7 +1656,6 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT107.",
       "threatLevel": "High",
       "difficulty": "Advanced"
-
     },
     {
       "name": "APT108 (Bronze Union Subset 7)",
@@ -1640,7 +1673,1022 @@
       "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT108.",
       "threatLevel": "High",
       "difficulty": "Advanced"
+    },
+    {
+      "name": "APT109 (RedAlpha Subset 7)",
+      "description": "Yet another subset of the RedAlpha group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT109.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT110 (Zirconium Subset 7)",
+      "description": "Yet another subset of the Zirconium group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT110.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT111 (Kimsuky Subset 7)",
+      "description": "Yet another subset of the Kimsuky group, known for cyber espionage targeting South Korean government and military organizations.",
+      "origin": "North Korea",
+      "motivation": "Political intelligence gathering and surveillance",
+      "notableAttacks": [
+        "2019 South Korean Government Hack",
+        "2020 South Korean Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT111.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT112 (Scarlet Mimic Subset 7)",
+      "description": "Yet another subset of the Scarlet Mimic group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT112.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT113 (Naikon Subset 7)",
+      "description": "Yet another subset of the Naikon group, known for cyber espionage targeting Southeast Asian governments and organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2015 Southeast Asian Government Hack",
+        "2016 Southeast Asian Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT113.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT114 (Elderwood Subset 7)",
+      "description": "Yet another subset of the Elderwood group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT114.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT115 (Twisted Spider Subset 8)",
+      "description": "Yet another financially motivated subset of the Twisted Spider group, known for cybercrime targeting various industries.",
+      "origin": "China",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2020 US Healthcare Sector Hack",
+        "2021 US Financial Sector Hack"
+      ],
+      "tags": [
+        "Financially Motivated",
+        "Cyber Crime"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT115.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT116 (RedBaldKnight Subset 7)",
+      "description": "Yet another subset of the RedBaldKnight group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT116.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT117 (Bronze Union Subset 8)",
+      "description": "Yet another subset of the Bronze Union group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT117.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT118 (RedAlpha Subset 8)",
+      "description": "Yet another subset of the RedAlpha group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT118.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT119 (Zirconium Subset 8)",
+      "description": "Yet another subset of the Zirconium group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT119.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT120 (Kimsuky Subset 8)",
+      "description": "Yet another subset of the Kimsuky group, known for cyber espionage targeting South Korean government and military organizations.",
+      "origin": "North Korea",
+      "motivation": "Political intelligence gathering and surveillance",
+      "notableAttacks": [
+        "2019 South Korean Government Hack",
+        "2020 South Korean Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT120.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT121 (Scarlet Mimic Subset 8)",
+      "description": "Yet another subset of the Scarlet Mimic group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT121.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT122 (Naikon Subset 8)",
+      "description": "Yet another subset of the Naikon group, known for cyber espionage targeting Southeast Asian governments and organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2015 Southeast Asian Government Hack",
+        "2016 Southeast Asian Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT122.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT123 (Elderwood Subset 8)",
+      "description": "Yet another subset of the Elderwood group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT123.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT124 (Twisted Spider Subset 9)",
+      "description": "Yet another financially motivated subset of the Twisted Spider group, known for cybercrime targeting various industries.",
+      "origin": "China",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2020 US Healthcare Sector Hack",
+        "2021 US Financial Sector Hack"
+      ],
+      "tags": [
+        "Financially Motivated",
+        "Cyber Crime"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT124.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT125 (RedBaldKnight Subset 8)",
+      "description": "Yet another subset of the RedBaldKnight group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT125.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT126 (Bronze Union Subset 9)",
+      "description": "Yet another subset of the Bronze Union group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT126.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT127 (RedAlpha Subset 9)",
+      "description": "Yet another subset of the RedAlpha group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT127.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT128 (Zirconium Subset 9)",
+      "description": "Yet another subset of the Zirconium group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",  
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT128.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT129 (Kimsuky Subset 9)",
+      "description": "Yet another subset of the Kimsuky group, known for cyber espionage targeting South Korean government and military organizations.",
+      "origin": "North Korea",
+      "motivation": "Political intelligence gathering and surveillance",
+      "notableAttacks": [
+        "2019 South Korean Government Hack",
+        "2020 South Korean Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT129.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT130 (Scarlet Mimic Subset 9)",
+      "description": "Yet another subset of the Scarlet Mimic group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT130.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT131 (Naikon Subset 9)",
+      "description": "Yet another subset of the Naikon group, known for cyber espionage targeting Southeast Asian governments and organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2015 Southeast Asian Government Hack",
+        "2016 Southeast Asian Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT131.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT132 (Elderwood Subset 9)",
+      "description": "Yet another subset of the Elderwood group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT132.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT133 (Twisted Spider Subset 10)",
+      "description": "Yet another financially motivated subset of the Twisted Spider group, known for cybercrime targeting various industries.",
+      "origin": "China",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2020 US Healthcare Sector Hack",
+        "2021 US Financial Sector Hack"
+      ],
+      "tags": [
+        "Financially Motivated",
+        "Cyber Crime"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT133.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT134 (RedBaldKnight Subset 9)",
+      "description": "Yet another subset of the RedBaldKnight group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT134.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT135 (Bronze Union Subset 10)",
+      "description": "Yet another subset of the Bronze Union group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT135.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT136 (RedAlpha Subset 10)",
+      "description": "Yet another subset of the RedAlpha group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT136.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT137 (Zirconium Subset 10)",
+      "description": "Yet another subset of the Zirconium group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT137.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    } ,
+    {
+      "name": "APT138 (Kimsuky Subset 10)",
+      "description": "Yet another subset of the Kimsuky group, known for cyber espionage targeting South Korean government and military organizations.",
+      "origin": "North Korea",
+      "motivation": "Political intelligence gathering and surveillance",
+      "notableAttacks": [
+        "2019 South Korean Government Hack",
+        "2020 South Korean Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT138.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "APT139 (Scarlet Mimic Subset 10)",
+      "description": "Yet another subset of the Scarlet Mimic group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT139.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
 
+    },
+    {
+      "name": "APT140 (Naikon Subset 10)",
+      "description": "Yet another subset of the Naikon group, known for cyber espionage targeting Southeast Asian governments and organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2015 Southeast Asian Government Hack",
+        "2016 Southeast Asian Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT140.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    } ,
+    {
+      "name": "APT141 (Elderwood Subset 10)",
+      "description": "Yet another subset of the Elderwood group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT141.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    } ,
+    {
+      "name": "APT142 (Twisted Spider Subset 11)",
+      "description": "Yet another financially motivated subset of the Twisted Spider group, known for cybercrime targeting various industries.",
+      "origin": "China",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2020 US Healthcare Sector Hack",
+        "2021 US Financial Sector Hack"
+      ],
+      "tags": [
+        "Financially Motivated",
+        "Cyber Crime"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT142.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    } ,
+    {
+      "name": "APT143 (RedBaldKnight Subset 10)",
+      "description": "Yet another subset of the RedBaldKnight group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT143.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    } ,
+    {
+      "name": "APT144 (Bronze Union Subset 11)",
+      "description": "Yet another subset of the Bronze Union group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT144.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    },
+    {
+      "name": "APT145 (RedAlpha Subset 11)",
+      "description": "Yet another subset of the RedAlpha group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT145.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    },
+    {
+      "name": "APT146 (Zirconium Subset 11)",
+      "description": "Yet another subset of the Zirconium group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Energy Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT146.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    } ,
+    {
+      "name": "APT147 (Kimsuky Subset 11)",
+      "description": "Yet another subset of the Kimsuky group, known for cyber espionage targeting South Korean government and military organizations.",
+      "origin": "North Korea",
+      "motivation": "Political intelligence gathering and surveillance",
+      "notableAttacks": [
+        "2019 South Korean Government Hack",
+        "2020 South Korean Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT147.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    },
+    {
+      "name": "APT148 (Scarlet Mimic Subset 11)",
+      "description": "Yet another subset of the Scarlet Mimic group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Financial Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT148.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    },
+    {
+      "name": "APT149 (Naikon Subset 11)",
+      "description": "Yet another subset of the Naikon group, known for cyber espionage targeting Southeast Asian governments and organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2015 Southeast Asian Government Hack",
+        "2016 Southeast Asian Military Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT149.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    } , 
+    {
+      "name": "APT150 (Elderwood Subset 11)",
+      "description": "Yet another subset of the Elderwood group, known for cyber espionage targeting various industries and government organizations.",
+      "origin": "China",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "2021 US Government Hack",
+        "2022 US Technology Sector Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT150.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    },
+    {
+      "name": "APT151 (Twisted Spider Subset 12)",
+      "description": "Yet another financially motivated subset of the Twisted Spider group, known for cybercrime targeting various industries.",
+      "origin": "China",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2020 US Healthcare Sector Hack",
+        "2021 US Financial Sector Hack"
+      ],
+      "tags": [
+        "Financially Motivated",
+        "Cyber Crime"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from APT151.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+
+    },
+    {
+      "name": "Lazarus Group",
+      "description": "A North Korean state-sponsored group involved in cyber espionage, financial theft, and destructive attacks.",
+      "origin": "North Korea",
+      "motivation": "Financial gain and political objectives",
+      "notableAttacks": [
+        "2017 WannaCry Ransomware Attack",
+        "2014 Sony Pictures Hack"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage",
+        "Financial Theft"
+      ],
+      "defense": "Deploy advanced threat detection systems, implement strict access controls, and conduct regular security audits to counter the threats posed by the Lazarus Group.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"},
+    {
+      "name": "Charming Kitten (APT35)",
+      "description": "An Iranian state-sponsored group focused on cyber espionage against individuals and organizations in the Middle East and beyond.",
+      "origin": "Iran",
+      "motivation": "Political intelligence gathering and surveillance",
+      "notableAttacks": [
+        "Targeting of US government officials",
+        "Phishing campaigns against journalists"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage",
+        "Government Targets"
+      ],
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from Charming Kitten.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"},
+    {
+      "name": "Turla (Snake)",
+      "description": "A Russian state-sponsored group known for sophisticated cyber espionage campaigns targeting government and military organizations.",
+      "origin": "Russia",
+      "motivation": "Political and strategic intelligence gathering",
+      "notableAttacks": [
+        "2014 French TV5Monde Hack",
+        "2016 US Government Targeting"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage",
+        "Government Targets"
+      ],
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from Turla.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"},
+    {
+      "name": "OceanLotus (APT32)",
+      "description": "A Vietnamese state-sponsored group involved in cyber espionage and attacks against government, corporate, and dissident targets.",
+      "origin": "Vietnam",
+      "motivation": "Political intelligence gathering and economic espionage",
+      "notableAttacks": [
+        "Targeting of Southeast Asian governments",
+        "Attacks on multinational corporations"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage",
+        "Government Targets"
+      ],
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from OceanLotus.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"},
+    {
+      "name": "Equation Group",
+      "description": "A highly sophisticated group believed to be linked to the NSA, known for advanced cyber espionage and offensive capabilities.",
+      "origin": "United States",
+      "motivation": "Intelligence gathering and cyber warfare",
+      "notableAttacks": [
+        "2010 Stuxnet Attack",
+        "2016 Shadow Brokers Leak"
+      ],
+      "tags": [
+        "State-Sponsored",
+        "Cyber Espionage",
+        "Government Targets"
+      ],
+      "defense": "Implement strong network segmentation, use multi-factor authentication, and regularly update software to mitigate risks from Equation Group.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"},
+    {
+      "name": "Cobalt Group",
+      "description": "A cybercriminal group known for targeting financial institutions with sophisticated malware and attack techniques.",
+      "origin": "Russia",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2016 SWIFT Banking Attacks",
+        "2018 ATM Malware Campaign"
+      ],
+      "tags": [
+        "Cyber Criminal",
+        "Financial Theft"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Cobalt Group.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "FIN7 (Carbanak Group)",
+      "description": "A financially motivated cybercriminal group known for targeting retail and hospitality sectors with sophisticated malware.",
+      "origin": "Unknown (suspected Eastern Europe)",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2015 Target Data Breach",
+        "2017 Hospitality Industry Attacks"
+      ],
+      "tags": [
+        "Cyber Criminal",
+        "Financial Theft"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from FIN7.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Magecart",
+      "description": "A collective of cybercriminal groups specializing in web skimming attacks to steal payment card information from e-commerce sites.",
+      "origin": "Global (various groups)",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2018 British Airways Data Breach",
+        "2019 Ticketmaster Skimming Attack"
+      ],
+      "tags": [
+        "Cyber Criminal",
+        "Financial Theft"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Magecart.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "DarkSide",
+      "description": "A ransomware group known for high-profile attacks on critical infrastructure and large enterprises, often demanding significant ransoms.",
+      "origin": "Unknown (suspected Eastern Europe)",
+      "motivation": "Financial gain through ransomware attacks",
+      "notableAttacks": [
+        "2021 Colonial Pipeline Ransomware Attack",
+        "2020 Brenntag Ransomware Attack"
+      ],
+      "tags": [
+        "Ransomware",
+        "Financial Gain"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from DarkSide.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "REvil (Sodinokibi)",
+      "description": "A ransomware group known for targeting large enterprises and demanding high ransoms, often using double extortion tactics.",
+      "origin": "Unknown (suspected Eastern Europe)",
+      "motivation": "Financial gain through ransomware attacks",
+      "notableAttacks": [
+        "2021 Kaseya Ransomware Attack",
+        "2020 Travelex Ransomware Attack"
+      ],
+      "tags": [
+        "Ransomware",
+        "Financial Gain"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from REvil.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Conti",
+      "description": "A ransomware group known for targeting healthcare, government, and enterprise organizations with sophisticated ransomware attacks.",
+      "origin": "Unknown (suspected Eastern Europe)",
+      "motivation": "Financial gain through ransomware attacks",
+      "notableAttacks": [
+        "2020 Irish Health Service Ransomware Attack",
+        "2021 Costa Rica Government Ransomware Attack"
+      ],
+      "tags": [
+        "Ransomware",
+        "Financial Gain"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Conti.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "LockBit",
+      "description": "A ransomware group known for targeting a wide range of industries with fast encryption and high ransom demands.",
+      "origin": "Unknown (suspected Eastern Europe)",
+      "motivation": "Financial gain through ransomware attacks",
+      "notableAttacks": [
+        "2021 Accenture Ransomware Attack",
+        "2020 University of California Ransomware Attack"
+      ],
+      "tags": [
+        "Ransomware",
+        "Financial Gain"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from LockBit.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Babuk Locker",
+      "description": "A ransomware group known for targeting government and enterprise organizations, often using double extortion tactics.",
+      "origin": "Unknown (suspected Eastern Europe)",
+      "motivation": "Financial gain through ransomware attacks",
+      "notableAttacks": [
+        "2021 Washington D.C. Police Department Ransomware Attack",
+        "2021 Los Angeles Unified School District Ransomware Attack"
+      ],
+      "tags": [
+        "Ransomware",
+        "Financial Gain"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Babuk Locker.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Evil Corp",
+      "description": "A cybercriminal group known for targeting financial institutions and enterprises with sophisticated malware and ransomware attacks.",
+      "origin": "Russia",
+      "motivation": "Financial gain through cybercrime",
+      "notableAttacks": [
+        "2019 Dridex Banking Malware Campaign",
+        "2020 WastedLocker Ransomware Attack"
+      ],
+      "tags": [
+        "Cyber Criminal",
+        "Financial Theft"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Evil Corp.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "NetWalker",
+      "description": "A ransomware group known for targeting healthcare and government organizations, often using double extortion tactics.",
+      "origin": "Unknown (suspected Eastern Europe)",
+      "motivation": "Financial gain through ransomware attacks",
+      "notableAttacks": [
+        "2020 University of California Ransomware Attack",
+        "2021 City of Tulsa Ransomware Attack"
+      ],
+      "tags": [
+        "Ransomware",
+        "Financial Gain"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from NetWalker.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
+    },
+    {
+      "name": "Sunburst (SolarWinds Attack)",
+      "description": "A sophisticated supply chain attack attributed to a state-sponsored group, involving the compromise of SolarWinds software to infiltrate multiple organizations.",
+      "origin": "Unknown (suspected Russian state-sponsored group)",
+      "motivation": "Intelligence gathering and cyber espionage",
+      "notableAttacks": [
+        "2020 SolarWinds Supply Chain Attack",
+        "2021 Microsoft Exchange Server Vulnerabilities"
+      ],
+      "tags": [
+        "Supply Chain Attack",
+        "Cyber Espionage"
+      ],
+      "defense": "Implement strong access controls, use advanced threat detection systems, and conduct regular security audits to mitigate risks from Sunburst.",
+      "threatLevel": "High",
+      "difficulty": "Advanced"
     }
 
   ]
