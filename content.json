@@ -1574,6 +1574,7 @@
       "difficulty": "Beginner"
     }
   ],
+  
   "quizzes": {
     "attackMethods": [
       {
@@ -3272,6 +3273,172 @@
         ],
         "answerIndex": 0,
         "difficulty": "Beginner"
+      }
+    ],
+    "threatActors": [
+      {
+        "question": "Which type of threat actor is typically state-sponsored?",
+        "options": [
+          "Hacktivists",
+          "Cybercriminals",
+          "Nation-state actors",
+          "Insiders"
+        ],
+        "answerIndex": 2,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Hacktivists are motivated by:",
+        "options": [
+          "Financial gain",
+          "Political or social causes",
+          "Espionage",
+          "Personal grudges"
+        ],
+        "answerIndex": 1,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which threat actor type often seeks financial gain through ransomware?",
+        "options": [
+          "Nation-state actors",
+          "Hacktivists",
+          "Cybercriminals",
+          "Insiders"
+        ],
+        "answerIndex": 2,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Insider threats can be caused by:",
+        "options": [
+          "Disgruntled employees",
+          "External hackers",
+          "Nation-states",
+          "Hacktivists"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which type of threat actor is most likely to conduct espionage?",
+        "options": [
+          "Cybercriminals",
+          "Hacktivists",
+          "Nation-state actors",
+          "Insiders"
+        ],
+        "answerIndex": 2,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Hacktivist groups often target:",
+        "options": [
+          "Financial institutions",
+          "Government agencies and corporations for political reasons",
+          "Individual users for identity theft",
+          "Cloud service providers for data breaches"
+        ],
+        "answerIndex": 1,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which threat actor type is most likely to use sophisticated zero-day exploits?",
+        "options": [
+          "Hacktivists",
+          "Cybercriminals",
+          "Nation-state actors",
+          "Insiders"
+        ],
+        "answerIndex": 2,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is a common motivation for insider threats?",
+        "options": [
+          "(Financial gain, revenge, or ideological beliefs)",
+          "Ideological beliefs",
+          "Espionage",
+          "All of the above"],
+        "answerIndex": 3,
+        "difficulty": "Intermediate"
+      },
+      {
+        "question": "Which type of threat actor is most likely to conduct financially motivated attacks?",
+        "options": [
+          "Nation-state actors",
+          "Hacktivists",
+          "Cybercriminals",
+          "Insiders"
+        ],
+        "answerIndex": 2,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which threat actor type is most likely to target critical infrastructure?",
+        "options": [
+          "Hacktivists",
+          "Cybercriminals",
+          "Nation-state actors",
+          "Insiders"
+        ],
+        "answerIndex": 2,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "What is a common characteristic of nation-state actors?",
+        "options": [
+          "Highly sophisticated techniques and resources",
+          "Motivated by financial gain",
+          "Primarily target individuals",
+          "Operate only within their own country"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
+      },
+      {
+        "question": "Which type of threat actor is most likely to use ransomware for financial gain?",
+        "options": [
+          "Nation-state actors",
+          "Hacktivists",
+          "Cybercriminals",
+          "Insiders"
+        ],
+        "answerIndex": 2,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which type of threat actor is most likely to conduct politically motivated attacks?",
+        "options": [
+          "Nation-state actors",
+          "Hacktivists",
+          "Cybercriminals",
+          "Insiders"
+        ],
+        "answerIndex": 1,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "What is a common motivation for hacktivists?",
+        "options": [
+          "Financial gain",
+          "Political or social causes",
+          "Espionage",
+          "Personal grudges"
+        ],
+        "answerIndex": 1,
+        "difficulty": "Beginner"
+      },
+      {
+        "question": "Which type of threat actor is most likely to conduct espionage for competitive advantage?",
+        "options": [
+          "Nation-state actors",
+          "Hacktivists",
+          "Cybercriminals",
+          "Insiders"
+        ],
+        "answerIndex": 0,
+        "difficulty": "Advanced"
       }
     ],
     "socOperations": [

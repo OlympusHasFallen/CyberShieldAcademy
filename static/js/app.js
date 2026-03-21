@@ -1,6 +1,9 @@
 async function loadContent() {
     const res = await fetch("content.json");
+    const res1 = await fetch("content1.json");
     const data = await res.json();
+    const data1 = await res1.json();
+
 
     document.getElementById("appTitle").textContent = data.appTitle;
     document.getElementById("heroTitle").textContent = data.appTitle;
@@ -185,6 +188,23 @@ data.socOperations.forEach(item => {
     `;
     socList.appendChild(li);
 });
+
+
+/* ------------------------------
+   THREAT INTELLIGENCE SECTION
+------------------------------ */
+    const threatActors1 = document.getElementById("threatActors1");
+    const threatActors2 = document.getElementById("threatActors2");
+    const muzo = Math.ceil(data1.threatActors.length / 2);
+    data1.threatActors.forEach((item, idx) => {
+        const li = document.createElement("li");
+        li.className = "search-item";
+        li.dataset.difficulty = item.difficulty || "Beginner";
+        li.innerHTML = `<span class="item-title">${item.name}</span> — ${item.description}
+            <span class="pill">Difficulty: ${li.dataset.difficulty}</span>`;
+        if (idx < muzo) threatActors1.appendChild(li);
+        else threatActors2.appendChild(li);
+    });    
 
 // Strict username sanitizer: letters + spaces only
 function sanitizeName(input) {
