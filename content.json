@@ -1190,9 +1190,549 @@
       "term": "Purple Team",
       "definition": "Collaboration between Red and Blue teams to improve detection and defense capabilities.",
       "difficulty": "Beginner"
-    }
-  ],
-  "resources": [
+    },
+    {
+    "term": "WannaCry",
+    "definition": "Exploits SMB vulnerabilities (EternalBlue) to encrypt files and demand ransom.",
+    "difficulty": "Beginner",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "Ryuk",
+    "definition": "Targets enterprises and encrypts critical systems, often following initial access malware.",
+    "difficulty": "Advanced",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "REvil (Sodinokibi)",
+    "definition": "Uses double extortion by encrypting and exfiltrating data.",
+    "difficulty": "Advanced",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "LockBit",
+    "definition": "Ransomware-as-a-Service known for fast encryption and affiliate operations.",
+    "difficulty": "Intermediate",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "Conti",
+    "definition": "Operated by organized groups targeting enterprises with data theft and encryption.",
+    "difficulty": "Advanced",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "CryptoLocker",
+    "definition": "Early ransomware that encrypts files and demands cryptocurrency payments.",
+    "difficulty": "Beginner",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "Maze",
+    "definition": "Introduced data leak extortion alongside file encryption.",
+    "difficulty": "Intermediate",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "Petya",
+    "definition": "Encrypts the master boot record to block system access.",
+    "difficulty": "Intermediate",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "NotPetya",
+    "definition": "Destructive wiper disguised as ransomware targeting infrastructure.",
+    "difficulty": "Advanced",
+    "tags": ["Wiper Malware"]
+  },
+  {
+    "term": "BlackCat (ALPHV)",
+    "definition": "Rust-based ransomware offering advanced customization.",
+    "difficulty": "Advanced",
+    "tags": ["Ransomware Family"]
+  },
+  {
+    "term": "Emotet",
+    "definition": "Spreads via phishing and delivers additional malware payloads.",
+    "difficulty": "Intermediate",
+    "tags": ["Trojan Family"]
+  },
+  {
+    "term": "TrickBot",
+    "definition": "Steals credentials and enables lateral movement within networks.",
+    "difficulty": "Advanced",
+    "tags": ["Trojan Family"]
+  },
+  {
+    "term": "Zeus",
+    "definition": "Steals banking credentials using keylogging and form grabbing.",
+    "difficulty": "Beginner",
+    "tags": ["Trojan Family"]
+  },
+  {
+    "term": "Dridex",
+    "definition": "Spreads via malicious documents to steal banking information.",
+    "difficulty": "Intermediate",
+    "tags": ["Trojan Family"]
+  },
+  {
+    "term": "QakBot (Qbot)",
+    "definition": "Used for credential harvesting and ransomware deployment.",
+    "difficulty": "Advanced",
+    "tags": ["Trojan Family"]
+  },
+  {
+    "term": "Ursnif (Gozi)",
+    "definition": "Targets financial data using browser injection techniques.",
+    "difficulty": "Advanced",
+    "tags": ["Trojan Family"]
+  },
+  {
+    "term": "NanoCore",
+    "definition": "Provides remote access and control of infected systems.",
+    "difficulty": "Beginner",
+    "tags": ["RAT Malware"]
+  },
+  {
+    "term": "Agent Tesla",
+    "definition": "Captures keystrokes and steals credentials from infected machines.",
+    "difficulty": "Intermediate",
+    "tags": ["Spyware"]
+  },
+  {
+    "term": "Conficker",
+    "definition": "Spreads through network vulnerabilities and weak credentials.",
+    "difficulty": "Intermediate",
+    "tags": ["Worm Family"]
+  },
+  {
+    "term": "Mydoom",
+    "definition": "Email-based worm that creates large botnets.",
+    "difficulty": "Beginner",
+    "tags": ["Worm Family"]
+  },
+  {
+    "term": "SQL Slammer",
+    "definition": "Rapidly spreads by exploiting SQL Server vulnerabilities.",
+    "difficulty": "Intermediate",
+    "tags": ["Worm Family"]
+  },
+  {
+    "term": "Stuxnet",
+    "definition": "Targets industrial control systems and SCADA environments.",
+    "difficulty": "Advanced",
+    "tags": ["Worm Family", "ICS Malware"]
+  },
+  {
+    "term": "Pegasus",
+    "definition": "Advanced mobile spyware used for surveillance and data exfiltration.",
+    "difficulty": "Advanced",
+    "tags": ["Spyware"]
+  },
+  {
+    "term": "FinFisher (FinSpy)",
+    "definition": "Commercial surveillance spyware used by governments.",
+    "difficulty": "Advanced",
+    "tags": ["Spyware"]
+  },
+  {
+    "term": "DarkHotel",
+    "definition": "Targets executives via compromised hotel Wi-Fi networks.",
+    "difficulty": "Advanced",
+    "tags": ["APT Malware", "Spyware"]
+  },
+  {
+    "term": "Flame",
+    "definition": "Modular cyber espionage toolkit used for intelligence gathering.",
+    "difficulty": "Advanced",
+    "tags": ["APT Malware"]
+  },
+  {
+    "term": "Duqu",
+    "definition": "Related to Stuxnet, used for reconnaissance and data theft.",
+    "difficulty": "Advanced",
+    "tags": ["APT Malware"]
+  },
+  {
+    "term": "CoinMiner",
+    "definition": "Uses infected systems to mine cryptocurrency without consent.",
+    "difficulty": "Beginner",
+    "tags": ["Cryptominer"]
+  },
+  {
+    "term": "Adylkuzz",
+    "definition": "Cryptomining worm exploiting SMB vulnerabilities.",
+    "difficulty": "Intermediate",
+    "tags": ["Cryptominer", "Worm Family"]
+  },
+  {
+    "term": "XMRig",
+    "definition": "Legitimate miner often abused for unauthorized Monero mining.",
+    "difficulty": "Beginner",
+    "tags": ["Cryptominer"]
+  },
+  {
+    "term": "CryptoJacking",
+    "definition": "Unauthorized use of computing resources to mine cryptocurrency.",
+    "difficulty": "Intermediate",
+    "tags": ["Cryptominer"]
+  },
+  {
+    "term": "Fileless Malware",
+    "definition": "Malware that operates in memory without writing files to disk.",
+    "difficulty": "Advanced",
+    "tags": ["Fileless Attack"]
+  },
+  {
+    "term": "Living off the Land (LotL)",
+    "definition": "Attack technique that uses legitimate tools and processes for malicious purposes.",
+    "difficulty": "Advanced",
+    "tags": ["Attack Technique"]
+  },
+  {
+    "term": "Supply Chain Attack",
+    "definition": "Compromising a trusted vendor or software dependency to attack a target organization.",
+    "difficulty": "Advanced",
+    "tags": ["Attack Technique"]
+  },
+  {
+    "term": "Zero-Day Exploit",
+    "definition": "An attack that exploits a previously unknown vulnerability with no available patch.",
+    "difficulty": "Advanced",
+    "tags": ["Attack Technique"]
+  },
+  {
+    "term": "DDoS Attack",
+    "definition": "Distributed Denial of Service attack that overwhelms a target with traffic.",
+    "difficulty": "Intermediate",
+    "tags": ["Attack Technique"]
+  },
+
+    {
+        "term": "Ransomware-as-a-Service (RaaS)",
+        "definition": "A business model where ransomware developers provide their malware to affiliates for a share of the profits.",
+        "difficulty": "Advanced",
+        "tags": ["Ransomware", "Business Model"]
+      },
+      {
+        "term": "Multi-Vector Attack",
+        "definition": "An attack that uses multiple methods or vectors to compromise a target, such as combining phishing, malware, and DDoS.",
+        "difficulty": "Advanced",
+        "tags": ["Attack Technique"]
+      },
+      {
+        "term": "Data Exfiltration",
+        "definition": "The unauthorized transfer of data from a target to an attacker.",
+        "difficulty": "Intermediate",
+        "tags": ["Attack Technique"]
+      },
+      {
+        "term": "DDoS Threat",
+        "definition": "The use of Distributed Denial of Service attacks to disrupt services and increase pressure on victims during extortion attempts.",
+        "difficulty": "Intermediate",
+        "tags": ["Attack Technique"]
+      },
+      {
+        "term": "Public Shaming",
+        "definition": "The tactic of threatening to release sensitive data publicly to coerce victims into paying ransom.",
+        "difficulty": "Intermediate",
+        "tags": ["Attack Technique", "Extortion Tactic"]
+      },
+  {"term":"IcedID","definition":"Banking trojan used for credential theft and malware delivery.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"BazarLoader","definition":"Loader malware used to deploy ransomware like Conti.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"RedLine","definition":"Infostealer that collects credentials, cookies, and system data.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"Raccoon Stealer","definition":"Steals browser data, credentials, and crypto wallets.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"Vidar","definition":"Infostealer derived from Arkei targeting sensitive data.","difficulty":"Intermediate","tags":["Infostealer"]},
+  {"term":"Arkei","definition":"Credential-stealing malware targeting browsers and apps.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"SmokeLoader","definition":"Downloader used to fetch additional malware payloads.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Gootloader","definition":"Malware loader distributed via SEO poisoning.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"FormBook","definition":"Infostealer capturing keystrokes and clipboard data.","difficulty":"Intermediate","tags":["Infostealer"]},
+  {"term":"AsyncRAT","definition":"Remote access trojan enabling full system control.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Remcos","definition":"Commercial RAT abused for surveillance and control.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"NjRAT","definition":"RAT used for spying and botnet creation.","difficulty":"Beginner","tags":["RAT Malware"]},
+  {"term":"QuasarRAT","definition":"Open-source RAT used for remote administration and attacks.","difficulty":"Beginner","tags":["RAT Malware"]},
+  {"term":"Cobalt Strike Beacon","definition":"Post-exploitation framework abused for lateral movement.","difficulty":"Advanced","tags":["APT Malware","Loader"]},
+  {"term":"Metasploit Payload","definition":"Pen-testing payload often abused maliciously.","difficulty":"Intermediate","tags":["APT Malware"]},
+  {"term":"NetWire","definition":"RAT used for credential theft and persistence.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"HawkEye","definition":"Keylogger and credential stealer targeting multiple apps.","difficulty":"Beginner","tags":["Spyware"]},
+  {"term":"AZORult","definition":"Infostealer targeting browser credentials and cookies.","difficulty":"Intermediate","tags":["Infostealer"]},
+  {"term":"Lokibot","definition":"Infostealer targeting credentials and crypto wallets.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"MassLogger","definition":"Keylogger stealing login credentials from browsers.","difficulty":"Beginner","tags":["Spyware"]},
+  {"term":"Cerber","definition":"Ransomware encrypting files and demanding payment.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"Dharma","definition":"Ransomware targeting RDP-exposed systems.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"Phobos","definition":"Ransomware variant derived from Dharma.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"Egregor","definition":"Ransomware with data exfiltration and extortion.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Clop","definition":"Ransomware targeting enterprises and file transfer systems.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Avaddon","definition":"Ransomware-as-a-Service operation.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"Babuk","definition":"Ransomware targeting enterprise networks.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Hive","definition":"Ransomware group targeting healthcare and critical sectors.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Karakurt","definition":"Extortion group focusing on data theft without encryption.","difficulty":"Advanced","tags":["Data Extortion"]},
+  {"term":"Royal","definition":"Ransomware targeting large organizations.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Mirai","definition":"IoT botnet malware used for DDoS attacks.","difficulty":"Beginner","tags":["Botnet"]},
+  {"term":"Gafgyt","definition":"IoT botnet targeting routers and devices.","difficulty":"Beginner","tags":["Botnet"]},
+  {"term":"Mozi","definition":"Peer-to-peer IoT botnet malware.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"Torii","definition":"Stealthy IoT malware for persistence and espionage.","difficulty":"Advanced","tags":["Botnet","APT Malware"]},
+  {"term":"Hajime","definition":"IoT worm competing with Mirai botnets.","difficulty":"Intermediate","tags":["Worm Family"]},
+  {"term":"Shlayer","definition":"MacOS trojan distributing adware and malware.","difficulty":"Beginner","tags":["Trojan Family"]},
+  {"term":"Silver Sparrow","definition":"MacOS malware targeting Apple M1 systems.","difficulty":"Intermediate","tags":["Trojan Family"]},
+  {"term":"XLoader","definition":"Cross-platform infostealer targeting macOS and Windows.","difficulty":"Intermediate","tags":["Infostealer"]},
+  {"term":"OSX.KeRanger","definition":"Ransomware targeting macOS systems.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"MacSpy","definition":"Spyware targeting macOS users.","difficulty":"Beginner","tags":["Spyware"]},
+  {"term":"Andromeda","definition":"Modular botnet malware for credential theft.","difficulty":"Intermediate","tags":["Botnet","Trojan Family"]},
+  {"term":"Zloader","definition":"Banking trojan derived from Zeus.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Tinba","definition":"Tiny banking trojan targeting financial data.","difficulty":"Intermediate","tags":["Trojan Family"]},
+  {"term":"SpyEye","definition":"Banking trojan competing with Zeus.","difficulty":"Intermediate","tags":["Trojan Family"]},
+  {"term":"Ramnit","definition":"Banking trojan and worm hybrid.","difficulty":"Advanced","tags":["Trojan Family","Worm Family"]},
+  {"term":"PlugX","definition":"RAT used in espionage campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"ShadowPad","definition":"Backdoor used by advanced threat actors.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Gh0st RAT","definition":"RAT used in cyber espionage operations.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Poison Ivy","definition":"Remote access trojan used in targeted attacks.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Back Orifice","definition":"Early remote administration malware.","difficulty":"Beginner","tags":["RAT Malware"]},
+  {"term":"Necurs","definition":"Spam botnet distributing malware.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"Cutwail","definition":"Botnet used for spam campaigns.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"Kelihos","definition":"Botnet used for spam and credential theft.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"Emdivi","definition":"Backdoor used in espionage campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Sality","definition":"File-infecting virus with botnet capabilities.","difficulty":"Advanced","tags":["Virus","Botnet"]},
+  {"term":"Virut","definition":"Polymorphic file infector virus.","difficulty":"Advanced","tags":["Virus"]},
+  {"term":"Polipos","definition":"Polymorphic banking trojan.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Dyre","definition":"Banking trojan targeting financial institutions.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Carbanak","definition":"APT malware targeting banks and financial systems.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Anunak","definition":"Malware used in financial cybercrime campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Regin","definition":"Highly advanced espionage malware framework.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"EquationDrug","definition":"NSA-linked advanced malware platform.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"GrayFish","definition":"Advanced bootkit malware.","difficulty":"Advanced","tags":["Rootkit"]},
+  {"term":"Fanny","definition":"Worm used for air-gapped network infection.","difficulty":"Advanced","tags":["Worm Family"]},
+  {"term":"ProjectSauron","definition":"Advanced cyber espionage malware platform.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Terdot","definition":"Banking trojan targeting browsers.","difficulty":"Intermediate","tags":["Trojan Family"]},
+  {"term":"Pony","definition":"Credential stealer targeting FTP and email accounts.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"Fareit","definition":"Infostealer targeting browser credentials.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"Predator the Thief","definition":"Infostealer targeting sensitive user data.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"Collector Stealer","definition":"Malware designed to harvest credentials and system data.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"BlackEnergy","definition":"Malware targeting industrial systems and infrastructure.","difficulty":"Advanced","tags":["APT Malware","ICS Malware"]},
+  {"term":"Industroyer","definition":"Malware targeting power grids.","difficulty":"Advanced","tags":["ICS Malware"]},
+  {"term":"CrashOverride","definition":"Industrial control system attack malware.","difficulty":"Advanced","tags":["ICS Malware"]},
+  {"term":"TRITON","definition":"Malware targeting safety instrumented systems.","difficulty":"Advanced","tags":["ICS Malware"]},
+  {"term":"Ekans","definition":"Ransomware targeting industrial environments.","difficulty":"Advanced","tags":["Ransomware Family","ICS Malware"]},
+  {"term":"DarkComet","definition":"RAT used in surveillance and attacks.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Imminent Monitor","definition":"Commercial RAT abused by attackers.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Orcus","definition":"RAT used for remote system control.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Revenge RAT","definition":"RAT used for spying and persistence.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Warzone RAT","definition":"RAT used for espionage and control.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Glupteba","definition":"Botnet with blockchain-based resilience.","difficulty":"Advanced","tags":["Botnet"]},
+  {"term":"TrickMo","definition":"Banking trojan targeting mobile authentication.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Flubot","definition":"Android malware spreading via SMS phishing.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Joker","definition":"Android malware for fraud and subscriptions.","difficulty":"Beginner","tags":["Mobile Malware"]},
+  {"term":"Anubis","definition":"Android banking trojan.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Cerberus","definition":"Android banking trojan targeting credentials.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Hydra","definition":"Banking trojan targeting financial apps.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Alien","definition":"Android banking malware with overlay attacks.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Ermac","definition":"Android banking trojan derived from Cerberus.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Octo","definition":"Android malware enabling remote control of devices.","difficulty":"Advanced","tags":["Mobile Malware"]},
+  {"term":"Amadey","definition":"Loader malware used to download additional payloads onto infected systems.","difficulty":"Intermediate","tags":["Loader"]},
+  {"term":"Valak","definition":"Malware loader distributed via phishing campaigns.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"SquirrelWaffle","definition":"Loader malware spreading via spam emails and exploits.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Saint Bot","definition":"Downloader malware used to deliver secondary payloads.","difficulty":"Intermediate","tags":["Loader"]},
+  {"term":"PrivateLoader","definition":"Pay-per-install malware loader used by cybercriminals.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Aurora Stealer","definition":"Infostealer targeting browser credentials and crypto wallets.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"Mars Stealer","definition":"Infostealer targeting cryptocurrency wallets and browsers.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"Prynt Stealer","definition":"Malware designed to harvest sensitive data from infected systems.","difficulty":"Beginner","tags":["Infostealer"]},
+  {"term":"RisePro","definition":"Infostealer targeting credentials and financial data.","difficulty":"Intermediate","tags":["Infostealer"]},
+  {"term":"Lumma Stealer","definition":"Modern infostealer targeting browsers and applications.","difficulty":"Intermediate","tags":["Infostealer"]},
+  {"term":"SystemBC","definition":"Proxy malware used to establish encrypted communication channels.","difficulty":"Advanced","tags":["Backdoor","APT Malware"]},
+  {"term":"Danabot","definition":"Banking trojan used for credential theft and fraud.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Mekotio","definition":"Banking trojan targeting Latin American users.","difficulty":"Intermediate","tags":["Trojan Family"]},
+  {"term":"Grandoreiro","definition":"Banking trojan used in financial fraud campaigns.","difficulty":"Intermediate","tags":["Trojan Family"]},
+  {"term":"Guildma","definition":"Banking trojan targeting financial institutions.","difficulty":"Intermediate","tags":["Trojan Family"]},
+
+  {"term":"Chaes","definition":"JavaScript-based banking trojan targeting e-commerce users.","difficulty":"Intermediate","tags":["Trojan Family"]},
+  {"term":"Gootkit","definition":"Banking trojan using rootkit capabilities to evade detection.","difficulty":"Advanced","tags":["Trojan Family","Rootkit"]},
+  {"term":"Panda Banker","definition":"Banking trojan derived from Zeus source code.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Chthonic","definition":"Banking trojan variant based on Zeus.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Kronos","definition":"Banking trojan designed for credential theft.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"Makop","definition":"Ransomware targeting businesses and encrypting files.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"MedusaLocker","definition":"Ransomware targeting enterprise environments.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"MountLocker","definition":"Ransomware used in targeted attacks with data theft.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"NetWalker","definition":"Ransomware-as-a-Service targeting organizations.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Ragnar Locker","definition":"Ransomware using virtual machines to evade detection.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Snatch","definition":"Ransomware that reboots systems into safe mode before encrypting files.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"SunCrypt","definition":"Ransomware using double extortion tactics.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Pysa","definition":"Ransomware targeting government and healthcare sectors.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Vice Society","definition":"Ransomware group targeting education and healthcare.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"BianLian","definition":"Ransomware group focusing on data exfiltration.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Sodin","definition":"Early variant of REvil ransomware.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"HelloKitty","definition":"Ransomware targeting corporate networks.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"FiveHands","definition":"Ransomware linked to UNC2447 threat group.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Zeppelin","definition":"Ransomware derived from VegaLocker.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"VegaLocker","definition":"Ransomware targeting enterprise systems.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"Prometei","definition":"Cryptomining botnet targeting enterprise networks.","difficulty":"Advanced","tags":["Cryptominer","Botnet"]},
+  {"term":"NRSMiner","definition":"Fileless cryptominer using legitimate tools.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"WatchDog Miner","definition":"Cryptomining malware targeting cloud environments.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"Kinsing","definition":"Cloud-based cryptominer targeting containers.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"8220 Gang","definition":"Cryptomining campaign targeting misconfigured servers.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"MuddyWater","definition":"APT malware associated with espionage campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Turla","definition":"Advanced espionage malware used by state actors.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Snake","definition":"Advanced backdoor linked to Turla group.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Carbon","definition":"Backdoor malware used in targeted espionage.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Kazuar","definition":"Backdoor malware linked to APT campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Htran","definition":"Proxy tool used for covert communications.","difficulty":"Intermediate","tags":["Backdoor"]},
+  {"term":"Fast Reverse Proxy","definition":"Tool used by attackers for network tunneling.","difficulty":"Intermediate","tags":["Backdoor"]},
+  {"term":"Ngrok Abuse","definition":"Legitimate tunneling tool abused for malicious activity.","difficulty":"Beginner","tags":["Backdoor"]},
+  {"term":"Chisel","definition":"Tunneling tool used in post-exploitation.","difficulty":"Intermediate","tags":["Backdoor"]},
+  {"term":"Plink Abuse","definition":"SSH tool abused for lateral movement.","difficulty":"Intermediate","tags":["Backdoor"]},
+  {"term":"DeadBolt","definition":"Ransomware targeting NAS devices.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"eCh0raix","definition":"Ransomware targeting QNAP devices.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"Muhstik","definition":"Linux malware used for botnet and cryptomining.","difficulty":"Advanced","tags":["Botnet","Cryptominer"]},
+  {"term":"XorDDoS","definition":"Linux malware used for DDoS attacks.","difficulty":"Advanced","tags":["Botnet"]},
+  {"term":"Kaiji","definition":"Linux botnet targeting IoT and servers.","difficulty":"Advanced","tags":["Botnet"]},
+  {"term":"Linux.Encoder","definition":"Linux ransomware targeting servers.","difficulty":"Intermediate","tags":["Ransomware Family"]},
+  {"term":"HiddenWasp","definition":"Linux rootkit and backdoor malware.","difficulty":"Advanced","tags":["Rootkit","Backdoor"]},
+  {"term":"Ebury","definition":"SSH backdoor malware targeting Linux servers.","difficulty":"Advanced","tags":["Backdoor"]},
+  {"term":"Windigo","definition":"Linux malware campaign involving Ebury.","difficulty":"Advanced","tags":["Botnet"]},
+  {"term":"Rex","definition":"Linux botnet malware targeting servers.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"IceID Loader","definition":"Loader associated with IcedID campaigns.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Latrodectus","definition":"Emerging malware loader linked to cybercrime groups.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Pikabot","definition":"Loader malware used for delivering ransomware.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Bumblebee","definition":"Loader used as a replacement for BazarLoader.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"HijackLoader","definition":"Loader malware using DLL side-loading.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Black Basta","definition":"Ransomware targeting enterprise environments.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Akira","definition":"Ransomware targeting corporate networks.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"Play","definition":"Ransomware group targeting various industries.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"NoEscape","definition":"Ransomware operation with double extortion.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"RansomEXX","definition":"Ransomware targeting Linux and Windows systems.","difficulty":"Advanced","tags":["Ransomware Family"]},
+  {"term":"DarkGate","definition":"Loader malware with multiple capabilities.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"WarzoneRAT","definition":"Remote access trojan for espionage.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"VenomRAT","definition":"RAT used for credential theft and control.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"BitRAT","definition":"RAT with surveillance and data theft capabilities.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"DcRAT","definition":"Remote access trojan used in cybercrime.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"Godzilla Webshell","definition":"Webshell used for persistence on compromised servers.","difficulty":"Advanced","tags":["Webshell"]},
+  {"term":"China Chopper","definition":"Lightweight webshell used for remote control.","difficulty":"Intermediate","tags":["Webshell"]},
+  {"term":"ASPXSpy","definition":"Webshell targeting ASP.NET servers.","difficulty":"Intermediate","tags":["Webshell"]},
+  {"term":"WSO Webshell","definition":"PHP webshell used for server management.","difficulty":"Intermediate","tags":["Webshell"]},
+  {"term":"C99 Webshell","definition":"PHP-based webshell for remote command execution.","difficulty":"Intermediate","tags":["Webshell"]},
+  {"term":"JS Miner","definition":"Browser-based cryptomining malware.","difficulty":"Beginner","tags":["Cryptominer"]},
+  {"term":"Coinhive","definition":"Browser cryptominer using JavaScript.","difficulty":"Beginner","tags":["Cryptominer"]},
+  {"term":"WebCobra","definition":"Cryptomining malware using compromised servers.","difficulty":"Intermediate","tags":["Cryptominer"]},
+  {"term":"PowerGhost","definition":"Fileless cryptominer using PowerShell.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"Smominru","definition":"Cryptomining botnet exploiting Windows vulnerabilities.","difficulty":"Advanced","tags":["Cryptominer","Botnet"]},
+  {"term":"GhostEmperor","definition":"Advanced rootkit targeting Microsoft Exchange.","difficulty":"Advanced","tags":["Rootkit","APT Malware"]},
+  {"term":"DoublePulsar","definition":"Backdoor implant used with EternalBlue.","difficulty":"Advanced","tags":["Backdoor"]},
+  {"term":"EternalBlue Exploit","definition":"Exploit used to spread malware via SMB.","difficulty":"Intermediate","tags":["Exploit"]},
+  {"term":"BlueKeep Exploit","definition":"RDP vulnerability exploited by attackers.","difficulty":"Intermediate","tags":["Exploit"]},
+  {"term":"PrintNightmare Exploit","definition":"Windows spooler vulnerability exploited for privilege escalation.","difficulty":"Intermediate","tags":["Exploit"]},{"term":"Sykipot","definition":"Trojan used in spear-phishing campaigns targeting defense contractors.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"MiniDuke","definition":"Backdoor used in targeted espionage campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"CosmicDuke","definition":"Information-stealing malware linked to APT operations.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"OnionDuke","definition":"Malware distributed via Tor exit nodes for espionage.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"SeaDuke","definition":"Backdoor malware used for cyber espionage.","difficulty":"Advanced","tags":["APT Malware"]},
+
+  {"term":"Gamaredon","definition":"Malware used in ongoing espionage campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Pterodo","definition":"Backdoor associated with Gamaredon group.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"WellMess","definition":"Backdoor used in targeted attacks on healthcare organizations.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"WellMail","definition":"Lightweight backdoor used alongside WellMess.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Sunburst","definition":"Backdoor used in supply chain attacks.","difficulty":"Advanced","tags":["APT Malware"]},
+
+  {"term":"GoldMax","definition":"Backdoor used in post-compromise activities.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Raindrop","definition":"Loader used in advanced intrusion campaigns.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Teardrop","definition":"Dropper malware used in targeted attacks.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"BoomBox","definition":"Downloader malware used in espionage campaigns.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"NativeZone","definition":"Malware loader used for persistence and payload delivery.","difficulty":"Advanced","tags":["Loader"]},
+
+  {"term":"Hancitor","definition":"Loader malware used to distribute banking trojans.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"TA551 Loader","definition":"Loader used in phishing campaigns to deploy malware.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"SLoad","definition":"Downloader malware used for stealthy payload delivery.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Get2 Loader","definition":"Downloader malware used in targeted attacks.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"Buer Loader","definition":"Malware loader used to distribute ransomware.","difficulty":"Advanced","tags":["Loader"]},
+
+  {"term":"Evilnum","definition":"Backdoor used in financial cybercrime campaigns.","difficulty":"Advanced","tags":["Trojan Family"]},
+  {"term":"TrickLoader","definition":"Loader associated with TrickBot infections.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"DripLoader","definition":"Loader malware used for stealthy execution.","difficulty":"Advanced","tags":["Loader"]},
+  {"term":"IceRAT","definition":"Remote access trojan used for espionage.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"jRAT","definition":"Java-based RAT for cross-platform attacks.","difficulty":"Intermediate","tags":["RAT Malware"]},
+
+  {"term":"XtremeRAT","definition":"RAT used for surveillance and data exfiltration.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"LuminosityLink","definition":"Commercial RAT abused by attackers.","difficulty":"Intermediate","tags":["RAT Malware"]},
+  {"term":"SpyNote","definition":"Android RAT used for spying on mobile devices.","difficulty":"Intermediate","tags":["Mobile Malware","RAT Malware"]},
+  {"term":"Dendroid","definition":"Android RAT used for remote control.","difficulty":"Intermediate","tags":["Mobile Malware","RAT Malware"]},
+  {"term":"AhMyth","definition":"Android RAT targeting mobile devices.","difficulty":"Intermediate","tags":["Mobile Malware","RAT Malware"]},
+
+  {"term":"BankBot","definition":"Android banking trojan targeting financial apps.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Marcher","definition":"Mobile banking trojan targeting Android users.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Svpeng","definition":"Mobile ransomware and banking trojan.","difficulty":"Intermediate","tags":["Mobile Malware","Ransomware Family"]},
+  {"term":"Ginp","definition":"Android banking malware using overlay attacks.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"EventBot","definition":"Android malware targeting financial data.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+
+  {"term":"Hermit","definition":"Spyware targeting mobile devices.","difficulty":"Advanced","tags":["Spyware","Mobile Malware"]},
+  {"term":"Monokle","definition":"Mobile spyware used for surveillance.","difficulty":"Advanced","tags":["Spyware","Mobile Malware"]},
+  {"term":"Exodus","definition":"Spyware targeting Android devices.","difficulty":"Advanced","tags":["Spyware","Mobile Malware"]},
+  {"term":"FlexiSpy","definition":"Commercial spyware used for monitoring.","difficulty":"Intermediate","tags":["Spyware"]},
+  {"term":"mSpy","definition":"Spyware used for tracking and monitoring.","difficulty":"Beginner","tags":["Spyware"]},
+
+  {"term":"GhostPush","definition":"Android malware installing unwanted apps.","difficulty":"Beginner","tags":["Mobile Malware"]},
+  {"term":"HummingBad","definition":"Android malware generating ad revenue fraud.","difficulty":"Intermediate","tags":["Mobile Malware"]},
+  {"term":"Triada","definition":"Android malware with root capabilities.","difficulty":"Advanced","tags":["Mobile Malware","Rootkit"]},
+  {"term":"xHelper","definition":"Persistent Android malware difficult to remove.","difficulty":"Advanced","tags":["Mobile Malware"]},
+  {"term":"Judy","definition":"Android adware malware generating fraudulent clicks.","difficulty":"Beginner","tags":["Mobile Malware"]},
+
+  {"term":"Fireball","definition":"Adware malware hijacking browsers.","difficulty":"Beginner","tags":["Adware"]},
+  {"term":"Kovter","definition":"Fileless malware used for click fraud.","difficulty":"Advanced","tags":["Adware"]},
+  {"term":"Gator","definition":"Adware tracking user behavior.","difficulty":"Beginner","tags":["Adware"]},
+  {"term":"DollarRevenue","definition":"Adware used for affiliate fraud.","difficulty":"Beginner","tags":["Adware"]},
+  {"term":"CoolWebSearch","definition":"Browser hijacker altering search results.","difficulty":"Beginner","tags":["Adware"]},
+
+  {"term":"TDSS","definition":"Rootkit used to hide malicious activity.","difficulty":"Advanced","tags":["Rootkit"]},
+  {"term":"ZeroAccess","definition":"Rootkit used for botnet operations.","difficulty":"Advanced","tags":["Rootkit","Botnet"]},
+  {"term":"NecroRootkit","definition":"Rootkit providing stealth persistence.","difficulty":"Advanced","tags":["Rootkit"]},
+  {"term":"Rustock","definition":"Rootkit powering spam botnets.","difficulty":"Advanced","tags":["Rootkit","Botnet"]},
+  {"term":"Alureon","definition":"Rootkit stealing financial information.","difficulty":"Advanced","tags":["Rootkit","Trojan Family"]},
+
+  {"term":"Festi","definition":"DDoS botnet malware.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"Ares Botnet","definition":"Botnet used for DDoS and spam campaigns.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"Dark Nexus","definition":"IoT botnet targeting routers.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"Reaper","definition":"IoT botnet exploiting vulnerabilities.","difficulty":"Intermediate","tags":["Botnet"]},
+  {"term":"VPNFilter","definition":"Botnet targeting network devices.","difficulty":"Advanced","tags":["Botnet","APT Malware"]},
+
+  {"term":"QSnatch","definition":"Malware targeting NAS devices.","difficulty":"Advanced","tags":["Botnet"]},
+  {"term":"FritzFrog","definition":"Peer-to-peer botnet targeting SSH servers.","difficulty":"Advanced","tags":["Botnet"]},
+  {"term":"Skidmap","definition":"Linux rootkit used for cryptomining.","difficulty":"Advanced","tags":["Rootkit","Cryptominer"]},
+  {"term":"Rocke","definition":"Cryptomining malware targeting cloud systems.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"TeamTNT","definition":"Cloud-focused cryptomining campaign.","difficulty":"Advanced","tags":["Cryptominer"]},
+
+  {"term":"DirtyMoe","definition":"Cryptomining botnet targeting Windows systems.","difficulty":"Advanced","tags":["Cryptominer","Botnet"]},
+  {"term":"LemonDuck","definition":"Cross-platform cryptomining malware.","difficulty":"Advanced","tags":["Cryptominer","Botnet"]},
+  {"term":"WatchBog","definition":"Linux cryptomining botnet.","difficulty":"Advanced","tags":["Cryptominer","Botnet"]},
+  {"term":"Outlaw","definition":"Linux malware used for cryptomining.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"Shellbot","definition":"Botnet targeting Linux servers.","difficulty":"Intermediate","tags":["Botnet"]},
+
+  {"term":"Siloscape","definition":"Cloud malware targeting Kubernetes clusters.","difficulty":"Advanced","tags":["Cryptominer","APT Malware"]},
+  {"term":"Kubelet Malware","definition":"Targets Kubernetes API for attacks.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"Hildegard","definition":"Cryptomining malware targeting Kubernetes.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"Peirates","definition":"Cloud malware targeting container environments.","difficulty":"Advanced","tags":["Cryptominer"]},
+  {"term":"Doki","definition":"Backdoor malware using DNS-based C2.","difficulty":"Advanced","tags":["Backdoor"]},
+
+  {"term":"ChaChi","definition":"Backdoor used in targeted attacks.","difficulty":"Advanced","tags":["Backdoor"]},
+  {"term":"Cobalt Kitty","definition":"Malware used in long-term espionage campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"LuckyMouse","definition":"Malware associated with espionage operations.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Tick Malware","definition":"APT malware used for cyber espionage.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Winnti","definition":"APT malware targeting software supply chains.","difficulty":"Advanced","tags":["APT Malware"]},
+
+  {"term":"SideWinder","definition":"APT malware targeting government entities.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"Patchwork","definition":"APT malware used in espionage campaigns.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"OilRig","definition":"APT malware targeting Middle East organizations.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"APT28 Tools","definition":"Malware toolkit used by Fancy Bear group.","difficulty":"Advanced","tags":["APT Malware"]},
+  {"term":"APT29 Tools","definition":"Malware toolkit used by Cozy Bear group.","difficulty":"Advanced","tags":["APT Malware"]},
+
+  {"term":"PowerSploit","definition":"Post-exploitation framework using PowerShell.","difficulty":"Advanced","tags":["Post-Exploitation"]},
+  {"term":"Empire","definition":"PowerShell-based post-exploitation framework.","difficulty":"Advanced","tags":["Post-Exploitation"]},
+  {"term":"Mimikatz","definition":"Credential dumping tool used in attacks.","difficulty":"Intermediate","tags":["Post-Exploitation"]},
+  {"term":"LaZagne","definition":"Credential recovery tool used maliciously.","difficulty":"Intermediate","tags":["Post-Exploitation"]},
+  {"term":"Seatbelt","definition":"Post-exploitation situational awareness tool.","difficulty":"Intermediate","tags":["Post-Exploitation"]},
+
+  {"term":"SharpHound","definition":"Tool for mapping Active Directory relationships.","difficulty":"Intermediate","tags":["Post-Exploitation"]},
+  {"term":"Rubeus","definition":"Kerberos abuse tool for credential attacks.","difficulty":"Advanced","tags":["Post-Exploitation"]},
+  {"term":"Kerberoast Tool","definition":"Tool used for Kerberos ticket extraction.","difficulty":"Advanced","tags":["Post-Exploitation"]},
+  {"term":"BloodHound","definition":"Tool used to analyze Active Directory attack paths.","difficulty":"Intermediate","tags":["Post-Exploitation"]},
+  {"term":"Responder","definition":"Tool for network credential interception.","difficulty":"Intermediate","tags":["Post-Exploitation"]}
+],
+    "resources": [
     {
       "name": "NIST Cybersecurity Framework",
       "url": "https://www.nist.gov/cyberframework"
