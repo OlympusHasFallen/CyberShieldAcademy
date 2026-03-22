@@ -200,7 +200,7 @@ data.socOperations.forEach(item => {
         const li = document.createElement("li");
         li.className = "search-item";
         li.dataset.difficulty = item.difficulty || "Beginner";
-        li.innerHTML = `<span class="item-title">${item.name}</span> — ${item.description}
+        li.innerHTML = `<span class="item-title">${item.name}</span> — ${item.description}</span> — Motivation: ${item.motivation}</span> — Notable Attacks: ${item.notableAttacks}</span>
             <span class="pill">Difficulty: ${li.dataset.difficulty}</span>`;
         if (idx < muzo) threatActors1.appendChild(li);
         else threatActors2.appendChild(li);
